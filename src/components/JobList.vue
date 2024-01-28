@@ -1,5 +1,5 @@
 <template>
-  <el-carousel height="300px" direction="vertical" :interval="5000" indicator-position="none" style="width: 250px;">
+  <el-carousel height="370px" direction="vertical" :interval="5000" indicator-position="none" style="width: 320px;">
     <el-carousel-item v-for="(item, i) in companyList" :key="item">
       <el-card class="box-card">
         <div class="card-header">
@@ -39,8 +39,8 @@ export default {
 
 <style>
   .box-card {
-    width: 250px;
-    height: 290px;
+    width: 300px;
+    height: 350px;
   }
   .card-header{
     border-bottom: 1px solid gray;

@@ -10,8 +10,13 @@
 </template>
 
 <style lang="less">
+body,html{
+  padding: 0px;
+  margin: 0px;
+}
 .main-nav-text{
-  font-size: 5rem;
+  font-size: 4rem;
+  line-height: 130px;
 }
 .nav-data{
   position: absolute;
