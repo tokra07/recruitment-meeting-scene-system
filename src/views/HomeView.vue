@@ -12,6 +12,7 @@
     <el-col :span="5">
       <TalentSalary/>
       <TalentIndustry/>
+      <TalentEducation/>
     </el-col>
   </el-row>
   <el-row>
@@ -33,6 +34,7 @@ import EnterpriseIndustry from '@/components/EnterpriseIndustry.vue'
 import EnterpriseEducation from '@/components/EnterpriseEducation.vue'
 import TalentSalary from '@/components/TalentSalary.vue'
 import TalentIndustry from '@/components/TalentIndustry.vue'
+import TalentEducation from '@/components/TalentEducation.vue'
 import { getInfo } from '@/api/api'
 export default {
   name: 'HomeView',
@@ -42,7 +44,8 @@ export default {
     EnterpriseIndustry,
     EnterpriseEducation,
     TalentSalary,
-    TalentIndustry
+    TalentIndustry,
+    TalentEducation
   },
   data () {
     return {

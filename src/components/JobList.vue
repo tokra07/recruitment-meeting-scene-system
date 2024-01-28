@@ -1,16 +1,14 @@
 <template>
   <el-carousel height="350px" direction="vertical" :interval="5000" indicator-position="none" style="width: 320px;">
-    <el-carousel-item v-for="(item, i) in companyList" :key="item">
-      <el-card class="box-card">
+    <el-carousel-item v-for="item in FullList" :key="item">
         <div class="card-header">
           <span class="card-header-text">
-            {{ item }}
+            {{ item.key }}
           </span>
         </div>
-        <div v-for="(it) in jobList[i]" :key="it">
+        <div v-for="it in item.value" :key="it">
           {{ it }}
         </div>
-      </el-card>
     </el-carousel-item>
   </el-carousel>
 </template>
@@ -21,14 +19,18 @@ export default {
   name: 'JobList',
   data () {
     return {
-      companyList: [],
-      jobList: []
+      FullList: []
     }
   },
   mounted () {
     getJobList().then((res) => {
-      this.jobList = Object.values(res.data)
-      this.companyList = Object.keys(res.data)
+      const companyList = Object.keys(res.data)
+      const jobList = Object.values(res.data)
+      for (let i = 0; i < companyList.length; i++) {
+        this.FullList.push(
+          { key: companyList[i], value: jobList[i] }
+        )
+      }
     })
   },
   methods: {
@@ -40,7 +42,7 @@ export default {
 <style>
   .box-card {
     width: 300px;
-    height: 345px;
+    height: 350px;
   }
   .card-header{
     border-bottom: 1px solid gray;

@@ -31,3 +31,11 @@ export function getTalentSalary () {
 export function getTalentIndustry () {
   return get('/getTalentIndustry')
 }
+
+export function getTalentEducation () {
+  return get('/getTalentEducation')
+}
+
+export function getBoothList () {
+  return get('/getBoothList')
+}
