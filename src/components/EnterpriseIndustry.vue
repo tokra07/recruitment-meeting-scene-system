@@ -23,7 +23,6 @@ export default {
   mounted () {
     getEnterpriseIndustry().then((res) => {
       const idustryList = []
-      console.log(res)
       for (let i = 0; i < res.data.length; i++) {
         idustryList.push(
           { value: res.data[i].numbers, name: res.data[i].groupTag }
@@ -96,7 +95,6 @@ export default {
     })
     getJobIndustry().then((res) => {
       const jobIdustryList = []
-      console.log(res)
       for (let i = 0; i < res.data.length; i++) {
         jobIdustryList.push(
           { value: res.data[i].numbers, name: res.data[i].groupTag }

@@ -15,3 +15,11 @@ export function getEnterpriseIndustry () {
 export function getJobIndustry () {
   return get('/getJobIndustry')
 }
+
+export function getEnterpriseEducation () {
+  return get('/getEnterpriseEducation')
+}
+
+export function getInfo () {
+  return get('/getInfo')
+}
