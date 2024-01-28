@@ -27,3 +27,7 @@ export function getInfo () {
 export function getTalentSalary () {
   return get('/getTalentSalary')
 }
+
+export function getTalentIndustry () {
+  return get('/getTalentIndustry')
+}
