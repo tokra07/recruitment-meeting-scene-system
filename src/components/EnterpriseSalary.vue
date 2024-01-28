@@ -1,5 +1,5 @@
 <template>
-  <div id="main"></div>
+  <div id="EnterpriseSalaryEcharts"></div>
 </template>
 
 <script>
@@ -9,20 +9,18 @@ export default {
   name: 'EnterpriseSalary',
   mounted () {
     getEnterpriseSalary().then((res) => {
-      console.log(res)
       const salarList = []
       for (let i = 0; i < res.data.length; i++) {
         salarList.push(
           { value: res.data[i].numbers, name: res.data[i].groupTag }
         )
       }
-      console.log(salarList)
-      const chartDom = document.getElementById('main')
+      const chartDom = document.getElementById('EnterpriseSalaryEcharts')
       const myChart = echarts.init(chartDom)
       const option = {
         title: {
-          text: '企业薪资分布图',
-          subtext: '每分钟',
+          text: '企业薪资分布',
+          subtext: '每日',
           left: 'center'
         },
         legend: {
@@ -55,7 +53,7 @@ export default {
 </script>
 
 <style>
-#main{
+#EnterpriseSalaryEcharts{
   width: 300px;
   height: 300px;
 }
