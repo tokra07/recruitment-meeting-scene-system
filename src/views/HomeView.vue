@@ -9,7 +9,9 @@
       </div>
     </el-col>
     <el-col :span="14"></el-col>
-    <el-col :span="5"></el-col>
+    <el-col :span="5">
+      <TalentSalary/>
+    </el-col>
   </el-row>
   <el-row>
     <el-col>
@@ -28,6 +30,7 @@ import JobList from '@/components/JobList.vue'
 import EnterpriseSalary from '@/components/EnterpriseSalary.vue'
 import EnterpriseIndustry from '@/components/EnterpriseIndustry.vue'
 import EnterpriseEducation from '@/components/EnterpriseEducation.vue'
+import TalentSalary from '@/components/TalentSalary.vue'
 import { getInfo } from '@/api/api'
 export default {
   name: 'HomeView',
@@ -35,7 +38,8 @@ export default {
     JobList,
     EnterpriseSalary,
     EnterpriseIndustry,
-    EnterpriseEducation
+    EnterpriseEducation,
+    TalentSalary
   },
   data () {
     return {
@@ -44,7 +48,6 @@ export default {
   },
   mounted () {
     getInfo().then((res) => {
-      console.log(res)
       for (let i = 0; i < res.data.length; i++) {
         this.messageText += res.data[i].title + '    '
       }

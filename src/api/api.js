@@ -23,3 +23,7 @@ export function getEnterpriseEducation () {
 export function getInfo () {
   return get('/getInfo')
 }
+
+export function getTalentSalary () {
+  return get('/getTalentSalary')
+}
