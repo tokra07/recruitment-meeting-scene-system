@@ -16,8 +16,10 @@ export default {
         )
       }
       const chartDom = document.getElementById('EnterpriseEducationEcharts')
-      const myChart = echarts.init(chartDom)
+      const myChart = echarts.init(chartDom, 'dark')
       const option = {
+        backgroundColor: '',
+        color: ['#cccc00', '#cc0000', '#66cc00', '#cc0066', '#cc6600', '#00cc66'],
         title: {
           text: '各个行业的学历要求',
           subtext: '每日',

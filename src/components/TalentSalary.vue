@@ -15,8 +15,10 @@ export default {
       getTalentSalary().then((res) => {
         console.log(res)
         const chartDom = document.getElementById('TalentSalaryEcharts')
-        const myChart = echarts.init(chartDom)
+        const myChart = echarts.init(chartDom, 'dark')
         const option = {
+          backgroundColor: '',
+          color: ['#cccc00', '#cc0000', '#66cc00', '#cc0066', '#cc6600', '#00cc66'],
           title: {
             text: '人才薪资期望',
             subtext: '每分钟',

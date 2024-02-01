@@ -16,8 +16,10 @@ export default {
         )
       }
       const chartDom = document.getElementById('EnterpriseSalaryEcharts')
-      const myChart = echarts.init(chartDom)
+      const myChart = echarts.init(chartDom, 'dark')
       const option = {
+        backgroundColor: '',
+        color: ['#cccc00', '#cc0000', '#66cc00', '#cc0066', '#cc6600', '#00cc66'],
         title: {
           text: '企业薪资分布',
           subtext: '每日',

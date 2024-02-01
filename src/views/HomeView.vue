@@ -1,14 +1,30 @@
 <template>
-  <el-row>
+  <div style="position: absolute">
+    <ModelVMiew/>
+  </div>
+  <div style="position: absolute;width: 100%;pointer-events: none">
+    <Nav>
+    <img src="../image/head-title.png" style="position: absolute;height: 130px;margin-left: -400px;">
+    <div style="width: 100%;text-align: center;height: 130px;position: absolute;margin-top: -22px;">
+      <span class="main-nav-text">赤峰市公共就业数字孪生招聘会</span>
+    </div>
+    <div class="nav-data">
+      <NumInfo/>
+    </div>
+  </Nav>
+  <el-row style="margin-top: 130px;">
     <el-col :span="5">
-      <div style="margin-left: 10%;">
+      <div style="background:linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0));width: 550px;height: 100%;position: absolute"></div>
+      <div style="background:linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.5));width: 550px;height: 100%;position: absolute;right: 0px;"></div>
+      <div style="margin-left: 2%;position: absolute;">
         <JobList/>
         <EnterpriseSalary/>
         <EnterpriseIndustry/>
         <EnterpriseEducation/>
       </div>
     </el-col>
-    <el-col :span="14"></el-col>
+    <el-col :span="14">
+    </el-col>
     <el-col :span="5">
       <TalentSalary/>
       <TalentIndustry/>
@@ -24,10 +40,11 @@
       </div>
     </el-col>
   </el-row>
-
+  </div>
 </template>
 
 <script>
+import NumInfo from '@/components/NumInfo.vue'
 import JobList from '@/components/JobList.vue'
 import EnterpriseSalary from '@/components/EnterpriseSalary.vue'
 import EnterpriseIndustry from '@/components/EnterpriseIndustry.vue'
@@ -35,6 +52,7 @@ import EnterpriseEducation from '@/components/EnterpriseEducation.vue'
 import TalentSalary from '@/components/TalentSalary.vue'
 import TalentIndustry from '@/components/TalentIndustry.vue'
 import TalentEducation from '@/components/TalentEducation.vue'
+import ModelVMiew from '@/components/ModelView.vue'
 import { getInfo } from '@/api/api'
 export default {
   name: 'HomeView',
@@ -45,7 +63,9 @@ export default {
     EnterpriseEducation,
     TalentSalary,
     TalentIndustry,
-    TalentEducation
+    TalentEducation,
+    ModelVMiew,
+    NumInfo
   },
   data () {
     return {
@@ -63,6 +83,20 @@ export default {
 </script>
 
 <style>
+.main-nav-text{
+  color: #5BA7EF;
+  text-shadow: 0 0 5px #5BA7EF,0 0 5px #5BA7EF,0 0 10px #5BA7EF,0 0 15px #5BA7EF,0 0 20px #5BA7EF;
+  font-size: 4rem;
+  line-height: 130px;
+}
+.nav-data{
+  margin-top: 15px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 250px;
+  height: 130px;
+}
 .message-out{
   width: 90%;
   height: 2.5rem;
@@ -77,6 +111,7 @@ export default {
   white-space: normal;
   width: max-content;
   animation: marquee 20s infinite;
+  color: #cc0000;
 }
 
 @keyframes marquee {

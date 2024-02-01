@@ -1,6 +1,6 @@
 <template>
-  <el-carousel height="350px" direction="vertical" :interval="5000" indicator-position="none" style="width: 320px;">
-    <el-carousel-item v-for="item in FullList" :key="item">
+  <el-carousel height="320px" direction="vertical" :interval="5000" indicator-position="none" style="width: 320px;">
+    <el-carousel-item v-for="item in FullList" :key="item" style="color: #cccc00;">
         <div class="card-header">
           <span class="card-header-text">
             {{ item.key }}
@@ -42,7 +42,7 @@ export default {
 <style>
   .box-card {
     width: 300px;
-    height: 350px;
+    height: 320px;
   }
   .card-header{
     border-bottom: 1px solid gray;

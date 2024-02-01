@@ -1,5 +1,5 @@
 <template>
-    <div style="margin-top: 12%;"><span class="main-info">当前企业数：</span><span>{{ epNum }}家</span></div>
+    <div style="margin-top: 12%;"><span class="main-info">当前企业数：</span><span class="info-text">{{ epNum }}家</span></div>
     <div><span class="main-info">当前展厅人数：</span></div>
     <div><span class="main-info">当前投递简历数：</span></div>
 </template>
@@ -116,5 +116,10 @@ export default {
 .main-info{
     font-weight: bold;
     line-height: 1.5rem;
+    color: #cc0066;
+}
+.info-text{
+  line-height: 1.5rem;
+    color: #cc0066;
 }
 </style>

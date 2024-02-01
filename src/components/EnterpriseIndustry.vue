@@ -29,8 +29,10 @@ export default {
         )
       }
       const chartDom = document.getElementById('EnterpriseIndustryEcharts')
-      const myChart = echarts.init(chartDom)
+      const myChart = echarts.init(chartDom, 'dark')
       const option = {
+        backgroundColor: '',
+        color: ['#cccc00', '#cc0000', '#66cc00', '#cc0066', '#cc6600', '#00cc66'],
         title: {
           text: '各个行业的企业数',
           subtext: '每日',
@@ -61,8 +63,10 @@ export default {
       }
       myChart.setOption(option)
       const chartDom1 = document.getElementById('EnterpriseIndustryEcharts1')
-      const myChart1 = echarts.init(chartDom1)
+      const myChart1 = echarts.init(chartDom1, 'dark')
       const option1 = {
+        backgroundColor: '',
+        color: ['#cccc00', '#cc0000', '#66cc00', '#cc0066', '#cc6600', '#00cc66'],
         title: {
           text: '各个行业的企业数',
           subtext: '每日',
@@ -101,8 +105,10 @@ export default {
         )
       }
       const chartDom = document.getElementById('JobIndustryEcharts')
-      const myChart = echarts.init(chartDom)
+      const myChart = echarts.init(chartDom, 'dark')
       const option = {
+        backgroundColor: '',
+        color: ['#cccc00', '#cc0000', '#66cc00', '#cc0066', '#cc6600', '#00cc66'],
         title: {
           text: '各个行业的岗位数',
           subtext: '每日',
@@ -126,8 +132,10 @@ export default {
       }
       myChart.setOption(option)
       const chartDom1 = document.getElementById('JobIndustryEcharts1')
-      const myChart1 = echarts.init(chartDom1)
+      const myChart1 = echarts.init(chartDom1, 'dark')
       const option1 = {
+        backgroundColor: '',
+        color: ['#cccc00', '#cc0000', '#66cc00', '#cc0066', '#cc6600', '#00cc66'],
         title: {
           text: '各个行业的岗位数',
           subtext: '每日',
