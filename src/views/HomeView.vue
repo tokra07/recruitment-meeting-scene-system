@@ -4,7 +4,7 @@
   </div>
   <div style="position: absolute;width: 100%;pointer-events: none">
     <Nav>
-    <img src="../image/head-title.png" style="position: absolute;height: 130px;margin-left: -400px;">
+    <img src="../image/head-title.png" style="position: absolute;height: 130px;margin-left: -485px;">
     <div style="width: 100%;text-align: center;height: 130px;position: absolute;margin-top: -22px;">
       <span class="main-nav-text">赤峰市公共就业数字孪生招聘会</span>
     </div>

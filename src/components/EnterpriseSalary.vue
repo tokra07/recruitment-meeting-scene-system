@@ -56,7 +56,7 @@ export default {
 
 <style>
 #EnterpriseSalaryEcharts{
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 </style>

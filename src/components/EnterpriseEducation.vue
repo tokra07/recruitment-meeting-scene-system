@@ -56,7 +56,7 @@ export default {
 
 <style>
 #EnterpriseEducationEcharts{
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
 }
 </style>

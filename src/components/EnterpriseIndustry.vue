@@ -165,19 +165,19 @@ export default {
 
 <style>
 #EnterpriseIndustryEcharts{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 #JobIndustryEcharts{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 #EnterpriseIndustryEcharts1{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 #JobIndustryEcharts1{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 </style>

@@ -70,7 +70,7 @@ export default {
 
 <style>
 #TalentSalaryEcharts{
-    width: 400px;
-    height: 400px;
+    width: 355px;
+    height: 355px;
 }
 </style>
