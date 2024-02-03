@@ -116,10 +116,10 @@ export default {
 .main-info{
     font-weight: bold;
     line-height: 1.5rem;
-    color: #cc0066;
+    color: #4f6beb;
 }
 .info-text{
   line-height: 1.5rem;
-    color: #cc0066;
+    color: #4f6beb;
 }
 </style>

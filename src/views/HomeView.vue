@@ -4,8 +4,8 @@
   </div>
   <div style="position: absolute;width: 100%;pointer-events: none">
     <Nav>
-    <img src="../image/head-title.png" style="position: absolute;height: 130px;margin-left: -485px;">
-    <div style="width: 100%;text-align: center;height: 130px;position: absolute;margin-top: -22px;">
+    <img src="../image/head-title.png" style="position: absolute;height: 130px;width: 1920px;" />
+    <div style="width: 100%;text-align: center;height: 130px;position: absolute;">
       <span class="main-nav-text">赤峰市公共就业数字孪生招聘会</span>
     </div>
     <div class="nav-data">
@@ -31,7 +31,7 @@
       <TalentEducation/>
     </el-col>
   </el-row>
-  <el-row>
+  <el-row style="position: absolute;bottom: -70px;">
     <el-col>
       <div class="message-out">
         <div class="messages">
@@ -86,7 +86,7 @@ export default {
 .main-nav-text{
   color: #5BA7EF;
   text-shadow: 0 0 5px #5BA7EF,0 0 5px #5BA7EF,0 0 10px #5BA7EF,0 0 15px #5BA7EF,0 0 20px #5BA7EF;
-  font-size: 4rem;
+  font-size: 45px;
   line-height: 130px;
 }
 .nav-data{

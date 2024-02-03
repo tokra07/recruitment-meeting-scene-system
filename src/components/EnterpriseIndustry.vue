@@ -32,7 +32,7 @@ export default {
       const myChart = echarts.init(chartDom, 'dark')
       const option = {
         backgroundColor: '',
-        color: ['#cccc00', '#cc0000', '#66cc00', '#cc0066', '#cc6600', '#00cc66'],
+        color: ['#00FF7F', '#00FFFF', '#98FB98', '#808000', '#E0FFFF', '#ADFF2F'],
         title: {
           text: '各个行业的企业数',
           subtext: '每日',
@@ -66,7 +66,7 @@ export default {
       const myChart1 = echarts.init(chartDom1, 'dark')
       const option1 = {
         backgroundColor: '',
-        color: ['#cccc00', '#cc0000', '#66cc00', '#cc0066', '#cc6600', '#00cc66'],
+        color: ['#00FF7F', '#00FFFF', '#98FB98', '#808000', '#E0FFFF', '#ADFF2F'],
         title: {
           text: '各个行业的企业数',
           subtext: '每日',
@@ -108,7 +108,7 @@ export default {
       const myChart = echarts.init(chartDom, 'dark')
       const option = {
         backgroundColor: '',
-        color: ['#cccc00', '#cc0000', '#66cc00', '#cc0066', '#cc6600', '#00cc66'],
+        color: ['#00FF7F', '#00FFFF', '#98FB98', '#808000', '#E0FFFF', '#ADFF2F'],
         title: {
           text: '各个行业的岗位数',
           subtext: '每日',
@@ -135,7 +135,7 @@ export default {
       const myChart1 = echarts.init(chartDom1, 'dark')
       const option1 = {
         backgroundColor: '',
-        color: ['#cccc00', '#cc0000', '#66cc00', '#cc0066', '#cc6600', '#00cc66'],
+        color: ['#00FF7F', '#00FFFF', '#98FB98', '#808000', '#E0FFFF', '#ADFF2F'],
         title: {
           text: '各个行业的岗位数',
           subtext: '每日',

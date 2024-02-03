@@ -10,6 +10,8 @@ module.exports = defineConfig({
           '/api': ''
         }
       }
-    }
+    },
+    allowedHosts: 'all',
+    client: { overlay: false }
   }
 })

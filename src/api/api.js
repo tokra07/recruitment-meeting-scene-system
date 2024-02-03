@@ -1,4 +1,4 @@
-import { get } from '@/api/index'
+import { get, post } from '@/api/index'
 
 export function getJobList () {
   return get('/getJobList')
@@ -38,4 +38,8 @@ export function getTalentEducation () {
 
 export function getBoothList () {
   return get('/getBoothList')
+}
+
+export function getDetails (data) {
+  return post('/getDetails', data)
 }

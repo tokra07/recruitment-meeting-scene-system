@@ -1,16 +1,20 @@
 <template>
-    <div id="webgl">
-    </div>
+  <div id="webgl"></div>
 </template>
 
 <script>
 import { scene, camera, renderer } from '@/model/index'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
+import { getDetails } from '@/api/api'
 export default {
   name: 'ModelView',
   mounted () {
     this.init()
+  },
+  data () {
+    return {
+    }
   },
   methods: {
     init () {
@@ -45,7 +49,9 @@ export default {
       // 如果OrbitControls改变了相机参数，重新调用渲染器渲染三维场景
       controls.addEventListener('change', function () {
         renderer.render(scene, camera) // 执行渲染操作
-      })// 监听鼠标、键盘事件
+      })
+      // 监听鼠标、键盘事件
+      window.addEventListener('click', this.onMouseClick, false)
       document.body.appendChild(renderer.domElement)
       document.getElementById('webgl').appendChild(renderer.domElement)
       this.render()
@@ -53,9 +59,28 @@ export default {
     render () {
       renderer.render(scene, camera)
       requestAnimationFrame(this.render)
-      console.log('x', camera.position.x)
-      console.log('y', camera.position.y)
-      console.log('z', camera.position.z)
+      // console.log('x', camera.position.x)
+      // console.log('y', camera.position.y)
+      // console.log('z', camera.position.z)
+    },
+    onMouseClick (event) {
+      const raycaster = new THREE.Raycaster()
+      const ndcX = (event.clientX / window.innerWidth) * 2 - 1
+      const ndcY = -(event.clientY / window.innerHeight) * 2 + 1
+      raycaster.setFromCamera(new THREE.Vector2(ndcX, ndcY), camera)
+      const intersects = raycaster.intersectObjects(scene.children)
+      console.log(intersects)
+      if (intersects.length > 0) {
+        console.log(intersects[0].object.parent.parent.name)
+        const setName = intersects[0].object.parent.parent.name
+        getDetails(setName).then((res) => {
+          console.log(res)
+          this.$msgbox({
+            title: res.data.companyName,
+            message: res.data.company.brief
+          })
+        })
+      }
     }
   }
 }

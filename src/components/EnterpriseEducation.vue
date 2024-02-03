@@ -19,7 +19,7 @@ export default {
       const myChart = echarts.init(chartDom, 'dark')
       const option = {
         backgroundColor: '',
-        color: ['#cccc00', '#cc0000', '#66cc00', '#cc0066', '#cc6600', '#00cc66'],
+        color: ['#00FF7F', '#00FFFF', '#98FB98', '#808000', '#E0FFFF', '#ADFF2F'],
         title: {
           text: '各个行业的学历要求',
           subtext: '每日',

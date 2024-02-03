@@ -25,15 +25,15 @@ loader.load('glb/ground.glb', (gltf) => {
       }
     }
   })
-  groundGlb.position.set(0, 0, 0)
+  groundGlb.position.set(-2, 0, 0)
   groundGlb.scale.set(2, 2, 2)
   groundGlb.castShadow = true
   groundGlb.receiveShadow = true
   scene.add(groundGlb)
 })
 loader.load('glb/booth.glb', (gltf) => {
-  console.log(gltf)
-  const boothGlb001 = gltf.scene
+  console.log('导入的模型', gltf.scene)
+  const boothGlb001 = gltf.scene.children[0]
   boothGlb001.castShadow = true
   boothGlb001.receiveShadow = true
   boothGlb001.traverse(function (obj) {
