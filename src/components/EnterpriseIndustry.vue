@@ -1,5 +1,5 @@
 <template>
-    <el-carousel height="300px" style="width: 300px;" :interval="10000" indicator-position="none" arrow="never">
+    <el-carousel height="230px" style="width: 230px;" :interval="10000" indicator-position="none" arrow="never">
         <el-carousel-item>
             <div id="EnterpriseIndustryEcharts"></div>
         </el-carousel-item>
@@ -165,19 +165,19 @@ export default {
 
 <style>
 #EnterpriseIndustryEcharts{
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
 }
 #JobIndustryEcharts{
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
 }
 #EnterpriseIndustryEcharts1{
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
 }
 #JobIndustryEcharts1{
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
 }
 </style>

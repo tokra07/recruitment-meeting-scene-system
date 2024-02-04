@@ -13,7 +13,7 @@ export default {
   methods: {
     getEcharts () {
       getTalentIndustry().then((res) => {
-        console.log(res)
+        console.log('TalentIndustryEcharts', res)
         const chartDom = document.getElementById('TalentIndustryEcharts')
         const myChart = echarts.init(chartDom, 'dark')
         const option = {
@@ -70,7 +70,7 @@ export default {
 
 <style>
 #TalentIndustryEcharts{
-    width: 355px;
-    height: 355px;
+    width: 300px;
+    height: 300px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <el-carousel height="250px" direction="vertical" :interval="5000" indicator-position="none" style="width: 250px;">
+  <el-carousel height="200px" direction="vertical" :interval="5000" indicator-position="none" style="width: 200px;">
     <el-carousel-item v-for="item in FullList" :key="item" style="color: #cccc00;">
         <div class="card-header">
           <span class="card-header-text">
@@ -41,8 +41,8 @@ export default {
 
 <style>
   .box-card {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
   .card-header{
     border-bottom: 1px solid gray;

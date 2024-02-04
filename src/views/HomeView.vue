@@ -23,15 +23,15 @@
         <EnterpriseEducation/>
       </div>
     </el-col>
-    <el-col :span="14">
+    <el-col :span="15">
     </el-col>
-    <el-col :span="5">
+    <el-col :span="4">
       <TalentSalary/>
       <TalentIndustry/>
       <TalentEducation/>
     </el-col>
   </el-row>
-  <el-row style="position: absolute;bottom: -70px;">
+  <el-row style="position: absolute;bottom: -35px;">
     <el-col>
       <div class="message-out">
         <div class="messages">
@@ -77,6 +77,10 @@ export default {
       for (let i = 0; i < res.data.length; i++) {
         this.messageText += res.data[i].title + '    '
       }
+      this.$message({
+        message: '恭喜你，这是一条成功消息',
+        type: 'success'
+      })
     })
   }
 }
@@ -98,12 +102,9 @@ export default {
   height: 130px;
 }
 .message-out{
-  width: 90%;
   height: 2.5rem;
   line-height: 2.5rem;
   margin-top: 20px;
-  margin-left: 5%;
-  margin-right: 5%;
   overflow: hidden;
 }
 .messages{

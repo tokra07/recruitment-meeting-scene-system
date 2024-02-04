@@ -1,11 +1,13 @@
 
 import * as THREE from 'three'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 const windowWidth = window.innerWidth
 const windowHeight = window.innerHeight
 export const scene = new THREE.Scene()
 export const camera = new THREE.PerspectiveCamera(30, windowWidth / windowHeight, 1, 3000)
 export const renderer = new THREE.WebGLRenderer()
+export const controls = new OrbitControls(camera, renderer.domElement)
 renderer.setSize(windowWidth, windowHeight)
 renderer.shadowMap.enabled = true
 renderer.setClearColor(0x131D3C, 1.0)

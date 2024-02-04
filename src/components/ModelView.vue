@@ -3,9 +3,8 @@
 </template>
 
 <script>
-import { scene, camera, renderer } from '@/model/index'
+import { scene, camera, renderer, controls } from '@/model/index'
 import * as THREE from 'three'
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import { getDetails } from '@/api/api'
 export default {
   name: 'ModelView',
@@ -20,7 +19,9 @@ export default {
     init () {
       const geometry = new THREE.BoxGeometry(80, 1, 80)
       const material = new THREE.MeshLambertMaterial({
-        color: 0xffffff// 0xff0000设置材质颜色为红色
+        color: 0xffffff,
+        transparent: true,
+        opacity: 0.2
       })
       const mesh = new THREE.Mesh(geometry, material)
       mesh.position.set(0, -0.5, 0)
@@ -40,17 +41,17 @@ export default {
       spotLight.position.set(0, 100, 0)
       spotLight.castShadow = true
       scene.add(spotLight)
-      camera.position.set(100, 100, 100)
+      camera.position.set(85, 85, 85)
       camera.lookAt(0, 0, 0)
       const ambient = new THREE.AmbientLight(0xffffff, 1)
       ambient.castShadow = true
       scene.add(ambient)
-      const controls = new OrbitControls(camera, renderer.domElement)
-      // 如果OrbitControls改变了相机参数，重新调用渲染器渲染三维场景
       controls.addEventListener('change', function () {
-        renderer.render(scene, camera) // 执行渲染操作
+        renderer.render(scene, camera)
       })
-      // 监听鼠标、键盘事件
+      controls.enableDamping = true
+      controls.autoRotate = true
+      controls.autoRotateSpeed = 3
       window.addEventListener('click', this.onMouseClick, false)
       document.body.appendChild(renderer.domElement)
       document.getElementById('webgl').appendChild(renderer.domElement)
@@ -59,6 +60,7 @@ export default {
     render () {
       renderer.render(scene, camera)
       requestAnimationFrame(this.render)
+      controls.update()
       // console.log('x', camera.position.x)
       // console.log('y', camera.position.y)
       // console.log('z', camera.position.z)
