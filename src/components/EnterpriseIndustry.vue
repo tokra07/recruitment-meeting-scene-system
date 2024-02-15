@@ -22,6 +22,7 @@ export default {
   name: 'EnterpriseIndustry',
   mounted () {
     getEnterpriseIndustry().then((res) => {
+      console.log('EnterpriseIndustryEcharts', res)
       const idustryList = []
       for (let i = 0; i < res.data.length; i++) {
         idustryList.push(
@@ -98,6 +99,7 @@ export default {
       myChart1.setOption(option1)
     })
     getJobIndustry().then((res) => {
+      console.log('JobIndustryEcharts', res)
       const jobIdustryList = []
       for (let i = 0; i < res.data.length; i++) {
         jobIdustryList.push(

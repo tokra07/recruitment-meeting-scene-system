@@ -1,5 +1,5 @@
 <template>
-  <div id="webgl"></div>
+  <div id="webgl" @mousemove="handleMouseMove"></div>
 </template>
 
 <script>
@@ -13,6 +13,7 @@ export default {
   },
   data () {
     return {
+      maxTime: 100
     }
   },
   methods: {
@@ -49,13 +50,33 @@ export default {
       controls.addEventListener('change', function () {
         renderer.render(scene, camera)
       })
-      controls.enableDamping = true
-      controls.autoRotate = true
-      controls.autoRotateSpeed = 3
+      controls.enableDamping = false
+      controls.autoRotate = false
+      controls.autoRotateSpeed = 0
       window.addEventListener('click', this.onMouseClick, false)
       document.body.appendChild(renderer.domElement)
       document.getElementById('webgl').appendChild(renderer.domElement)
       this.render()
+      this.cameraMove()
+    },
+    handleMouseMove () {
+      this.maxTime = 100
+      controls.enableDamping = false
+      controls.autoRotate = false
+      controls.autoRotateSpeed = 0
+    },
+    cameraMove () {
+      setInterval(this.decreaseTime, 1000)
+    },
+    decreaseTime () {
+      this.maxTime--
+      if (this.maxTime === 0) {
+        console.log(0)
+        controls.enableDamping = true
+        controls.autoRotate = true
+        controls.autoRotateSpeed = 3
+        this.maxTime = 100
+      }
     },
     render () {
       renderer.render(scene, camera)

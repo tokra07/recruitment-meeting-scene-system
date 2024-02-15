@@ -1,7 +1,7 @@
 <template>
     <div style="margin-top: 12%;"><span class="main-info">当前企业数：</span><span class="info-text">{{ epNum }}家</span></div>
-    <div><span class="main-info">当前展厅人数：</span></div>
-    <div><span class="main-info">当前投递简历数：</span></div>
+    <div><span class="main-info">当前展厅人数：</span><span class="info-text">{{ personMum }}人次</span></div>
+    <div><span class="main-info">当前投递简历数：</span><span class="info-text">{{ resumeNum }}份</span></div>
 </template>
 
 <script>
@@ -10,11 +10,14 @@ export default {
   name: 'NumInfo',
   data () {
     return {
-      epNum: 0
+      epNum: 0,
+      resumeNum: 0,
+      personMum: 0
     }
   },
   created () {
-    // this.initWebSocket()
+    this.resume()
+    this.people()
   },
   mounted () {
     getBoothList().then((res) => {
@@ -22,94 +25,46 @@ export default {
     })
   },
   methods: {
-    currentTime () {
-      setInterval(this.formatDate, 500)
-    },
-    initWebSocket () {
-      const wsuri = 'wss://cfjy2.0476soft.net:38080/ledapi/getCurrentPersonage'
-      this.websock = new WebSocket(wsuri)
-      this.websock.onmessage = this.websocketonmessage
-      this.websock.onopen = this.websocketonopen
-      this.websock.onerror = this.websocketonerror
-      this.websock.onclose = this.websocketclose
-    },
-    // 连接建立时触发
-    websocketonopen () {
-      // 开启心跳
-      this.start()
-      // 连接建立之后执行send方法发送数据
-      // let actions = {"room":"007854ce7b93476487c7ca8826d17eba","info":"1121212"};
-      // this.websocketsend(JSON.stringify(actions));
-    },
-    // 通信发生错误时触发
-    websocketonerror () {
-      console.log('出现错误')
-      this.reconnect()
-    },
-    // 客户端接收服务端数据时触发
-    websocketonmessage (e) {
-      console.log(e.data)
-      // 收到服务器信息，心跳重置
-      this.reset()
-    },
-    websocketsend (Data) {
-      // 数据发送
-      this.websock.send(Data)
-    },
-    // 连接关闭时触发
-    websocketclose (e) {
-      // 关闭
-      console.log('断开连接', e)
-      // 重连
-      this.reconnect()
-    },
-    reconnect () {
-      // 重新连接
-      const that = this
-      if (that.lockReconnect) {
-        return
-      }
-      that.lockReconnect = true
-      // 没连接上会一直重连，设置延迟避免请求过多
-      that.timeoutnum && clearTimeout(that.timeoutnum)
-      that.timeoutnum = setTimeout(function () {
-        // 新连接
-        that.initWebSocket()
-        that.lockReconnect = false
-      }, 5000)
-    },
-    reset () {
-      // 重置心跳
-      const that = this
-      // 清除时间
-      clearTimeout(that.timeoutObj)
-      clearTimeout(that.serverTimeoutObj)
-      // 重启心跳
-      that.start()
-    },
-    start () {
-      // 开启心跳
-      console.log('开启心跳')
-      const self = this
-      self.timeoutObj && clearTimeout(self.timeoutObj)
-      self.serverTimeoutObj && clearTimeout(self.serverTimeoutObj)
-      self.timeoutObj = setTimeout(function () {
-        // 这里发送一个心跳，后端收到后，返回一个心跳消息，
-        if (self.ws.readyState === 1) {
-          // 如果连接正常
-          // self.ws.send("heartCheck"); //这里可以自己跟后端约定
-        } else {
-          // 否则重连
-          self.reconnect()
+    resume () {
+      const _this = this
+      const socket = new WebSocket('ws://jy.chifengrencai.com//ledapi/getDeliveriesNumber')
+      const comList = {}
+      getBoothList().then((res) => {
+        console.log('公司数据', res.data)
+        for (let i = 0; i < res.data.length; i++) {
+          comList[res.data[i].boothNo] = res.data[i].companyName
         }
-        self.serverTimeoutObj = setTimeout(function () {
-          // 超时关闭
-          self.ws.close()
-        }, self.timeout)
-      }, self.timeout)
+        console.log('comList', comList)
+        socket.addEventListener('message', function (event) {
+          console.log('getDeliveriesNumber', event)
+          if (event.data === '连接成功') {
+            socket.send(1)
+          } else {
+            const deliverNum = JSON.parse(event.data)
+            const deliverKeys = Object.keys(deliverNum)
+            console.log('返回的值', comList[deliverKeys])
+            _this.resumeNum++
+            _this.$message({
+              message: '恭喜' + comList[deliverKeys] + '收到一份简历',
+              type: 'success'
+            })
+          }
+        })
+      })
+    },
+    people () {
+      const _this = this
+      const socket = new WebSocket('ws://jy.chifengrencai.com//ledapi/getCurrentPersonage')
+      socket.addEventListener('message', function (event) {
+        console.log('getCurrentPersonage', event)
+        if (event.data === '连接成功') {
+          socket.send(1)
+        } else {
+          _this.personMum++
+        }
+      })
     }
   }
-
 }
 </script>
 <style>

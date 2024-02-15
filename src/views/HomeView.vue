@@ -42,7 +42,6 @@
   </el-row>
   </div>
 </template>
-
 <script>
 import NumInfo from '@/components/NumInfo.vue'
 import JobList from '@/components/JobList.vue'
@@ -77,10 +76,6 @@ export default {
       for (let i = 0; i < res.data.length; i++) {
         this.messageText += res.data[i].title + '    '
       }
-      this.$message({
-        message: '恭喜你，这是一条成功消息',
-        type: 'success'
-      })
     })
   }
 }

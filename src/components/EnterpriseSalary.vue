@@ -9,6 +9,7 @@ export default {
   name: 'EnterpriseSalary',
   mounted () {
     getEnterpriseSalary().then((res) => {
+      console.log('EnterpriseSalaryEcharts', res)
       const salarList = []
       for (let i = 0; i < res.data.length; i++) {
         salarList.push(

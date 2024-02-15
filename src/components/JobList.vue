@@ -24,6 +24,7 @@ export default {
   },
   mounted () {
     getJobList().then((res) => {
+      console.log('公司列表', res)
       const companyList = Object.keys(res.data)
       const jobList = Object.values(res.data)
       for (let i = 0; i < companyList.length; i++) {

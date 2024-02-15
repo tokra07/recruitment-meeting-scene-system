@@ -9,6 +9,7 @@ export default {
   name: 'EnterpriseEducation',
   mounted () {
     getEnterpriseEducation().then((res) => {
+      console.log('EnterpriseEducationEcharts', res)
       const education = []
       for (let i = 0; i < res.data.length; i++) {
         education.push(
