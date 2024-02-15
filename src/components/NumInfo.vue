@@ -6,6 +6,7 @@
 
 <script>
 import { getBoothList } from '@/api/api'
+import { lightControls } from '@/model/lightControls'
 export default {
   name: 'NumInfo',
   data () {
@@ -43,6 +44,8 @@ export default {
             const deliverNum = JSON.parse(event.data)
             const deliverKeys = Object.keys(deliverNum)
             console.log('返回的值', comList[deliverKeys])
+            const boothNum = 'spotLight' + deliverKeys
+            lightControls(boothNum)
             _this.resumeNum++
             _this.$message({
               message: '恭喜' + comList[deliverKeys] + '收到一份简历',

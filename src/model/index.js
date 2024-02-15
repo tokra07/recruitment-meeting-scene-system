@@ -1,4 +1,3 @@
-
 import * as THREE from 'three'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
@@ -6,7 +5,11 @@ const windowWidth = window.innerWidth
 const windowHeight = window.innerHeight
 export const scene = new THREE.Scene()
 export const camera = new THREE.PerspectiveCamera(30, windowWidth / windowHeight, 1, 3000)
-export const renderer = new THREE.WebGLRenderer()
+export const renderer = new THREE.WebGLRenderer({
+  antialias: true
+})
+renderer.setPixelRatio(window.devicePixelRatio)
+renderer.outputEncoding = THREE.sRGBEncoding
 export const controls = new OrbitControls(camera, renderer.domElement)
 renderer.setSize(windowWidth, windowHeight)
 renderer.shadowMap.enabled = true
@@ -192,19 +195,19 @@ loader.load('glb/booth.glb', (gltf) => {
   boothGlb047.name = 'booth047'
   const boothGlb048 = boothGlb001.clone()
   boothGlb048.position.set(-6, 0, -5.5)
-  boothGlb048.name = 'booth002'
+  boothGlb048.name = 'booth048'
   const boothGlb049 = boothGlb001.clone()
   boothGlb049.position.set(-3.2, 0, -5.5)
-  boothGlb049.name = 'booth002'
+  boothGlb049.name = 'booth049'
   const boothGlb050 = boothGlb001.clone()
   boothGlb050.position.set(-0.3, 0, -5.5)
-  boothGlb050.name = 'booth002'
+  boothGlb050.name = 'booth050'
   const boothGlb051 = boothGlb001.clone()
   boothGlb051.position.set(2.4, 0, -5.5)
-  boothGlb051.name = 'booth002'
+  boothGlb051.name = 'booth051'
   const boothGlb052 = boothGlb001.clone()
   boothGlb052.position.set(5.2, 0, -5.5)
-  boothGlb052.name = 'booth002'
+  boothGlb052.name = 'booth052'
   const boothGlb053 = boothGlb001.clone()
   boothGlb053.position.set(10, 0, -5.5)
   boothGlb053.name = 'booth053'
