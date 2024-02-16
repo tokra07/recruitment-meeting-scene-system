@@ -13,12 +13,18 @@ export default {
     return {
       epNum: 0,
       resumeNum: 0,
-      personMum: 0
+      personMum: 0,
+      resumeSocket: '',
+      peopleSocket: ''
     }
   },
   created () {
     this.resume()
     this.people()
+  },
+  unmounted () {
+    this.resumeSocket.close()
+    this.peopleSocket.close()
   },
   mounted () {
     getBoothList().then((res) => {
@@ -28,7 +34,7 @@ export default {
   methods: {
     resume () {
       const _this = this
-      const socket = new WebSocket('ws://jy.chifengrencai.com//ledapi/getDeliveriesNumber')
+      _this.resumeSocket = new WebSocket('ws://jy.chifengrencai.com//ledapi/getDeliveriesNumber')
       const comList = {}
       getBoothList().then((res) => {
         console.log('公司数据', res.data)
@@ -36,10 +42,10 @@ export default {
           comList[res.data[i].boothNo] = res.data[i].companyName
         }
         console.log('comList', comList)
-        socket.addEventListener('message', function (event) {
+        _this.resumeSocket.addEventListener('message', function (event) {
           console.log('getDeliveriesNumber', event)
           if (event.data === '连接成功') {
-            socket.send(1)
+            _this.resumeSocket.send(1)
           }
           const deliverNum = JSON.parse(event.data)
           const deliverKeys = Object.keys(deliverNum)
@@ -56,11 +62,11 @@ export default {
     },
     people () {
       const _this = this
-      const socket = new WebSocket('ws://jy.chifengrencai.com//ledapi/getCurrentPersonage')
-      socket.addEventListener('message', function (event) {
+      _this.peopleSocket = new WebSocket('ws://jy.chifengrencai.com//ledapi/getCurrentPersonage')
+      _this.peopleSocket.addEventListener('message', function (event) {
         console.log('getCurrentPersonage', event)
         if (event.data === '连接成功') {
-          socket.send(1)
+          _this.peopleSocket.send(1)
         } else {
           _this.personMum++
         }

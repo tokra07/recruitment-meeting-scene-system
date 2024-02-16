@@ -1,16 +1,14 @@
 <template>
-  <el-carousel height="200px" direction="vertical" :interval="5000" indicator-position="none" style="width: 200px;">
-    <el-carousel-item v-for="item in FullList" :key="item" style="color: #cccc00;">
-        <div class="card-header">
-          <span class="card-header-text">
-            {{ item.key }}
-          </span>
-        </div>
-        <div v-for="it in item.value" :key="it">
-          {{ it }}
-        </div>
-    </el-carousel-item>
-  </el-carousel>
+  <div style="width: 200px;height: 200px;">
+    <div class="card-header">
+      <span class="card-header-text">
+          {{ Headers }}
+      </span>
+    </div>
+    <div v-for="item in jobLists" :key="item" class="card-body-text">
+      {{ item }}
+    </div>
+  </div>
 </template>
 
 <script>
@@ -19,23 +17,28 @@ export default {
   name: 'JobList',
   data () {
     return {
-      FullList: []
+      Headers: '',
+      nv: 0,
+      companyList: [],
+      jobList: [],
+      jobLists: []
     }
   },
   mounted () {
     getJobList().then((res) => {
       console.log('公司列表', res)
-      const companyList = Object.keys(res.data)
-      const jobList = Object.values(res.data)
-      for (let i = 0; i < companyList.length; i++) {
-        this.FullList.push(
-          { key: companyList[i], value: jobList[i] }
-        )
-      }
+      this.companyList = Object.keys(res.data)
+      this.jobList = Object.values(res.data)
+      this.loop()
+      setInterval(this.loop, 15000)
     })
   },
   methods: {
-
+    loop () {
+      this.Headers = this.companyList[this.nv]
+      this.jobLists = this.jobList[this.nv]
+      this.nv++
+    }
   }
 }
 </script>
@@ -52,6 +55,7 @@ export default {
     white-space: normal;
   }
   .card-header-text{
+    color: #ffdd93;
     font-weight: bold;
     line-height: 2.5rem;
     font-size: 1rem;
@@ -61,5 +65,8 @@ export default {
     display: -webkit-box;
     -webkit-box-orient:vertical;
     -webkit-line-clamp:1;
+  }
+  .card-body-text{
+    color: #ffdd93;
   }
 </style>
