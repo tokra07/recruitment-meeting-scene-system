@@ -24,11 +24,15 @@ export default {
     getData () {
       getTalentEducation().then((res) => {
         console.log(res)
-        const xlist = []
-        const ylist = []
-        for (let i = 0; i < res.data.length; i++) {
-          xlist.push(res.data[i].groupTag)
-          ylist.push(res.data[i].numbers)
+        const xlist = ['小学', '初中', '高中', '大学', '其他']
+        const ylist = [10, 15, 20, 25, 30]
+        if (res.data.length > 0) {
+          xlist.splice(0)
+          ylist.splice(0)
+          for (let i = 0; i < res.data.length; i++) {
+            xlist.push(res.data[i].groupTag)
+            ylist.push(res.data[i].numbers)
+          }
         }
         this.yList = this.yLists
         this.xLists = xlist

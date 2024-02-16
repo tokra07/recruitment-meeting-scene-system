@@ -9,12 +9,21 @@ export default {
   name: 'EnterpriseEducation',
   mounted () {
     getEnterpriseEducation().then((res) => {
-      console.log('EnterpriseEducationEcharts', res)
-      const education = []
-      for (let i = 0; i < res.data.length; i++) {
-        education.push(
-          { value: res.data[i].numbers, name: res.data[i].groupTag }
-        )
+      const education = [
+        { value: 10, name: '小学' },
+        { value: 15, name: '初中' },
+        { value: 20, name: '高中' },
+        { value: 25, name: '大学' },
+        { value: 30, name: '其他' }
+      ]
+      if (res.data.length > 0) {
+        console.log('EnterpriseEducationEcharts', res)
+        education.splice(0)
+        for (let i = 0; i < res.data.length; i++) {
+          education.push(
+            { value: res.data[i].numbers, name: res.data[i].groupTag }
+          )
+        }
       }
       const chartDom = document.getElementById('EnterpriseEducationEcharts')
       const myChart = echarts.init(chartDom, 'dark')

@@ -10,11 +10,19 @@ export default {
   mounted () {
     getEnterpriseSalary().then((res) => {
       console.log('EnterpriseSalaryEcharts', res)
-      const salarList = []
-      for (let i = 0; i < res.data.length; i++) {
-        salarList.push(
-          { value: res.data[i].numbers, name: res.data[i].groupTag }
-        )
+      const salarList = [
+        { value: 10, name: '2k-4k' },
+        { value: 15, name: '4k-6k' },
+        { value: 20, name: '8k-10k' },
+        { value: 25, name: '其他' }
+      ]
+      if (res.data.length > 0) {
+        salarList.splice(0)
+        for (let i = 0; i < res.data.length; i++) {
+          salarList.push(
+            { value: res.data[i].numbers, name: res.data[i].groupTag }
+          )
+        }
       }
       const chartDom = document.getElementById('EnterpriseSalaryEcharts')
       const myChart = echarts.init(chartDom, 'dark')

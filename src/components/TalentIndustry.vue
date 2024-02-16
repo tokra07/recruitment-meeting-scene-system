@@ -23,12 +23,15 @@ export default {
   methods: {
     getData () {
       getTalentIndustry().then((res) => {
-        console.log(res)
-        const xlist = []
-        const ylist = []
-        for (let i = 0; i < res.data.length; i++) {
-          xlist.push(res.data[i].groupTag)
-          ylist.push(res.data[i].numbers)
+        const xlist = ['金融服务', '制造业', '消费品', '建筑工程', '服务业']
+        const ylist = [10, 15, 20, 25, 30]
+        if (res.data.length > 0) {
+          xlist.splice(0)
+          ylist.splice(0)
+          for (let i = 0; i < res.data.length; i++) {
+            xlist.push(res.data[i].groupTag)
+            ylist.push(res.data[i].numbers)
+          }
         }
         this.yList = this.yLists
         this.xLists = xlist

@@ -23,11 +23,20 @@ export default {
   mounted () {
     getEnterpriseIndustry().then((res) => {
       console.log('EnterpriseIndustryEcharts', res)
-      const idustryList = []
-      for (let i = 0; i < res.data.length; i++) {
-        idustryList.push(
-          { value: res.data[i].numbers, name: res.data[i].groupTag }
-        )
+      const idustryList = [
+        { value: 10, name: '金融服务' },
+        { value: 15, name: '消费品' },
+        { value: 20, name: '建筑工程' },
+        { value: 25, name: '农业' },
+        { value: 30, name: '服务业' }
+      ]
+      if (res.data.length > 0) {
+        idustryList.splice(0)
+        for (let i = 0; i < res.data.length; i++) {
+          idustryList.push(
+            { value: res.data[i].numbers, name: res.data[i].groupTag }
+          )
+        }
       }
       const chartDom = document.getElementById('EnterpriseIndustryEcharts')
       const myChart = echarts.init(chartDom, 'dark')
@@ -100,11 +109,20 @@ export default {
     })
     getJobIndustry().then((res) => {
       console.log('JobIndustryEcharts', res)
-      const jobIdustryList = []
-      for (let i = 0; i < res.data.length; i++) {
-        jobIdustryList.push(
-          { value: res.data[i].numbers, name: res.data[i].groupTag }
-        )
+      const jobIdustryList = [
+        { value: 10, name: '金融服务' },
+        { value: 15, name: '消费品' },
+        { value: 20, name: '建筑工程' },
+        { value: 25, name: '农业' },
+        { value: 30, name: '服务业' }
+      ]
+      if (res.data.length > 0) {
+        jobIdustryList.splice(0)
+        for (let i = 0; i < res.data.length; i++) {
+          jobIdustryList.push(
+            { value: res.data[i].numbers, name: res.data[i].groupTag }
+          )
+        }
       }
       const chartDom = document.getElementById('JobIndustryEcharts')
       const myChart = echarts.init(chartDom, 'dark')

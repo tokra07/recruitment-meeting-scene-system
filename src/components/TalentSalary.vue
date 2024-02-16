@@ -23,12 +23,15 @@ export default {
   methods: {
     getData () {
       getTalentSalary().then((res) => {
-        console.log(res)
-        const xlist = []
-        const ylist = []
-        for (let i = 0; i < res.data.length; i++) {
-          xlist.push(res.data[i].groupTag)
-          ylist.push(res.data[i].numbers)
+        const xlist = ['2k-4k', '4k-6k', '6k-8k', '8k-10k', '其他']
+        const ylist = [10, 15, 20, 25, 30]
+        if (res.data.length > 0) {
+          xlist.splice(0)
+          ylist.splice(0)
+          for (let i = 0; i < res.data.length; i++) {
+            xlist.push(res.data[i].groupTag)
+            ylist.push(res.data[i].numbers)
+          }
         }
         this.yList = this.yLists
         this.xLists = xlist
