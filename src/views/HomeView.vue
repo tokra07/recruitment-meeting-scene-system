@@ -4,8 +4,8 @@
   </div>
   <div style="position: absolute;width: 100%;pointer-events: none">
     <Nav>
-    <img src="../image/head-title.png" style="position: absolute;height: 130px;width: 1920px;" />
-    <div style="width: 100%;text-align: center;height: 130px;position: absolute;">
+    <img src="../image/head-title.png" style="position: absolute;height: 130px;width: 1920px;user-select: none;" />
+    <div style="width: 100%;text-align: center;height: 130px;position: absolute;user-select: none;">
       <span class="main-nav-text">赤峰市公共就业数字孪生招聘会</span>
     </div>
     <div class="nav-data">
@@ -87,6 +87,7 @@ export default {
   text-shadow: 0 0 5px #5BA7EF,0 0 5px #5BA7EF,0 0 10px #5BA7EF,0 0 15px #5BA7EF,0 0 20px #5BA7EF;
   font-size: 45px;
   line-height: 130px;
+  user-select: none;
 }
 .nav-data{
   margin-top: 15px;

@@ -1,60 +1,14 @@
+
 import * as THREE from 'three'
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
-import { clickControls } from './clickControls'
-const windowWidth = window.innerWidth
-const windowHeight = window.innerHeight
-export const scene = new THREE.Scene()
-export const camera = new THREE.PerspectiveCamera(30, windowWidth / windowHeight, 1, 3000)
-export const renderer = new THREE.WebGLRenderer({
-  antialias: true
-})
-renderer.setPixelRatio(window.devicePixelRatio)
-renderer.outputEncoding = THREE.sRGBEncoding
-export const controls = new OrbitControls(camera, renderer.domElement)
-renderer.setSize(windowWidth, windowHeight)
-renderer.shadowMap.enabled = true
-renderer.setClearColor(0x131D3C, 1.0)
-const loader = new GLTFLoader()
-loader.load('glb/ground.glb', (gltf) => {
-  console.log(gltf)
-  const groundGlb = gltf.scene
-  groundGlb.traverse(function (obj) {
-    obj.receiveShadow = true
-    obj.castShadow = true
-    if (obj.isMesh) {
-      // console.log(obj)
-      const map = obj.material.map
-      if (map !== null) {
-        map.magFilter = THREE.LinearFilter
-        map.minFilter = THREE.LinearMipMapLinearFilter
-      }
-    }
+import { scene } from '@/model/index'
+export function clickControls () {
+  const geometry = new THREE.BoxGeometry(2, 2, 2)
+  const material = new THREE.MeshLambertMaterial({
+    color: 0xffffff,
+    transparent: true,
+    opacity: 0.1
   })
-  groundGlb.position.set(-2, 0, 0)
-  groundGlb.scale.set(2, 2, 2)
-  groundGlb.castShadow = true
-  groundGlb.receiveShadow = true
-  scene.add(groundGlb)
-})
-clickControls()
-loader.load('glb/booth.glb', (gltf) => {
-  console.log('导入的模型', gltf.scene)
-  const boothGlb001 = gltf.scene.children[0]
-  boothGlb001.castShadow = true
-  boothGlb001.receiveShadow = true
-  boothGlb001.traverse(function (obj) {
-    obj.receiveShadow = true
-    obj.castShadow = true
-    if (obj.isMesh) {
-      // console.log(obj)
-      const map = obj.material.map
-      if (map !== null) {
-        map.magFilter = THREE.LinearFilter
-        map.minFilter = THREE.LinearMipMapLinearFilter
-      }
-    }
-  })
+  const boothGlb001 = new THREE.Mesh(geometry, material)
   boothGlb001.position.set(-26.3, 0, -19)
   boothGlb001.name = 'booth001'
   const boothGlb002 = boothGlb001.clone()
@@ -534,4 +488,4 @@ loader.load('glb/booth.glb', (gltf) => {
   scene.add(boothGlb118)
   scene.add(boothGlb119)
   scene.add(boothGlb120)
-})
+}

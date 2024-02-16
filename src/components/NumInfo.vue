@@ -40,18 +40,17 @@ export default {
           console.log('getDeliveriesNumber', event)
           if (event.data === '连接成功') {
             socket.send(1)
-          } else {
-            const deliverNum = JSON.parse(event.data)
-            const deliverKeys = Object.keys(deliverNum)
-            console.log('返回的值', comList[deliverKeys])
-            const boothNum = 'spotLight' + deliverKeys
-            lightControls(boothNum)
-            _this.resumeNum++
-            _this.$message({
-              message: '恭喜' + comList[deliverKeys] + '收到一份简历',
-              type: 'success'
-            })
           }
+          const deliverNum = JSON.parse(event.data)
+          const deliverKeys = Object.keys(deliverNum)
+          console.log('返回的值', comList[deliverKeys])
+          const boothNum = 'spotLight' + deliverKeys
+          lightControls(boothNum)
+          _this.resumeNum++
+          _this.$message({
+            message: '恭喜' + comList[deliverKeys] + '收到一份简历',
+            type: 'success'
+          })
         })
       })
     },
