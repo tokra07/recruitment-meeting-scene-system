@@ -90,11 +90,11 @@ export default {
   user-select: none;
 }
 .nav-data{
-  margin-top: 15px;
+  margin-top: 10px;
   position: absolute;
   top: 0px;
   right: 0px;
-  width: 250px;
+  width: 300px;
   height: 130px;
 }
 .message-out{
