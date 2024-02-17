@@ -36,6 +36,13 @@ export default {
         this.yList = this.yLists
         this.xLists = xlist
         this.yLists = ylist
+      }).catch(err => {
+        console.log(err)
+        const xlist = ['金融服务', '制造业', '消费品', '建筑工程', '服务业']
+        const ylist = [10, 15, 20, 25, 30]
+        this.yList = this.yLists
+        this.xLists = xlist
+        this.yLists = ylist
       })
     },
     getEcharts () {
@@ -98,7 +105,7 @@ export default {
 
 <style>
 #TalentIndustryEcharts{
-    width: 300px;
-    height: 300px;
+    width: 295px;
+    height: 295px;
 }
 </style>

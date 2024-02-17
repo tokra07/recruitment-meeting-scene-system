@@ -37,6 +37,13 @@ export default {
         this.yList = this.yLists
         this.xLists = xlist
         this.yLists = ylist
+      }).catch(err => {
+        console.log(err)
+        const xlist = ['小学', '初中', '高中', '大学', '其他']
+        const ylist = [10, 15, 20, 25, 30]
+        this.yList = this.yLists
+        this.xLists = xlist
+        this.yLists = ylist
       })
     },
     getEcharts () {
@@ -99,7 +106,7 @@ export default {
 
 <style>
 #TalentEducationEcharts{
-    width: 300px;
-    height: 300px;
+    width: 295px;
+    height: 295px;
 }
 </style>

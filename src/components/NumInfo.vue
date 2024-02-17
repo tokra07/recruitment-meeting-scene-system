@@ -39,29 +39,30 @@ export default {
     resume () {
       const _this = this
       _this.resumeSocket = new WebSocket('ws://jy.chifengrencai.com//ledapi/getDeliveriesNumber')
-      const comList = {}
-      getBoothList().then((res) => {
-        console.log('公司数据', res.data)
-        for (let i = 0; i < res.data.length; i++) {
-          comList[res.data[i].boothNo] = res.data[i].companyName
-        }
-        console.log('comList', comList)
-        _this.resumeSocket.addEventListener('message', function (event) {
-          console.log('getDeliveriesNumber', event)
-          if (event.data === '连接成功') {
-            _this.resumeSocket.send(1)
-          }
-          const deliverNum = JSON.parse(event.data)
-          const deliverKeys = Object.keys(deliverNum)
-          console.log('返回的值', comList[deliverKeys])
-          const boothNum = 'spotLight' + deliverKeys
-          lightControls(boothNum)
-          _this.resumeNum++
-          _this.$message({
-            message: '恭喜' + comList[deliverKeys] + '收到一份简历',
-            type: 'success'
+      _this.resumeSocket.addEventListener('message', function (event) {
+        console.log('getDeliveriesNumber', event)
+        if (event.data === '连接成功') {
+          _this.resumeSocket.send(1)
+        } else {
+          const comList = {}
+          getBoothList().then((res) => {
+            console.log('公司数据', res.data)
+            for (let i = 0; i < res.data.length; i++) {
+              comList[res.data[i].boothNo] = res.data[i].companyName
+            }
+            console.log('comList', comList)
+            const deliverNum = JSON.parse(event.data)
+            const deliverKeys = Object.keys(deliverNum)
+            console.log('返回的值', comList[deliverKeys])
+            const boothNum = 'spotLight' + deliverKeys
+            lightControls(boothNum)
+            _this.resumeNum++
+            _this.$message({
+              message: '恭喜' + comList[deliverKeys] + '收到一份简历',
+              type: 'success'
+            })
           })
-        })
+        }
       })
     },
     people () {

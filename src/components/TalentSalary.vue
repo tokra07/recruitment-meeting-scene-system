@@ -36,6 +36,13 @@ export default {
         this.yList = this.yLists
         this.xLists = xlist
         this.yLists = ylist
+      }).catch(err => {
+        console.log(err)
+        const xlist = ['2k-4k', '4k-6k', '6k-8k', '8k-10k', '其他']
+        const ylist = [10, 15, 20, 25, 30]
+        this.yList = this.yLists
+        this.xLists = xlist
+        this.yLists = ylist
       })
     },
     getEcharts () {
@@ -98,7 +105,7 @@ export default {
 
 <style>
 #TalentSalaryEcharts{
-    width: 300px;
-    height: 300px;
+    width: 295px;
+    height: 295px;
 }
 </style>

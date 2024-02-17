@@ -16,19 +16,30 @@
     <el-col :span="5">
       <div style="background:linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0));width: 550px;height: 100%;position: absolute"></div>
       <div style="background:linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.5));width: 550px;height: 100%;position: absolute;right: 0px;"></div>
-      <div style="margin-left: 2%;position: absolute;">
-        <JobList/>
-        <EnterpriseSalary/>
-        <EnterpriseIndustry/>
-        <EnterpriseEducation/>
+      <div style="margin-left: 50px;">
+        <BorderBox1 style="width: 260px;">
+          <div style="width: 100%;height: 10px;"></div>
+          <JobList  style="padding-left: 20px;padding-right: 20px;"/>
+          <div style="width: 100%;height: 10px;"></div>
+        </BorderBox1>
+        <BorderBox1  style="width: 260px;">
+          <div style="width: 100%;height: 10px;"></div>
+          <EnterpriseSalary style="padding-left: 20px;padding-right: 20px;"/>
+          <EnterpriseIndustry style="padding-left: 20px;padding-right: 20px;"/>
+          <EnterpriseEducation style="padding-left: 20px;padding-right: 20px;"/>
+          <div style="width: 100%;height: 10px;"></div>
+        </BorderBox1>
       </div>
     </el-col>
     <el-col :span="15">
     </el-col>
     <el-col :span="4">
-      <TalentSalary/>
-      <TalentIndustry/>
-      <TalentEducation/>
+      <BorderBox1>
+        <div style="width: 100%;height: 10px;"></div>
+        <TalentSalary style="padding-left: 20px;"/>
+        <TalentIndustry style="padding-left: 20px;"/>
+        <TalentEducation style="padding-left: 20px;"/>
+      </BorderBox1>
     </el-col>
   </el-row>
   <el-row style="position: absolute;bottom: -35px;">
@@ -42,6 +53,9 @@
   </el-row>
   </div>
 </template>
+<script setup>
+import { BorderBox1 } from '@dataview/datav-vue3'
+</script>
 <script>
 import NumInfo from '@/components/NumInfo.vue'
 import JobList from '@/components/JobList.vue'

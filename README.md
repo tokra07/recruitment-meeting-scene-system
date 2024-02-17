@@ -1,24 +1,6 @@
-# recruitment-meeting-scene-system
-
-## Project setup
+运行这个项目需要执行
 ```
-npm install
+npm install --legacy-peer-deps
 ```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+之后到 ``node_modules\@dataview\datav-vue3\package.json`` 文件内 ``"module": "./es/index.js",`` 改成 ``"module": "./es/index.mjs",``
+![alt text](4a9a1581353e8d37bf9185e0065dc39.png)
