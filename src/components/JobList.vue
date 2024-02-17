@@ -58,7 +58,7 @@ export default {
 <style>
   .box-card {
     width: 200px;
-    height: 200px;
+    height: 185px;
   }
   .card-header{
     border-bottom: 1px solid gray;
