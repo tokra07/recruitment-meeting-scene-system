@@ -1,5 +1,6 @@
 <template>
-  <div style="width: 200px;height: 200px;">
+  <Transition :duration="550" name="nested">
+    <div style="width: 200px;height: 200px;" v-if="show">
     <div class="card-header">
       <span class="card-header-text">
           {{ Headers }}
@@ -9,6 +10,7 @@
       {{ item }}
     </div>
   </div>
+  </Transition>
 </template>
 
 <script>
@@ -21,7 +23,8 @@ export default {
       nv: 0,
       companyList: [],
       jobList: [],
-      jobLists: []
+      jobLists: [],
+      show: true
     }
   },
   mounted () {
@@ -30,14 +33,19 @@ export default {
       this.companyList = Object.keys(res.data)
       this.jobList = Object.values(res.data)
       this.loop()
-      setInterval(this.loop, 15000)
+      setInterval(this.loop, 5000)
     })
   },
   methods: {
     loop () {
+      const _this = this
       this.Headers = this.companyList[this.nv]
       this.jobLists = this.jobList[this.nv]
       this.nv++
+      _this.show = false
+      setTimeout(() => {
+        _this.show = true
+      }, 500)
     }
   }
 }
@@ -69,4 +77,33 @@ export default {
   .card-body-text{
     color: #ffdd93;
   }
+  .nested-enter-active, .nested-leave-active {
+    transition: all 0.3s ease-in-out;
+}
+/* delay leave of parent element */
+.nested-leave-active {
+  transition-delay: 0.25s;
+}
+
+.nested-enter-from,
+.nested-leave-to {
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+/* we can also transition nested elements using nested selectors */
+.nested-enter-active .inner,
+.nested-leave-active .inner {
+  transition: all 0.3s ease-in-out;
+}
+/* delay enter of nested element */
+.nested-enter-active .inner {
+  transition-delay: 0.25s;
+}
+
+.nested-enter-from .inner,
+.nested-leave-to .inner {
+  transform: translateX(30px);
+  opacity: 0.001;
+}
 </style>
