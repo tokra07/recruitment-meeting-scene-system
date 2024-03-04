@@ -41,7 +41,7 @@ export default {
         const myChart = echarts.init(chartDom, 'dark')
         const option = {
           backgroundColor: '',
-          color: ['#00FF7F', '#00FFFF', '#98FB98', '#808000', '#E0FFFF', '#ADFF2F'],
+          color: '#00FFFF',
           title: {
             text: '企\n业\n薪\n资\n分\n布'
           },
@@ -64,6 +64,39 @@ export default {
         myChart.setOption(option)
       }).catch(err => {
         console.log(err)
+        const xlist = [10, 15, 20, 15]
+        const maxNum = Math.max(...xlist) * 1.2
+        const ylist = [
+          { name: '2k-4k', max: maxNum },
+          { name: '4k-6k', max: maxNum },
+          { name: '8k-10k', max: maxNum },
+          { name: '其他', max: maxNum }
+        ]
+        const chartDom = document.getElementById('EnterpriseSalaryEcharts')
+        const myChart = echarts.init(chartDom, 'dark')
+        const option = {
+          backgroundColor: '',
+          color: '#00FFFF',
+          title: {
+            text: '企\n业\n薪\n资\n分\n布'
+          },
+          radar: {
+            // shape: 'circle',
+            indicator: ylist
+          },
+          series: [
+            {
+              name: 'Budget vs spending',
+              type: 'radar',
+              data: [
+                {
+                  value: xlist
+                }
+              ]
+            }
+          ]
+        }
+        myChart.setOption(option)
         setTimeout(this.init, 6000)
       })
     }

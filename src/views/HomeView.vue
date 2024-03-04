@@ -22,7 +22,7 @@
           <JobList  style="padding-left: 20px;padding-right: 20px;"/>
           <div style="width: 100%;height: 10px;"></div>
         </BorderBox1>
-        <BorderBox1  style="width: 260px;">
+        <BorderBox1  style="width: 420px;">
           <div style="width: 100%;height: 10px;"></div>
           <EnterpriseSalary style="padding-left: 20px;padding-right: 20px;"/>
           <EnterpriseIndustry style="padding-left: 20px;padding-right: 20px;"/>
