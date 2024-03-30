@@ -4,7 +4,7 @@
   </div>
   <div style="position: absolute;width: 100%;pointer-events: none">
     <Nav>
-    <img src="../image/head-title.png" style="position: absolute;height: 130px;width: 1920px;user-select: none;" />
+    <img src="../image/head-title.png" style="position: absolute;height: 130px;width: 2236px;user-select: none;" />
     <div style="width: 100%;text-align: center;height: 130px;position: absolute;user-select: none;">
       <span class="main-nav-text">赤峰市公共就业数字孪生招聘会</span>
     </div>
@@ -17,9 +17,16 @@
       <div style="background:linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0));width: 550px;height: 100%;position: absolute"></div>
       <div style="background:linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.5));width: 550px;height: 100%;position: absolute;right: 0px;"></div>
       <div style="margin-left: 50px;">
-        <BorderBox1 style="width: 260px;">
+        <BorderBox1 style="width: 420px;">
           <div style="width: 100%;height: 10px;"></div>
-          <JobList  style="padding-left: 20px;padding-right: 20px;"/>
+          <el-row>
+            <el-col :span="12">
+              <JobList style="padding-left: 20px;padding-right: 20px;"/>
+            </el-col>
+            <el-col :span="12">
+              <ResumesRanking style="padding-left: 20px;padding-right: 20px;"/>
+            </el-col>
+          </el-row>
           <div style="width: 100%;height: 10px;"></div>
         </BorderBox1>
         <BorderBox1  style="width: 420px;">
@@ -29,16 +36,23 @@
           <EnterpriseEducation style="padding-left: 20px;padding-right: 20px;"/>
           <div style="width: 100%;height: 10px;"></div>
         </BorderBox1>
+        <BorderBox1  style="width: 420px;height: 160px;">
+          <EnterpriseRanking/>
+        </BorderBox1>
       </div>
+      <div style="height: 20px;width: 10px;"></div>
     </el-col>
     <el-col :span="15">
     </el-col>
     <el-col :span="4">
-      <BorderBox1>
+      <BorderBox1 style="height: 900px;">
         <div style="width: 100%;height: 10px;"></div>
         <TalentSalary style="padding-left: 20px;"/>
         <TalentIndustry style="padding-left: 20px;"/>
         <TalentEducation style="padding-left: 20px;"/>
+      </BorderBox1>
+      <BorderBox1 style="height: 160px;">
+          <TalentRanking/>
       </BorderBox1>
     </el-col>
   </el-row>
@@ -66,6 +80,9 @@ import TalentSalary from '@/components/TalentSalary.vue'
 import TalentIndustry from '@/components/TalentIndustry.vue'
 import TalentEducation from '@/components/TalentEducation.vue'
 import ModelVMiew from '@/components/ModelView.vue'
+import ResumesRanking from '@/components/ResumesRanking.vue'
+import EnterpriseRanking from '@/components/EnterpriseRanking'
+import TalentRanking from '@/components/TalentRanking'
 import { getInfo } from '@/api/api'
 export default {
   name: 'HomeView',
@@ -78,7 +95,10 @@ export default {
     TalentIndustry,
     TalentEducation,
     ModelVMiew,
-    NumInfo
+    NumInfo,
+    ResumesRanking,
+    EnterpriseRanking,
+    TalentRanking
   },
   data () {
     return {
@@ -112,6 +132,7 @@ export default {
   height: 130px;
 }
 .message-out{
+  width: 100vw;
   height: 2.5rem;
   line-height: 2.5rem;
   margin-top: 20px;

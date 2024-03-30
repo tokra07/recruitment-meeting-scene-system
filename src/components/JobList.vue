@@ -44,7 +44,7 @@ export default {
     loop () {
       const _this = this
       this.Headers = this.companyList[this.nv]
-      this.jobLists = this.jobList[this.nv].slice(0, 6)
+      this.jobLists = this.jobList[this.nv].slice(0, 5)
       this.nv++
       _this.show = false
       setTimeout(() => {

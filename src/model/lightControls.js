@@ -556,14 +556,14 @@ export function lightControls (lightName) {
   spotLight079.angle = Math.PI / 5
   const spotLight080 = new THREE.SpotLight(0xBB0000, 1.0)
   spotLight080.name = 'spotLight080'
-  spotLight080.position.set(6, 0, 6)
+  spotLight080.position.set(6, 2, 6)
   spotLight080.target.position.set(6, 0, 6)
   spotLight080.intensity = 5000.0
   spotLight080.decay = 0.0
   spotLight080.angle = Math.PI / 5
   const spotLight081 = new THREE.SpotLight(0xBB0000, 1.0)
   spotLight081.name = 'spotLight081'
-  spotLight081.position.set(9, 0, 6)
+  spotLight081.position.set(9, 2, 6)
   spotLight081.target.position.set(9, 0, 6)
   spotLight081.intensity = 5000.0
   spotLight081.decay = 0.0

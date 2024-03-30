@@ -43,3 +43,7 @@ export function getBoothList () {
 export function getDetails (data) {
   return post('/getDetails', data)
 }
+
+export function getResumesRanking () {
+  return get('/getResumesRanking')
+}

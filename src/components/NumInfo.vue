@@ -7,6 +7,7 @@
 <script>
 import { getBoothList } from '@/api/api'
 import { lightControls } from '@/model/lightControls'
+import { bulbControls } from '@/model/bulbControls'
 import Flipper from '@/components/FlipperView.vue'
 export default {
   name: 'NumInfo',
@@ -55,7 +56,9 @@ export default {
             const deliverKeys = Object.keys(deliverNum)
             console.log('返回的值', comList[deliverKeys])
             const boothNum = 'spotLight' + deliverKeys
+            const bulbName = 'bulb' + deliverKeys
             lightControls(boothNum)
+            bulbControls(bulbName)
             _this.resumeNum++
             _this.$message({
               message: '恭喜' + comList[deliverKeys] + '收到一份简历',

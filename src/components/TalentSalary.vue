@@ -10,8 +10,7 @@ export default {
   data () {
     return {
       xLists: [],
-      yLists: [],
-      yList: []
+      yLists: []
     }
   },
   mounted () {
@@ -33,14 +32,12 @@ export default {
             ylist.push(res.data[i].numbers)
           }
         }
-        this.yList = this.yLists
         this.xLists = xlist
         this.yLists = ylist
       }).catch(err => {
         console.log(err)
         const xlist = ['2k-4k', '4k-6k', '6k-8k', '8k-10k', '其他']
         const ylist = [10, 15, 20, 25, 30]
-        this.yList = this.yLists
         this.xLists = xlist
         this.yLists = ylist
       })
@@ -53,7 +50,6 @@ export default {
         color: ['#00FF7F', '#00FFFF', '#98FB98', '#808000', '#E0FFFF', '#ADFF2F'],
         title: {
           text: '人才薪资分布',
-          subtext: '每分钟',
           left: 'center'
         },
         legend: {
@@ -78,18 +74,8 @@ export default {
         },
         series: [
           {
-            name: '本分钟',
             data: this.yLists,
             type: 'bar',
-            label: {
-              show: true,
-              position: 'inside'
-            }
-          },
-          {
-            name: '上分钟',
-            data: this.yList,
-            type: 'line',
             label: {
               show: true,
               position: 'inside'
