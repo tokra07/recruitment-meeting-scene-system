@@ -3,13 +3,25 @@
     <div style="padding-bottom: 10px;padding-top: 10px;">
       <span class="rankTitle">简历投递数企业排行榜</span>
     </div>
-    <el-scrollbar height="140px" ref="ranks">
+    <el-scrollbar height="150px" ref="ranks">
       <div ref="maxHeight">
         <div v-for="(item,index) in rankList" :key="item">
-        <el-row>
+        <el-row style="margin-bottom: 10px;">
           <el-col :span="6">
-            <span class="rankText">{{ index + 1 }}</span>
+            <div class="rankBorder" style="background-color: gold" v-if="index===0">
+              <span class="rankText" style="color: red;">{{ index + 1 }}</span>
+            </div>
+            <div class="rankBorder" style="background-color: #C0C0C0" v-if="index===1">
+              <span class="rankText" style="color: red;">{{ index + 1 }}</span>
+            </div>
+            <div class="rankBorder" style="background-color: #B87333" v-if="index===2">
+              <span class="rankText" style="color: red;">{{ index + 1 }}</span>
+            </div>
+            <div class="rankBorder" v-if="index>=3">
+              <span class="rankText" style="color: #ffdd93;">{{ index + 1 }}</span>
+            </div>
           </el-col>
+          <el-col :span="3"></el-col>
           <el-col :span="12">
             <span class="rankText">{{ item.groupTag }}</span>
           </el-col>
@@ -70,10 +82,18 @@ export default {
 
 <style>
 .rankText{
-  color: #ffdd93;
+  line-height: 40px;
 }
 .rankTitle{
   color: #ffdd93;
   font-weight: bold;
+}
+.rankBorder{
+  line-height: 40px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border:gray 1px solid;
 }
 </style>

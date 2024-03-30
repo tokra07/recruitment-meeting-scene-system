@@ -36,7 +36,7 @@
           <EnterpriseEducation style="padding-left: 20px;padding-right: 20px;"/>
           <div style="width: 100%;height: 10px;"></div>
         </BorderBox1>
-        <BorderBox1  style="width: 420px;height: 160px;">
+        <BorderBox1  style="width: 420px;height: 170px;">
           <EnterpriseRanking/>
         </BorderBox1>
       </div>
@@ -51,7 +51,7 @@
         <TalentIndustry style="padding-left: 20px;"/>
         <TalentEducation style="padding-left: 20px;"/>
       </BorderBox1>
-      <BorderBox1 style="height: 160px;">
+      <BorderBox1 style="height: 170px;">
           <TalentRanking/>
       </BorderBox1>
     </el-col>

@@ -5,12 +5,15 @@
               <div style="padding-bottom: 10px;padding-top: 10px;">
                 <span class="rankTitle">薪资需求排行榜</span>
               </div>
-              <el-scrollbar height="65px" ref="ranks">
+              <el-scrollbar height="70px" ref="ranks">
                 <div ref="maxHeight">
                   <div v-for="(item,index) in rankList" :key="item">
                   <el-row>
                     <el-col :span="6">
-                      <span class="rankText">{{ index + 1 }}</span>
+                      <span class="rankText" style="color: gold;" v-if="index===0">{{ index + 1 }}</span>
+                      <span class="rankText" style="color: #C0C0C0;" v-if="index===1">{{ index + 1 }}</span>
+                      <span class="rankText" style="color: #B87333;" v-if="index===2">{{ index + 1 }}</span>
+                      <span class="rankText" style="color: beige;" v-if="index>=3">{{ index + 1 }}</span>
                     </el-col>
                     <el-col :span="12">
                       <span class="rankText">{{ item.groupTag }}</span>
@@ -26,12 +29,15 @@
               <div style="padding-bottom: 10px;padding-top: 10px;">
                 <span class="rankTitle">学历需求排行榜</span>
               </div>
-              <el-scrollbar height="65px" ref="educationranks">
+              <el-scrollbar height="70px" ref="educationranks">
                 <div ref="educationmaxHeight">
                   <div v-for="(item,index) in educationRankList" :key="item">
                   <el-row>
                     <el-col :span="6">
-                      <span class="rankText">{{ index + 1 }}</span>
+                      <span class="rankText" style="color: gold;" v-if="index===0">{{ index + 1 }}</span>
+                      <span class="rankText" style="color: #C0C0C0;" v-if="index===1">{{ index + 1 }}</span>
+                      <span class="rankText" style="color: #B87333;" v-if="index===2">{{ index + 1 }}</span>
+                      <span class="rankText" style="color: beige;" v-if="index>=3">{{ index + 1 }}</span>
                     </el-col>
                     <el-col :span="12">
                       <span class="rankText">{{ item.groupTag }}</span>
@@ -150,7 +156,6 @@ export default {
 <style>
 .rankText{
     text-align: center;
-    color: #ffdd93;
 }
 .rankTitle{
   color: #ffdd93;
