@@ -1,12 +1,12 @@
 <template>
-  <div id="JobIndustryTrend"></div>
+  <div id="TalentIndustryTrend"></div>
 </template>
 
 <script>
-import { getJobIndustryTrend } from '@/api/api'
+import { getTalentIndustryTrend } from '@/api/api'
 import * as echarts from 'echarts'
 export default {
-  name: 'ForecastComp',
+  name: 'ForecastComps',
   data () {
     return {
     }
@@ -16,9 +16,9 @@ export default {
   },
   methods: {
     getJobIndustryTrendData () {
-      getJobIndustryTrend().then(res => {
+      getTalentIndustryTrend().then(res => {
         const JobData = res.data
-        console.log('getJobIndustryTrend', JobData)
+        console.log('TalentIndustryTrend', JobData)
         const xList = []
         const yList = []
         for (let i = 0; i < JobData.length; i++) {
@@ -26,12 +26,12 @@ export default {
           yList.push(JobData[i].numbers)
         }
         console.log('JobData', this.JobData, this.TalentData)
-        const chartDom = document.getElementById('JobIndustryTrend')
+        const chartDom = document.getElementById('TalentIndustryTrend')
         const myChart = echarts.init(chartDom, 'dark')
         const option = {
           backgroundColor: '',
           title: {
-            text: '行业岗位趋势分析'
+            text: '行业人才趋势分析'
           },
           xAxis: {
             type: 'category',
@@ -56,10 +56,10 @@ export default {
 </script>
 
 <style>
-#JobIndustryTrend{
+#TalentIndustryTrend{
   width: 380px;
   height: 240px;
-  margin-top: 13px;
+  padding-top: 20px;
   margin-left: 5px;
 }
 </style>

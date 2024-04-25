@@ -59,6 +59,9 @@
           </el-col>
         </el-row>
       </BorderBox1>
+      <BorderBox1  style="width: 370px;height: 220px;margin-left: 80px;margin-top: 474px">
+        <ForecastComps/>
+      </BorderBox1>
     </el-col>
     <el-col :span="4">
       <BorderBox1 style="height: 900px;">
@@ -97,6 +100,7 @@ import ResumesRanking from '@/components/ResumesRanking.vue'
 import EnterpriseRanking from '@/components/EnterpriseRanking'
 import TalentRanking from '@/components/TalentRanking'
 import ForecastComp from '@/components/ForecastComp'
+import ForecastComps from '@/components/ForecastComps'
 import { getInfo } from '@/api/api'
 export default {
   name: 'HomeView',
@@ -113,7 +117,8 @@ export default {
     ResumesRanking,
     EnterpriseRanking,
     TalentRanking,
-    ForecastComp
+    ForecastComp,
+    ForecastComps
   },
   data () {
     return {
