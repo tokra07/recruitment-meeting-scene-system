@@ -47,3 +47,11 @@ export function getDetails (data) {
 export function getResumesRanking () {
   return get('/getResumesRanking')
 }
+
+export function getJobIndustryTrend () {
+  return get('/getJobIndustryTrend')
+}
+
+export function getTalentIndustryTrend () {
+  return get('/getTalentIndustryTrend')
+}

@@ -4,7 +4,7 @@
   </div>
   <div style="position: absolute;width: 100%;pointer-events: none">
     <Nav>
-    <img src="../image/head-title.png" style="position: absolute;height: 130px;width: 2236px;user-select: none;" />
+    <img src="../image/head-title.png" style="position: absolute;height: 130px;width: 1920px;user-select: none;" />
     <div style="width: 100%;text-align: center;height: 130px;position: absolute;user-select: none;">
       <span class="main-nav-text">赤峰市公共就业数字孪生招聘会</span>
     </div>
@@ -18,6 +18,12 @@
       <div style="background:linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.5));width: 550px;height: 100%;position: absolute;right: 0px;"></div>
       <div style="margin-left: 50px;">
         <BorderBox1 style="width: 420px;">
+          <vue-particles
+            style="position: fixed;width: 220px;height: 210px;"
+            id="tsparticles"
+            @particles-loaded="particlesLoaded"
+            :options="particlesOptions"
+          ></vue-particles>
           <div style="width: 100%;height: 10px;"></div>
           <el-row>
             <el-col :span="12">
@@ -36,13 +42,23 @@
           <EnterpriseEducation style="padding-left: 20px;padding-right: 20px;"/>
           <div style="width: 100%;height: 10px;"></div>
         </BorderBox1>
-        <BorderBox1  style="width: 420px;height: 170px;">
-          <EnterpriseRanking/>
-        </BorderBox1>
       </div>
       <div style="height: 20px;width: 10px;"></div>
     </el-col>
     <el-col :span="15">
+      <BorderBox1  style="width: 1100px;height: 170px;margin-left: 80px;">
+        <el-row>
+          <el-col :span="8">
+            <EnterpriseRanking/>
+          </el-col>
+          <el-col :span="8">
+            <TalentRanking/>
+          </el-col>
+          <el-col :span="8">
+
+          </el-col>
+        </el-row>
+      </BorderBox1>
     </el-col>
     <el-col :span="4">
       <BorderBox1 style="height: 900px;">
@@ -51,12 +67,9 @@
         <TalentIndustry style="padding-left: 20px;"/>
         <TalentEducation style="padding-left: 20px;"/>
       </BorderBox1>
-      <BorderBox1 style="height: 170px;">
-          <TalentRanking/>
-      </BorderBox1>
     </el-col>
   </el-row>
-  <el-row style="position: absolute;bottom: -35px;">
+  <el-row style="position: absolute;bottom: -15px;">
     <el-col>
       <div class="message-out">
         <div class="messages">
@@ -102,7 +115,81 @@ export default {
   },
   data () {
     return {
-      messageText: ''
+      messageText: '',
+      particlesOptions: {}
+    }
+  },
+  created () {
+    this.particlesOptions = {
+      background: {
+        opacity: 0
+      },
+      fpsLimit: 120,
+      fullScreen: false,
+      interactivity: {
+        events: {
+          onClick: {
+            enable: false,
+            mode: 'push'
+          },
+          onHover: {
+            enable: false,
+            mode: 'repulse'
+          },
+          resize: true
+        },
+        modes: {
+          bubble: {
+            distance: 800,
+            duration: 2,
+            opacity: 0.8,
+            size: 40
+          },
+          push: {
+            quantity: 4
+          },
+          repulse: {
+            distance: 200,
+            duration: 0.4
+          }
+        }
+      },
+      particles: {
+        color: {
+          value: '#ffffff'
+        },
+        links: {
+          color: '#ffffff',
+          distance: 100,
+          enable: true,
+          opacity: 0.5,
+          width: 1
+        },
+        move: {
+          direction: 'none',
+          enable: true,
+          outModes: 'bounce',
+          random: false,
+          speed: 6,
+          straight: false
+        },
+        number: {
+          density: {
+            enable: true
+          },
+          value: 200
+        },
+        opacity: {
+          value: 0.5
+        },
+        shape: {
+          type: 'circle'
+        },
+        size: {
+          value: { min: 1, max: 5 }
+        }
+      },
+      detectRetina: true
     }
   },
   mounted () {

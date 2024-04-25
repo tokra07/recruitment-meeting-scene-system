@@ -16,7 +16,10 @@
                       <span class="rankText" style="color: beige;" v-if="index>=3">{{ index + 1 }}</span>
                     </el-col>
                     <el-col :span="12">
-                      <span class="rankText">{{ item.groupTag }}</span>
+                      <span class="rankText" style="color: gold;" v-if="index===0">{{ item.groupTag }}</span>
+                      <span class="rankText" style="color: #C0C0C0;" v-if="index===1">{{ item.groupTag }}</span>
+                      <span class="rankText" style="color: #B87333;" v-if="index===2">{{ item.groupTag }}</span>
+                      <span class="rankText" style="color: beige;" v-if="index>=3">{{ item.groupTag }}</span>
                     </el-col>
                   </el-row>
                 </div>
@@ -40,7 +43,10 @@
                       <span class="rankText" style="color: beige;" v-if="index>=3">{{ index + 1 }}</span>
                     </el-col>
                     <el-col :span="12">
-                      <span class="rankText">{{ item.groupTag }}</span>
+                      <span class="rankText" style="color: gold;" v-if="index===0">{{ item.groupTag }}</span>
+                      <span class="rankText" style="color: #C0C0C0;" v-if="index===1">{{ item.groupTag }}</span>
+                      <span class="rankText" style="color: #B87333;" v-if="index===2">{{ item.groupTag }}</span>
+                      <span class="rankText" style="color: beige;" v-if="index>=3">{{ item.groupTag }}</span>
                     </el-col>
                   </el-row>
                 </div>
