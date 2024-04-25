@@ -5,7 +5,7 @@
               <div style="padding-bottom: 10px;padding-top: 10px;">
                 <span class="rankTitle">薪资期望排行榜</span>
               </div>
-              <el-scrollbar height="70px" ref="ranks">
+              <el-scrollbar height="120px" ref="ranks">
                 <div ref="maxHeight">
                   <div v-for="(item,index) in rankList" :key="item">
                   <el-row>
@@ -32,7 +32,7 @@
               <div style="padding-bottom: 10px;padding-top: 10px;">
                 <span class="rankTitle">求职者所属行业排行榜</span>
               </div>
-              <el-scrollbar height="70px" ref="educationranks">
+              <el-scrollbar height="120px" ref="educationranks">
                 <div ref="educationmaxHeight">
                   <div v-for="(item,index) in educationRankList" :key="item">
                   <el-row>

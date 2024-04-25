@@ -5,7 +5,7 @@
     </div>
     <el-scrollbar height="150px" ref="ranks">
       <div ref="maxHeight">
-        <div v-for="(item,index) in rankList" :key="item">
+        <div v-for="(item,index) in rankList2" :key="item">
         <el-row style="margin-bottom: 10px;">
           <el-col :span="6">
             <div class="rankBorder" style="background-color: gold" v-if="index===0">
@@ -41,9 +41,9 @@ export default {
   name: 'ResumesRanking',
   data () {
     return {
-      rankList: [],
-      listCon: -200,
-      max: 0
+      rankList2: [],
+      listCon2: -200,
+      max2: 0
     }
   },
   mounted () {
@@ -57,27 +57,27 @@ export default {
         numList.sort(
           (a, b) => a.numbers < b.numbers ? 1 : a.numbers > b.numbers ? -1 : 0
         )
-        this.rankList = numList
+        this.rankList2 = numList
         this.getMaxHeight()
         setInterval(this.addNum2, 50)
       })
     },
     addNum2 () {
-      if (this.listCon < this.max) {
-        this.listCon++
+      if (this.listCon2 < this.max2) {
+        this.listCon2++
         this.scrolls()
       } else {
-        this.listCon = -200
+        this.listCon2 = -200
         this.scrolls()
       }
     },
     async scrolls () {
       await this.$nextTick()
-      this.$refs.ranks.setScrollTop(this.listCon)
+      this.$refs.ranks.setScrollTop(this.listCon2)
     },
     async getMaxHeight () {
       await this.$nextTick()
-      this.max = this.$refs.maxHeight.offsetHeight
+      this.max2 = this.$refs.maxHeight.offsetHeight
     }
   }
 }

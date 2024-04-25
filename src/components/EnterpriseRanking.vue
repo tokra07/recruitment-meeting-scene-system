@@ -5,7 +5,7 @@
               <div style="padding-bottom: 10px;padding-top: 10px;">
                 <span class="rankTitle">薪资需求排行榜</span>
               </div>
-              <el-scrollbar height="70px" ref="ranks">
+              <el-scrollbar height="120px" ref="ranks">
                 <div ref="maxHeight">
                   <div v-for="(item,index) in rankList" :key="item">
                   <el-row>
@@ -32,7 +32,7 @@
               <div style="padding-bottom: 10px;padding-top: 10px;">
                 <span class="rankTitle">学历需求排行榜</span>
               </div>
-              <el-scrollbar height="70px" ref="educationranks">
+              <el-scrollbar height="120px" ref="educationranks">
                 <div ref="educationmaxHeight">
                   <div v-for="(item,index) in educationRankList" :key="item">
                   <el-row>
@@ -65,8 +65,8 @@ export default {
   data () {
     return {
       rankList: [],
-      listCon: -200,
-      max: 0,
+      listCon1: -200,
+      max1: 0,
       educationRankList: [],
       educationlistCon: -200,
       educationmax: 0
@@ -100,21 +100,21 @@ export default {
       })
     },
     addNum1 () {
-      if (this.listCon < this.max) {
-        this.listCon++
+      if (this.listCon1 < this.max1) {
+        this.listCon1++
         this.scrolls()
       } else {
-        this.listCon = -200
+        this.listCon1 = -200
         this.scrolls()
       }
     },
     async scrolls () {
       await this.$nextTick()
-      this.$refs.ranks.setScrollTop(this.listCon)
+      this.$refs.ranks.setScrollTop(this.listCon1)
     },
     async getMaxHeight () {
       await this.$nextTick()
-      this.max = this.$refs.maxHeight.offsetHeight
+      this.max1 = this.$refs.maxHeight.offsetHeight
     },
     getEnterpriseEducations () {
       getEnterpriseEducation().then(res => {
@@ -149,7 +149,7 @@ export default {
     },
     async educationScrolls () {
       await this.$nextTick()
-      this.$refs.educationranks.setScrollTop(this.listCon)
+      this.$refs.educationranks.setScrollTop(this.educationlistCon)
     },
     async educationGetMaxHeight () {
       await this.$nextTick()

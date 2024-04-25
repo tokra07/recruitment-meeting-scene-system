@@ -46,7 +46,7 @@
       <div style="height: 20px;width: 10px;"></div>
     </el-col>
     <el-col :span="15">
-      <BorderBox1  style="width: 1100px;height: 170px;margin-left: 80px;">
+      <BorderBox1  style="width: 1100px;height: 220px;margin-left: 80px;">
         <el-row>
           <el-col :span="8">
             <EnterpriseRanking/>
@@ -55,7 +55,7 @@
             <TalentRanking/>
           </el-col>
           <el-col :span="8">
-
+            <ForecastComp/>
           </el-col>
         </el-row>
       </BorderBox1>
@@ -96,6 +96,7 @@ import ModelVMiew from '@/components/ModelView.vue'
 import ResumesRanking from '@/components/ResumesRanking.vue'
 import EnterpriseRanking from '@/components/EnterpriseRanking'
 import TalentRanking from '@/components/TalentRanking'
+import ForecastComp from '@/components/ForecastComp'
 import { getInfo } from '@/api/api'
 export default {
   name: 'HomeView',
@@ -111,7 +112,8 @@ export default {
     NumInfo,
     ResumesRanking,
     EnterpriseRanking,
-    TalentRanking
+    TalentRanking,
+    ForecastComp
   },
   data () {
     return {
