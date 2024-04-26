@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import { getEnterpriseEducation } from '@/api/api'
+import { getResumesRanking } from '@/api/api'
 export default {
   name: 'ResumesRanking',
   data () {
@@ -48,11 +48,11 @@ export default {
   },
   mounted () {
     this.getEnterpriseEducations()
-    setInterval(this.getEnterpriseEducations, 100000)
+    setInterval(this.getResumesRanking, 100000)
   },
   methods: {
     getEnterpriseEducations () {
-      getEnterpriseEducation().then(res => {
+      getResumesRanking().then(res => {
         const numList = res.data
         numList.sort(
           (a, b) => a.numbers < b.numbers ? 1 : a.numbers > b.numbers ? -1 : 0
