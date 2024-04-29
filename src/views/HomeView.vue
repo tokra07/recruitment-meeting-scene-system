@@ -19,20 +19,15 @@
       <div style="margin-left: 50px;">
         <BorderBox1 style="width: 420px;">
           <vue-particles
-            style="position: fixed;width: 220px;height: 210px;"
+            style="position: fixed;width: 400px;height: 210px;"
             id="tsparticles"
             @particles-loaded="particlesLoaded"
             :options="particlesOptions"
           ></vue-particles>
           <div style="width: 100%;height: 10px;"></div>
-          <el-row>
-            <el-col :span="12">
-              <JobList style="padding-left: 20px;padding-right: 20px;"/>
-            </el-col>
-            <el-col :span="12">
-              <ResumesRanking style="padding-left: 20px;padding-right: 20px;"/>
-            </el-col>
-          </el-row>
+          <div>
+            <JobList style="padding-left: 20px;padding-right: 20px;"/>
+          </div>
           <div style="width: 100%;height: 10px;"></div>
         </BorderBox1>
         <BorderBox1  style="width: 420px;">
@@ -55,12 +50,20 @@
             <TalentRanking/>
           </el-col>
           <el-col :span="8">
-            <ForecastComp/>
+            <ResumesRanking style="padding-left: 20px;padding-right: 20px;"/>
           </el-col>
         </el-row>
       </BorderBox1>
-      <BorderBox1  style="width: 370px;height: 220px;margin-left: 80px;margin-top: 474px">
-        <ForecastComps/>
+      <BorderBox1  style="width: 1100px;height: 220px;margin-left: 80px;margin-top: 474px">
+        <el-row>
+          <el-col  :span="8">
+            <ForecastComps/>
+          </el-col>
+          <el-col  :span="8"></el-col>
+          <el-col  :span="8">
+            <ForecastComp/>
+          </el-col>
+        </el-row>
       </BorderBox1>
     </el-col>
     <el-col :span="4">

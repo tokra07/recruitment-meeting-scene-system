@@ -1,14 +1,15 @@
 <template>
   <div>
-    <div style="padding-bottom: 10px;padding-top: 10px;">
+    <div style="padding-bottom: 10px;padding-top: 31px;">
       <span class="rankTitle">简历投递数企业排行榜</span>
     </div>
-    <el-scrollbar height="150px" ref="ranks">
+    <el-scrollbar height="120px" ref="ranks">
       <div ref="maxHeight">
         <div v-for="(item,index) in rankList2" :key="item">
-        <el-row style="margin-bottom: 10px;">
-          <el-col :span="6">
-            <div class="rankBorder" style="background-color: gold" v-if="index===0">
+        <!-- <el-row style="margin-bottom: 10px;"> -->
+          <el-row>
+          <el-col :span="3">
+            <!-- <div class="rankBorder" style="background-color: gold" v-if="index===0">
               <span class="rankText" style="color: red;">{{ index + 1 }}</span>
             </div>
             <div class="rankBorder" style="background-color: #C0C0C0" v-if="index===1">
@@ -19,10 +20,14 @@
             </div>
             <div class="rankBorder" v-if="index>=3">
               <span class="rankText" style="color: #ffdd93;">{{ index + 1 }}</span>
-            </div>
+            </div> -->
+            <span class="rankText" style="color: gold;" v-if="index===0">{{ index + 1 }}</span>
+            <span class="rankText" style="color: #C0C0C0;" v-if="index===1">{{ index + 1 }}</span>
+            <span class="rankText" style="color: #B87333;" v-if="index===2">{{ index + 1 }}</span>
+            <span class="rankText" style="color: beige;" v-if="index>=3">{{ index + 1 }}</span>
           </el-col>
-          <el-col :span="3"></el-col>
-          <el-col :span="12">
+          <el-col :span="1"></el-col>
+          <el-col :span="20">
             <span class="rankText" style="color: gold;" v-if="index===0">{{ item.groupTag }}</span>
             <span class="rankText" style="color: #C0C0C0;" v-if="index===1">{{ item.groupTag }}</span>
             <span class="rankText" style="color: #B87333;" v-if="index===2">{{ item.groupTag }}</span>

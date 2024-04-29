@@ -1,6 +1,6 @@
 <template>
     <Transition :duration="550" name="nested">
-      <div style="width: 200px;height: 200px;" v-if="show">
+      <div style="width: 350px;height: 200px;margin-left: 20px;" v-if="show">
       <div class="card-header">
         <span class="card-header-text">
             {{ Headers }}
