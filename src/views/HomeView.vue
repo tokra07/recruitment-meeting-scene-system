@@ -4,6 +4,9 @@
   </div>
   <div style="position: absolute;width: 100%;pointer-events: none">
     <Nav>
+    <div class="nav-datas">
+      <NumInfos/>
+    </div>
     <img src="../image/head-title.png" style="position: absolute;height: 130px;width: 1920px;user-select: none;" />
     <div style="width: 100%;text-align: center;height: 130px;position: absolute;user-select: none;">
       <span class="main-nav-text">赤峰市公共就业数字孪生招聘会</span>
@@ -91,6 +94,7 @@ import { BorderBox1 } from '@dataview/datav-vue3'
 </script>
 <script>
 import NumInfo from '@/components/NumInfo.vue'
+import NumInfos from '@/components/NumInfos.vue'
 import JobList from '@/components/JobList.vue'
 import EnterpriseSalary from '@/components/EnterpriseSalary.vue'
 import EnterpriseIndustry from '@/components/EnterpriseIndustry.vue'
@@ -117,6 +121,7 @@ export default {
     TalentEducation,
     ModelVMiew,
     NumInfo,
+    NumInfos,
     ResumesRanking,
     EnterpriseRanking,
     TalentRanking,
@@ -225,6 +230,14 @@ export default {
   position: absolute;
   top: 0px;
   right: 0px;
+  width: 300px;
+  height: 130px;
+}
+.nav-datas{
+  margin-top: 10px;
+  position: absolute;
+  top: 0px;
+  left: 90px;
   width: 300px;
   height: 130px;
 }
