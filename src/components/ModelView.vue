@@ -185,6 +185,7 @@ export default {
       // console.log('z', camera.position.z)
     },
     onMouseClick (event) {
+      this.jobList = []
       const _this = this
       const raycaster = new THREE.Raycaster()
       const ndcX = (event.clientX / window.innerWidth) * 2 - 1
