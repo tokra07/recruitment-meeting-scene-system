@@ -2,6 +2,8 @@ import * as THREE from 'three'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import { clickControls } from './clickControls'
+import { CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js'
+
 const windowWidth = window.innerWidth
 const windowHeight = window.innerHeight
 export const scene = new THREE.Scene()
@@ -9,9 +11,11 @@ export const camera = new THREE.PerspectiveCamera(30, windowWidth / windowHeight
 export const renderer = new THREE.WebGLRenderer({
   antialias: true
 })
+export const css2Renderer = new CSS2DRenderer()
+css2Renderer.setSize(windowWidth, windowHeight)
 renderer.setPixelRatio(window.devicePixelRatio)
 renderer.outputEncoding = THREE.sRGBEncoding
-export const controls = new OrbitControls(camera, renderer.domElement)
+export const controls = new OrbitControls(camera, css2Renderer.domElement)
 renderer.setSize(windowWidth, windowHeight)
 renderer.shadowMap.enabled = true
 renderer.setClearColor(0x131D3C, 1.0)

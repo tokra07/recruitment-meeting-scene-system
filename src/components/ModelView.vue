@@ -45,10 +45,11 @@
     </div>
   </div>
   <div id="webgl" @mousemove="handleMouseMove"></div>
+  <div id="csswebgl" @mousemove="handleMouseMove" style="position: absolute;top: 0px;left: 0px;"></div>
 </template>
 
 <script>
-import { scene, camera, renderer, controls } from '@/model/index'
+import { scene, camera, renderer, controls, css2Renderer } from '@/model/index'
 import * as THREE from 'three'
 import { getDetails } from '@/api/api'
 export default {
@@ -100,15 +101,13 @@ export default {
       const ambient = new THREE.AmbientLight(0xffffff, 1)
       ambient.castShadow = true
       scene.add(ambient)
-      controls.addEventListener('change', function () {
-        renderer.render(scene, camera)
-      })
       controls.enableDamping = false
       controls.autoRotate = false
       controls.autoRotateSpeed = 0
       window.addEventListener('click', this.onMouseClick, false)
       document.body.appendChild(renderer.domElement)
       document.getElementById('webgl').appendChild(renderer.domElement)
+      document.getElementById('csswebgl').appendChild(css2Renderer.domElement)
       this.render()
       this.cameraMove()
     },
@@ -133,6 +132,7 @@ export default {
     },
     render () {
       renderer.render(scene, camera)
+      css2Renderer.render(scene, camera)
       requestAnimationFrame(this.render)
       controls.update()
       // console.log('x', camera.position.x)

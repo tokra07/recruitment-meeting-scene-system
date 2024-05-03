@@ -8,6 +8,7 @@
 import { getBoothList } from '@/api/api'
 import { lightControls } from '@/model/lightControls'
 import { bulbControls } from '@/model/bulbControls'
+import { addTag } from '@/model/cssControls'
 import Flipper from '@/components/FlipperView.vue'
 export default {
   name: 'NumInfos',
@@ -57,13 +58,15 @@ export default {
             console.log('返回的值', comList[deliverKeys])
             const boothNum = 'spotLight' + deliverKeys
             const bulbName = 'bulb' + deliverKeys
+            const cssNum = 'tag' + deliverKeys
             lightControls(boothNum)
             bulbControls(bulbName)
+            addTag(cssNum)
             _this.resumeNum++
-            _this.$message({
-              message: '恭喜' + comList[deliverKeys] + '收到一份简历',
-              type: 'success'
-            })
+            // _this.$message({
+            //   message: '恭喜' + comList[deliverKeys] + '收到一份简历',
+            //   type: 'success'
+            // })
           })
         }
       })
