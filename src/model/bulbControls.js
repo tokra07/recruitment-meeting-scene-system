@@ -22,7 +22,7 @@ export function bulbControls (bulbName) {
     bulb001.position.set(-28, 1, -19)
     bulb001.castShadow = true
     bulb001.receiveShadow = true
-    bulb001.name = 'booth001'
+    bulb001.name = 'bulb001'
     const bulb002 = bulb001.clone()
     bulb002.position.set(-24, 1, -19)
     bulb002.name = 'bulb002'

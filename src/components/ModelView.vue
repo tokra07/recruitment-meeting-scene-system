@@ -52,6 +52,7 @@
 import { scene, camera, renderer, controls, css2Renderer } from '@/model/index'
 import * as THREE from 'three'
 import { getDetails } from '@/api/api'
+import { chooseControls } from '@/model/directiveControls'
 export default {
   name: 'ModelView',
   mounted () {
@@ -63,7 +64,8 @@ export default {
       dialogVisible: false,
       companyName: '',
       summary: '',
-      jobList: []
+      jobList: [],
+      chonse: null
     }
   },
   methods: {
@@ -116,6 +118,7 @@ export default {
       controls.enableDamping = false
       controls.autoRotate = false
       controls.autoRotateSpeed = 0
+      clearInterval(this.chonse)
     },
     cameraMove () {
       setInterval(this.decreaseTime, 1000)
@@ -123,12 +126,54 @@ export default {
     decreaseTime () {
       this.maxTime--
       if (this.maxTime === 0) {
+        this.ismove = true
         console.log(0)
+        this.chonse = setInterval(this.chose, 20000)
         controls.enableDamping = true
         controls.autoRotate = true
         controls.autoRotateSpeed = 3
         this.maxTime = 100
       }
+    },
+    chose () {
+      const min = 1
+      const max = 120
+      const mun = Math.floor(Math.random() * (max - min + 1)) + min
+      chooseControls(mun)
+      this.conns(mun)
+    },
+    conns (mun) {
+      setTimeout(() => {
+        this.jobList = []
+        this.dialogVisible = false
+      }, 10000)
+      if (mun < 10) {
+        mun = '00' + mun
+      } else if (mun > 10 < 100) {
+        mun = '0' + mun
+      }
+      const data = { boothNo: mun }
+      getDetails(data).then((res) => {
+        this.jobList = []
+        this.dialogVisible = true
+        console.log(res)
+        this.companyName = res.data.companyName
+        this.summary = res.data.summary
+        const lists = res.data.params.职位列表
+        console.log('数据门', lists)
+        for (let i = 0; i < lists.length; i++) {
+          console.log('数据门', lists[i])
+          this.jobList.push({
+            address: lists[i].address,
+            contactUser: lists[i].contactUser,
+            contactCellphone: lists[i].contactCellphone,
+            position: lists[i].position,
+            tags: lists[i].tags,
+            grade: lists[i].grade,
+            summary: lists[i].summary
+          })
+        }
+      })
     },
     render () {
       renderer.render(scene, camera)
