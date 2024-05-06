@@ -1,10 +1,11 @@
 <template>
   <div style="margin-top: 12%;"><span class="main-info">当前企业数：</span><Flipper style="margin-top: 1px;" :val=epNum suffix="家"></Flipper></div>
   <div><span class="main-info">当前岗位数：</span><Flipper :val=posNum suffix="个"></Flipper></div>
+  <div><span class="main-info">招聘人数需求：</span><Flipper :val=recruitNum suffix="人"></Flipper></div>
 </template>
 
 <script>
-import { getBoothList, getJobIndustry } from '@/api/api'
+import { getBoothList, getJobIndustry, getRecruitNumbers } from '@/api/api'
 import Flipper from '@/components/FlipperView.vue'
 export default {
   name: 'NumInfos',
@@ -16,7 +17,8 @@ export default {
       epNum: 0,
       posNum: 0,
       resumeSocket: '',
-      peopleSocket: ''
+      peopleSocket: '',
+      recruitNum: 0
     }
   },
   mounted () {
@@ -28,6 +30,10 @@ export default {
       for (let i = 0; i < res.data.length; i++) {
         this.posNum += res.data[i].numbers
       }
+    })
+    getRecruitNumbers().then((res) => {
+      console.log('获取招聘人数', res)
+      this.recruitNum = res.data[0].numbers
     })
   },
   methods: {

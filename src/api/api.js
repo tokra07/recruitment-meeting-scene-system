@@ -55,3 +55,7 @@ export function getJobIndustryTrend () {
 export function getTalentIndustryTrend () {
   return get('/getTalentIndustryTrend')
 }
+
+export function getRecruitNumbers () {
+  return get('/getRecruitNumbers')
+}

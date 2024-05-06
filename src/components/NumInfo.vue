@@ -1,6 +1,7 @@
 <template>
     <div style="margin-top: 12%;"><span class="main-info">当前投递简历数：</span><Flipper :val=resumeNum suffix="份"></Flipper></div>
     <div><span class="main-info">当前展厅人数：</span><Flipper :val=personMum suffix="人次"></Flipper></div>
+    <div><span class="main-info">当前时间：</span><Flipper :val=yyyy suffix="："></Flipper><Flipper :val=mm suffix="："></Flipper><Flipper :val=dd suffix=""></Flipper></div>
 </template>
 
 <script>
@@ -16,9 +17,9 @@ export default {
   },
   data () {
     return {
-      yyy: 12,
-      mmm: 10,
-      ddd: 12,
+      yyyy: 12,
+      mm: 10,
+      dd: 12,
       resumeNum: 0,
       personMum: 0,
       resumeSocket: '',
@@ -34,7 +35,16 @@ export default {
     this.peopleSocket.close()
   },
   mounted () {
-
+    setInterval(() => {
+      const data = new Date()
+      this.yyyy = data.getHours()
+      this.mm = data.getMinutes()
+      if (data.getSeconds() < 10) {
+        this.dd = '0' + data.getSeconds()
+      } else {
+        this.dd = data.getSeconds()
+      }
+    }, 3000)
   },
   methods: {
     resume () {
