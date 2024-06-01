@@ -10,26 +10,50 @@
       </div>
       <div>
         <p style="margin-left: 25px;">岗位信息：</p>
-        <el-carousel :interval="5000">
+        <el-carousel :interval="5000"  style="height: 400px;">
           <el-carousel-item v-for="item in jobList" :key="item">
-            <table  style="width: 100%;">
+            <table  style="width: 80%;padding-left: 10%;">
               <tr>
                 <td class="tableHeader"><span>岗位</span></td>
                 <td class="tablebody1"><span>{{ item.position }}</span></td>
                 <td class="tableHeader"><span>联系人</span></td>
                 <td class="tablebody1"><span>{{ item.contactUser }}</span></td>
-                <td class="tableHeader"><span>联系方式</span></td>
-                <td class="tablebody1"><span>{{ item.contactCellphone }}</span></td>
+                <!-- <td class="tableHeader"><span>联系方式</span></td>
+                <td class="tablebody1"><span>{{ item.contactCellphone }}</span></td> -->
               </tr>
             </table>
-            <table style="width: 100%;">
+            <table style="width: 80%;padding-left: 10%;">
               <tr>
+                <td class="tableHeader"><span>联系方式</span></td>
+                <td class="tablebody1"><span>{{ item.contactCellphone }}</span></td>
                 <td class="tableHeader"><span>学历要求</span></td>
                 <td class="tablebody1"><span>{{ item.grade }}</span></td>
+                <!-- <td class="tableHeader"><span>公司特点</span></td>
+                <td class="tablebody1">{{ item.tags }}</td> -->
+                <!-- <td class="tableHeader"><span>联系地址</span></td>
+                <td class="tablebody1"><span>{{ item.address }}</span></td> -->
+              </tr>
+            </table>
+            <table style="width: 80%;padding-left: 10%;">
+              <tr>
+                <!-- <td class="tableHeader"><span>联系方式</span></td>
+                <td class="tablebody1"><span>{{ item.contactCellphone }}</span></td> -->
+                <!-- <td class="tableHeader"><span>学历要求</span></td>
+                <td class="tablebody1"><span>{{ item.grade }}</span></td> -->
+                <td style="width: 100px;"><span>公司特点</span></td>
+                <td style="text-align: start;">{{ item.tags }}</td>
+                <!-- <td class="tableHeader"><span>联系地址</span></td>
+                <td class="tablebody1"><span>{{ item.address }}</span></td> -->
+              </tr>
+            </table>
+            <table  style="width: 80%;padding-left: 10%;">
+              <tr>
+                <!-- <td class="tableHeader"><span>学历要求</span></td>
+                <td class="tablebody1"><span>{{ item.grade }}</span></td>
                 <td class="tableHeader"><span>公司特点</span></td>
-                <td class="tablebody1">{{ item.tags }}</td>
-                <td class="tableHeader"><span>联系地址</span></td>
-                <td class="tablebody1"><span>{{ item.address }}</span></td>
+                <td class="tablebody1">{{ item.tags }}</td> -->
+                <td><span>联系地址</span></td>
+                <td style="text-align: start;"><span>{{ item.address }}</span></td>
               </tr>
             </table>
             <div style="margin-left: 50px;padding-right: 50px;">
@@ -60,7 +84,7 @@ export default {
   },
   data () {
     return {
-      maxTime: 100,
+      maxTime: 20,
       dialogVisible: false,
       companyName: '',
       summary: '',
@@ -114,11 +138,11 @@ export default {
       this.cameraMove()
     },
     handleMouseMove () {
-      this.maxTime = 100
+      this.maxTime = 20
       controls.enableDamping = false
       controls.autoRotate = false
       controls.autoRotateSpeed = 0
-      clearInterval(this.chonse)
+      // clearInterval(this.chonse)
     },
     cameraMove () {
       setInterval(this.decreaseTime, 1000)
@@ -128,11 +152,12 @@ export default {
       if (this.maxTime === 0) {
         this.ismove = true
         console.log(0)
-        this.chonse = setInterval(this.chose, 20000)
+
+        this.chose()
         controls.enableDamping = true
         controls.autoRotate = true
         controls.autoRotateSpeed = 3
-        this.maxTime = 100
+        this.maxTime = 20
       }
     },
     chose () {
@@ -155,7 +180,6 @@ export default {
       const data = { boothNo: mun }
       getDetails(data).then((res) => {
         this.jobList = []
-        this.dialogVisible = true
         console.log(res)
         this.companyName = res.data.companyName
         this.summary = res.data.summary
@@ -173,6 +197,9 @@ export default {
             summary: lists[i].summary
           })
         }
+        setTimeout(() => {
+          this.dialogVisible = true
+        }, 3000)
       })
     },
     render () {
@@ -252,18 +279,18 @@ export default {
 }
 .infos {
   position: relative;
-  width: 40%;
-  height: 55%;
+  width: 30%;
+  height: 65%;
   margin: auto;
-  top: 200px;
+  top: 150px;
   background-color: rgba(22, 29, 60, 0.8);
   border-radius: 25px;
 }
 .tableHeader{
-  width: 10%;
-  text-align: center;
+  width: 15%;
+  text-align: left
 }
 .tablebody1{
-  width: 20%;
+  width: 25%;
 }
 </style>

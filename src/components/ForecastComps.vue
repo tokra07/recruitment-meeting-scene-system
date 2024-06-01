@@ -57,7 +57,7 @@ export default {
 
 <style>
 #TalentIndustryTrend{
-  width: 380px;
+  width: 550px;
   height: 240px;
   padding-top: 20px;
   margin-left: 5px;

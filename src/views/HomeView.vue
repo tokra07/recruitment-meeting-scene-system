@@ -21,12 +21,12 @@
       <div style="background:linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.5));width: 550px;height: 100%;position: absolute;right: 0px;"></div>
       <div style="margin-left: 50px;">
         <BorderBox1 style="width: 420px;">
-          <vue-particles
+          <!-- <vue-particles
             style="position: fixed;width: 400px;height: 210px;"
             id="tsparticles"
             @particles-loaded="particlesLoaded"
             :options="particlesOptions"
-          ></vue-particles>
+          ></vue-particles> -->
           <div style="width: 100%;height: 10px;"></div>
           <div>
             <JobList style="padding-left: 20px;padding-right: 20px;"/>
@@ -59,11 +59,10 @@
       </BorderBox1>
       <BorderBox1  style="width: 1100px;height: 220px;margin-left: 80px;margin-top: 474px">
         <el-row>
-          <el-col  :span="8">
-            <ForecastComps/>
+          <el-col  :span="12">
+            <ForecastComps style="margin-left: 20px;"/>
           </el-col>
-          <el-col  :span="8"></el-col>
-          <el-col  :span="8">
+          <el-col  :span="12">
             <ForecastComp/>
           </el-col>
         </el-row>

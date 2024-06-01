@@ -6,8 +6,35 @@
             {{ Headers }}
         </span>
       </div>
-      <div v-for="item in jobLists" :key="item" class="card-body-text">
-        {{ item }}
+      <el-scrollbar height="120px" ref="ranks" style="height: 120px;">
+        <div v-for="item in jobLists" :key="item" class="card-body-text">
+        {{ item }}:这里是岗位描述
+      </div>
+      </el-scrollbar>
+      <div style="border-top: 1px gray solid">
+        <el-row style="padding-top: 10px;">
+          <el-col :span="4">
+            <span class="card-body-text">
+              联系人
+            </span>
+          </el-col>
+          <el-col :span="7">
+            <span class="card-body-text">
+              东方信息
+            </span>
+          </el-col>
+          <el-col :span="4">
+            <span class="card-body-text">
+              电话
+            </span>
+          </el-col>
+          <el-col :span="9">
+            <span class="card-body-text">
+              13700000000
+            </span>
+          </el-col>
+        </el-row>
+
       </div>
     </div>
     </Transition>
@@ -23,7 +50,9 @@ export default {
       companyList: [],
       jobList: [],
       jobLists: [],
-      show: true
+      show: true,
+      listCon8: -200,
+      max8: 0
     }
   },
   mounted () {
@@ -32,24 +61,41 @@ export default {
       this.companyList = Object.keys(res.data)
       this.jobList = Object.values(res.data)
       this.loop()
-      setInterval(this.loop, 5000)
+      setInterval(this.loop, 20000)
     }).catch(err => {
       console.log(err)
       this.companyList = ['赤峰', '赤峰']
       this.jobList = [['测试员'], ['测试员']]
-      setTimeout(this.getJobList, 6000)
+      setTimeout(this.getJobList, 20000)
     })
   },
   methods: {
     loop () {
       const _this = this
       this.Headers = this.companyList[this.nv]
-      this.jobLists = this.jobList[this.nv].slice(0, 5)
+      this.jobLists = this.jobList[this.nv]
       this.nv++
       _this.show = false
       setTimeout(() => {
         _this.show = true
       }, 500)
+    },
+    addNum8 () {
+      if (this.listCon8 < this.max8) {
+        this.listCon8++
+        this.scrolls()
+      } else {
+        this.listCon8 = -200
+        this.scrolls()
+      }
+    },
+    async scrolls () {
+      await this.$nextTick()
+      this.$refs.ranks.setScrollTop(this.listCon8)
+    },
+    async getMaxHeight () {
+      await this.$nextTick()
+      this.max8 = this.$refs.maxHeight.offsetHeight
     }
   }
 }
@@ -58,7 +104,7 @@ export default {
 <style>
   .box-card {
     width: 200px;
-    height: 185px;
+    height: 125px;
   }
   .card-header{
     border-bottom: 1px solid gray;

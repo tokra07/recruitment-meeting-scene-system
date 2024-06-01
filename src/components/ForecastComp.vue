@@ -57,7 +57,7 @@ export default {
 
 <style>
 #JobIndustryTrend{
-  width: 380px;
+  width: 550px;
   height: 240px;
   margin-top: 13px;
   margin-left: 5px;
