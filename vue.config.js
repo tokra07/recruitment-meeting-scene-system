@@ -4,7 +4,7 @@ module.exports = defineConfig({
   devServer: {
     proxy: {
       '/api': {
-        target: 'http://jy.chifengrencai.com//ledapi',
+        target: 'http://jy.chifengrencai.com/ledapi',
         changeOrigin: true,
         pathRewrite: {
           '/api': ''

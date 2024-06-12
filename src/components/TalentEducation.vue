@@ -48,7 +48,7 @@ export default {
       const myChart = echarts.init(chartDom, 'dark')
       const option = {
         backgroundColor: '',
-        color: ['#00FF7F', '#00FFFF', '#98FB98', '#808000', '#E0FFFF', '#ADFF2F'],
+        color: '#00FFFF',
         title: {
           text: '人才学历分布',
           left: 'center'

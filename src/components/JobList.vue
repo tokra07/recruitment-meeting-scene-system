@@ -6,10 +6,12 @@
             {{ Headers }}
         </span>
       </div>
-      <el-scrollbar height="120px" ref="ranks" style="height: 120px;">
-        <div v-for="item in jobLists" :key="item" class="card-body-text">
-        {{ item }}:这里是岗位描述
-      </div>
+      <el-scrollbar height="120px" ref="ranks8" style="height: 120px;">
+        <div ref="maxHeight8">
+          <div v-for="item in jobLists" :key="item" class="card-body-text">
+          {{ item.position }}:{{ item.summary }}
+        </div>
+        </div>
       </el-scrollbar>
       <div style="border-top: 1px gray solid">
         <el-row style="padding-top: 10px;">
@@ -20,7 +22,7 @@
           </el-col>
           <el-col :span="7">
             <span class="card-body-text">
-              东方信息
+              {{ name }}
             </span>
           </el-col>
           <el-col :span="4">
@@ -30,7 +32,7 @@
           </el-col>
           <el-col :span="9">
             <span class="card-body-text">
-              13700000000
+              {{ phone }}
             </span>
           </el-col>
         </el-row>
@@ -46,12 +48,15 @@ export default {
   data () {
     return {
       Headers: '',
+      phone: '',
+      name: '',
       nv: 0,
       companyList: [],
       jobList: [],
       jobLists: [],
+      comList: [],
       show: true,
-      listCon8: -200,
+      listCon8: -20,
       max8: 0
     }
   },
@@ -59,9 +64,15 @@ export default {
     getJobList().then((res) => {
       console.log('公司列表', res)
       this.companyList = Object.keys(res.data)
-      this.jobList = Object.values(res.data)
+      const joblists = Object.values(res.data)
+      console.log('公司列表2', joblists[0])
+      for (let i = 0; i < joblists.length; i++) {
+        this.jobList.push(joblists[i].listrecruit)
+        this.comList.push(joblists[i].listcompany)
+      }
       this.loop()
       setInterval(this.loop, 20000)
+      // setInterval(this.addNum8, 50)
     }).catch(err => {
       console.log(err)
       this.companyList = ['赤峰', '赤峰']
@@ -74,6 +85,8 @@ export default {
       const _this = this
       this.Headers = this.companyList[this.nv]
       this.jobLists = this.jobList[this.nv]
+      this.phone = this.comList[this.nv].cellphone
+      this.name = this.comList[this.nv].contactUser
       this.nv++
       _this.show = false
       setTimeout(() => {
@@ -85,17 +98,18 @@ export default {
         this.listCon8++
         this.scrolls()
       } else {
-        this.listCon8 = -200
+        this.listCon8 = -20
         this.scrolls()
       }
     },
     async scrolls () {
       await this.$nextTick()
-      this.$refs.ranks.setScrollTop(this.listCon8)
+      this.$refs.ranks8.setScrollTop(this.listCon8)
     },
     async getMaxHeight () {
       await this.$nextTick()
-      this.max8 = this.$refs.maxHeight.offsetHeight
+      console.log('高度计算', this.$refs.maxHeight8.offsetHeight)
+      this.max8 = this.$refs.maxHeight8.offsetHeight
     }
   }
 }
