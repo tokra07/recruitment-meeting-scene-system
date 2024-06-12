@@ -6,13 +6,13 @@
             {{ Headers }}
         </span>
       </div>
-      <el-scrollbar height="120px" ref="ranks8" style="height: 120px;">
-        <div ref="maxHeight8">
+      <div class="scroll-container" :style="{ height: containerHeight + 'px' }">
+        <div class="scroll-content" :style="{ animationDuration: animationDuration + 's' }" ref="content">
           <div v-for="item in jobLists" :key="item" class="card-body-text">
           {{ item.position }}:{{ item.summary }}
         </div>
         </div>
-      </el-scrollbar>
+      </div>
       <div style="border-top: 1px gray solid">
         <el-row style="padding-top: 10px;">
           <el-col :span="4">
@@ -56,8 +56,8 @@ export default {
       jobLists: [],
       comList: [],
       show: true,
-      listCon8: -20,
-      max8: 0
+      containerHeight: 120, // Adjust container height as needed
+      animationDuration: 10 // Adjust animation duration as needed
     }
   },
   mounted () {
@@ -80,6 +80,11 @@ export default {
       setTimeout(this.getJobList, 20000)
     })
   },
+  watch: {
+    jobList () {
+      this.restartScroll()
+    }
+  },
   methods: {
     loop () {
       const _this = this
@@ -93,23 +98,11 @@ export default {
         _this.show = true
       }, 500)
     },
-    addNum8 () {
-      if (this.listCon8 < this.max8) {
-        this.listCon8++
-        this.scrolls()
-      } else {
-        this.listCon8 = -20
-        this.scrolls()
-      }
-    },
-    async scrolls () {
-      await this.$nextTick()
-      this.$refs.ranks8.setScrollTop(this.listCon8)
-    },
-    async getMaxHeight () {
-      await this.$nextTick()
-      console.log('高度计算', this.$refs.maxHeight8.offsetHeight)
-      this.max8 = this.$refs.maxHeight8.offsetHeight
+    restartScroll () {
+      this.$refs.content.style.animation = 'none'
+      this.$nextTick(() => {
+        this.$refs.content.style.animation = `scroll linear infinite ${this.animationDuration}s`
+      })
     }
   }
 }
@@ -169,5 +162,25 @@ export default {
 .nested-leave-to .inner {
   transform: translateX(30px);
   opacity: 0.001;
+}
+
+.scroll-container {
+  overflow: hidden;
+}
+
+.scroll-content {
+  animation: scroll linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
 }
 </style>
