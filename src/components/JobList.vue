@@ -72,7 +72,6 @@ export default {
       }
       this.loop()
       setInterval(this.loop, 20000)
-      // setInterval(this.addNum8, 50)
     }).catch(err => {
       console.log(err)
       this.companyList = ['赤峰', '赤峰']
