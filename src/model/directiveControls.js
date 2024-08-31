@@ -19,54 +19,54 @@ export function chooseControls (chooseName) {
         }
       }
     })
-    choose001.position.set(-28, 1, -19)
+    choose001.position.set(22, 1, -19)
     choose001.castShadow = true
     choose001.receiveShadow = true
     choose001.name = 'choose001'
     const choose002 = choose001.clone()
-    choose002.position.set(-24, 1, -19)
+    choose002.position.set(19, 1, -19)
     choose002.name = 'choose002'
     const choose003 = choose001.clone()
-    choose003.position.set(-21, 1, -19)
+    choose003.position.set(16, 1, -19)
     choose003.name = 'choose003'
     const choose004 = choose001.clone()
-    choose004.position.set(-18, 1, -19)
+    choose004.position.set(11, 1, -22)
     choose004.name = 'choose004'
     const choose005 = choose001.clone()
-    choose005.position.set(-15, 1, -22)
+    choose005.position.set(8, 1, -22)
     choose005.name = 'choose005'
     const choose006 = choose001.clone()
-    choose006.position.set(-12, 1, -22)
+    choose006.position.set(4, 1, -22)
     choose006.name = 'choose006'
     const choose007 = choose001.clone()
-    choose007.position.set(-7, 1, -22)
+    choose007.position.set(2, 1, -22)
     choose007.name = 'choose007'
     const choose008 = choose001.clone()
     choose008.position.set(-2, 1, -22)
     choose008.name = 'choose008'
     const choose009 = choose001.clone()
-    choose009.position.set(1, 1, -22)
+    choose009.position.set(-4, 1, -22)
     choose009.name = 'choose009'
-    const choose010 = choose001.clone()
-    choose010.position.set(3, 1, -22)
-    choose010.name = 'choose010'
-    const choose011 = choose001.clone()
-    choose011.position.set(8, 1, -22)
-    choose011.name = 'choose011'
-    const choose012 = choose001.clone()
-    choose012.position.set(11, 1, -22)
-    choose012.name = 'choose012'
-    const choose013 = choose001.clone()
-    choose013.position.set(16, 1, -19)
-    choose013.name = 'choose013'
-    const choose014 = choose001.clone()
-    choose014.position.set(19, 1, -19)
-    choose014.name = 'choose014'
     const choose015 = choose001.clone()
-    choose015.position.set(-19, 1, -14)
+    choose015.position.set(-24, 1, -19)
     choose015.name = 'choose015'
+    const choose014 = choose001.clone()
+    choose014.position.set(-21, 1, -19)
+    choose014.name = 'choose014'
+    const choose013 = choose001.clone()
+    choose013.position.set(-18, 1, -19)
+    choose013.name = 'choose013'
+    const choose012 = choose001.clone()
+    choose012.position.set(-15, 1, -22)
+    choose012.name = 'choose012'
+    const choose011 = choose001.clone()
+    choose011.position.set(-12, 1, -22)
+    choose011.name = 'choose011'
+    const choose010 = choose001.clone()
+    choose010.position.set(-7, 1, -22)
+    choose010.name = 'choose010'
     const choose016 = choose001.clone()
-    choose016.position.set(22, 1, -19)
+    choose016.position.set(-27, 1, -19)
     choose016.name = 'choose016'
     const choose017 = choose001.clone()
     choose017.position.set(-21, 1, -14)
@@ -113,51 +113,53 @@ export function chooseControls (chooseName) {
     const choose031 = choose001.clone()
     choose031.position.set(15, 1, -14)
     choose031.name = 'choose031'
-    const choose032 = choose001.clone()
-    choose032.position.set(-21, 1, -11)
-    choose032.name = 'choose032'
-    const choose033 = choose001.clone()
-    choose033.position.set(-19, 1, -11)
-    choose033.name = 'choose033'
-    const choose034 = choose001.clone()
-    choose034.position.set(-16, 1, -11)
-    choose034.name = 'choose034'
-    const choose035 = choose001.clone()
-    choose035.position.set(-13, 1, -11)
-    choose035.name = 'choose035'
-    const choose036 = choose001.clone()
-    choose036.position.set(-11, 1, -11)
-    choose036.name = 'choose036'
-    const choose037 = choose001.clone()
-    choose037.position.set(-8, 1, -11)
-    choose037.name = 'choose037'
-    const choose038 = choose001.clone()
-    choose038.position.set(-5, 1, -11)
-    choose038.name = 'choose038'
+    //
+    const choose046 = choose001.clone()
+    choose046.position.set(-21, 1, -11)
+    choose046.name = 'choose046'
+    const choose045 = choose001.clone()
+    choose045.position.set(-19, 1, -11)
+    choose045.name = 'choose045'
+    const choose044 = choose001.clone()
+    choose044.position.set(-16, 1, -11)
+    choose044.name = 'choose044'
+    const choose043 = choose001.clone()
+    choose043.position.set(-13, 1, -11)
+    choose043.name = 'choose043'
+    const choose042 = choose001.clone()
+    choose042.position.set(-11, 1, -11)
+    choose042.name = 'choose042'
+    const choose041 = choose001.clone()
+    choose041.position.set(-8, 1, -11)
+    choose041.name = 'choose041'
+    const choose040 = choose001.clone()
+    choose040.position.set(-5, 1, -11)
+    choose040.name = 'choose040'
     const choose039 = choose001.clone()
     choose039.position.set(-3, 1, -11)
     choose039.name = 'choose039'
-    const choose040 = choose001.clone()
-    choose040.position.set(-1, 1, -11)
-    choose040.name = 'choose040'
-    const choose041 = choose001.clone()
-    choose041.position.set(1, 1, -11)
-    choose041.name = 'choose041'
-    const choose042 = choose001.clone()
-    choose042.position.set(4, 1, -11)
-    choose042.name = 'choose042'
-    const choose043 = choose001.clone()
-    choose043.position.set(7, 1, -11)
-    choose043.name = 'choose043'
-    const choose044 = choose001.clone()
-    choose044.position.set(9, 1, -11)
-    choose044.name = 'choose044'
-    const choose045 = choose001.clone()
-    choose045.position.set(12, 1, -11)
-    choose045.name = 'choose045'
-    const choose046 = choose001.clone()
-    choose046.position.set(15, 1, -11)
-    choose046.name = 'choose046'
+    const choose038 = choose001.clone()
+    choose038.position.set(-1, 1, -11)
+    choose038.name = 'choose038'
+    const choose037 = choose001.clone()
+    choose037.position.set(1, 1, -11)
+    choose037.name = 'choose037'
+    const choose036 = choose001.clone()
+    choose036.position.set(4, 1, -11)
+    choose036.name = 'choose036'
+    const choose035 = choose001.clone()
+    choose035.position.set(7, 1, -11)
+    choose035.name = 'choose035'
+    const choose034 = choose001.clone()
+    choose034.position.set(9, 1, -11)
+    choose034.name = 'choose034'
+    const choose033 = choose001.clone()
+    choose033.position.set(12, 1, -11)
+    choose033.name = 'choose033'
+    const choose032 = choose001.clone()
+    choose032.position.set(15, 1, -11)
+    choose032.name = 'choose032'
+    //
     const choose047 = choose001.clone()
     choose047.position.set(-12, 1, -5.5)
     choose047.name = 'choose047'
@@ -182,30 +184,32 @@ export function chooseControls (chooseName) {
     const choose054 = choose001.clone()
     choose054.position.set(11, 1, -5.5)
     choose054.name = 'choose054'
-    const choose055 = choose001.clone()
-    choose055.position.set(-12, 1, -2.5)
-    choose055.name = 'choose055'
-    const choose056 = choose001.clone()
-    choose056.position.set(-7, 1, -2.5)
-    choose056.name = 'choose056'
-    const choose057 = choose001.clone()
-    choose057.position.set(-4, 1, -2.5)
-    choose057.name = 'choose057'
-    const choose058 = choose001.clone()
-    choose058.position.set(-1, 1, -2.5)
-    choose058.name = 'choose058'
-    const choose059 = choose001.clone()
-    choose059.position.set(1, 1, -2.5)
-    choose059.name = 'choose059'
-    const choose060 = choose001.clone()
-    choose060.position.set(4, 1, -2.5)
-    choose060.name = 'choose060'
-    const choose061 = choose001.clone()
-    choose061.position.set(9, 1, -2.5)
-    choose061.name = 'choose061'
+    //
     const choose062 = choose001.clone()
-    choose062.position.set(11, 1, -2.5)
+    choose062.position.set(-12, 1, -2.5)
     choose062.name = 'choose062'
+    const choose061 = choose001.clone()
+    choose061.position.set(-7, 1, -2.5)
+    choose061.name = 'choose061'
+    const choose060 = choose001.clone()
+    choose060.position.set(-4, 1, -2.5)
+    choose060.name = 'choose060'
+    const choose059 = choose001.clone()
+    choose059.position.set(-1, 1, -2.5)
+    choose059.name = 'choose059'
+    const choose058 = choose001.clone()
+    choose058.position.set(1, 1, -2.5)
+    choose058.name = 'choose058'
+    const choose057 = choose001.clone()
+    choose057.position.set(4, 1, -2.5)
+    choose057.name = 'choose057'
+    const choose056 = choose001.clone()
+    choose056.position.set(9, 1, -2.5)
+    choose056.name = 'choose056'
+    const choose055 = choose001.clone()
+    choose055.position.set(11, 1, -2.5)
+    choose055.name = 'choose055'
+    //
     const choose063 = choose001.clone()
     choose063.position.set(-11, 1, 4)
     choose063.name = 'choose063'
@@ -236,36 +240,38 @@ export function chooseControls (chooseName) {
     const choose072 = choose001.clone()
     choose072.position.set(11, 1, 4)
     choose072.name = 'choose072'
-    const choose073 = choose001.clone()
-    choose073.position.set(-11, 1, 6)
-    choose073.name = 'choose073'
-    const choose074 = choose001.clone()
-    choose074.position.set(-8, 1, 6)
-    choose074.name = 'choose074'
-    const choose075 = choose001.clone()
-    choose075.position.set(-5, 1, 6)
-    choose075.name = 'choose075'
-    const choose076 = choose001.clone()
-    choose076.position.set(-3, 1, 6)
-    choose076.name = 'choose076'
-    const choose077 = choose001.clone()
-    choose077.position.set(-1, 1, 6)
-    choose077.name = 'choose077'
-    const choose078 = choose001.clone()
-    choose078.position.set(1, 1, 6)
-    choose078.name = 'choose078'
-    const choose079 = choose001.clone()
-    choose079.position.set(4, 1, 6)
-    choose079.name = 'choose079'
-    const choose080 = choose001.clone()
-    choose080.position.set(6, 1, 6)
-    choose080.name = 'choose080'
-    const choose081 = choose001.clone()
-    choose081.position.set(9, 1, 6)
-    choose081.name = 'choose081'
+    //
     const choose082 = choose001.clone()
-    choose082.position.set(11, 1, 6)
+    choose082.position.set(-11, 1, 6)
     choose082.name = 'choose082'
+    const choose081 = choose001.clone()
+    choose081.position.set(-8, 1, 6)
+    choose081.name = 'choose081'
+    const choose080 = choose001.clone()
+    choose080.position.set(-5, 1, 6)
+    choose080.name = 'choose080'
+    const choose079 = choose001.clone()
+    choose079.position.set(-3, 1, 6)
+    choose079.name = 'choose079'
+    const choose078 = choose001.clone()
+    choose078.position.set(-1, 1, 6)
+    choose078.name = 'choose078'
+    const choose077 = choose001.clone()
+    choose077.position.set(1, 1, 6)
+    choose077.name = 'choose077'
+    const choose076 = choose001.clone()
+    choose076.position.set(4, 1, 6)
+    choose076.name = 'choose076'
+    const choose075 = choose001.clone()
+    choose075.position.set(6, 1, 6)
+    choose075.name = 'choose075'
+    const choose074 = choose001.clone()
+    choose074.position.set(9, 1, 6)
+    choose074.name = 'choose074'
+    const choose073 = choose001.clone()
+    choose073.position.set(11, 1, 6)
+    choose073.name = 'choose073'
+    //
     const choose083 = choose001.clone()
     choose083.position.set(-14, 1, 12)
     choose083.name = 'choose083'
@@ -293,48 +299,51 @@ export function chooseControls (chooseName) {
     const choose091 = choose001.clone()
     choose091.position.set(11, 1, 12)
     choose091.name = 'choose091'
-    const choose092 = choose001.clone()
-    choose092.position.set(-14, 1, 15)
-    choose092.name = 'choose092'
-    const choose093 = choose001.clone()
-    choose093.position.set(-12, 1, 15)
-    choose093.name = 'choose093'
-    const choose094 = choose001.clone()
-    choose094.position.set(-7, 1, 15)
-    choose094.name = 'choose094'
-    const choose095 = choose001.clone()
-    choose095.position.set(-4, 1, 15)
-    choose095.name = 'choose095'
+    //
+    const choose100 = choose001.clone()
+    choose100.position.set(-14, 1, 15)
+    choose100.name = 'choose100'
+    const choose099 = choose001.clone()
+    choose099.position.set(-12, 1, 15)
+    choose099.name = 'choose099'
+    const choose098 = choose001.clone()
+    choose098.position.set(-7, 1, 15)
+    choose098.name = 'choose098'
+    const choose097 = choose001.clone()
+    choose097.position.set(-4, 1, 15)
+    choose097.name = 'choose097'
     const choose096 = choose001.clone()
     choose096.position.set(-1, 1, 15)
     choose096.name = 'choose096'
-    const choose097 = choose001.clone()
-    choose097.position.set(1, 1, 15)
-    choose097.name = 'choose097'
-    const choose098 = choose001.clone()
-    choose098.position.set(4, 1, 15)
-    choose098.name = 'choose098'
-    const choose099 = choose001.clone()
-    choose099.position.set(9, 1, 15)
-    choose099.name = 'choose099'
-    const choose100 = choose001.clone()
-    choose100.position.set(11, 1, 15)
-    choose100.name = 'choose100'
-    const choose101 = choose001.clone()
-    choose101.position.set(-32, 1, 15)
-    choose101.name = 'choose101'
-    const choose102 = choose001.clone()
-    choose102.position.set(-29, 1, 15)
-    choose102.name = 'choose102'
+    const choose095 = choose001.clone()
+    choose095.position.set(1, 1, 15)
+    choose095.name = 'choose095'
+    const choose094 = choose001.clone()
+    choose094.position.set(4, 1, 15)
+    choose094.name = 'choose094'
+    const choose093 = choose001.clone()
+    choose093.position.set(9, 1, 15)
+    choose093.name = 'choose093'
+    const choose092 = choose001.clone()
+    choose092.position.set(11, 1, 15)
+    choose092.name = 'choose092'
+    //
+    const choose105 = choose001.clone()
+    choose105.position.set(-35, 1, 15)
+    choose105.name = 'choose105'
+    const choose104 = choose001.clone()
+    choose104.position.set(-32, 1, 15)
+    choose104.name = 'choose104'
     const choose103 = choose001.clone()
     choose103.position.set(-29, 1, 15)
     choose103.name = 'choose103'
-    const choose104 = choose001.clone()
-    choose104.position.set(-26, 1, 15)
-    choose104.name = 'choose104'
-    const choose105 = choose001.clone()
-    choose105.position.set(-23, 1, 15)
-    choose105.name = 'choose105'
+    const choose102 = choose001.clone()
+    choose102.position.set(-26, 1, 15)
+    choose102.name = 'choose102'
+    const choose101 = choose001.clone()
+    choose101.position.set(-23, 1, 15)
+    choose101.name = 'choose101'
+    //
     const choose106 = choose001.clone()
     choose106.position.set(-35, 1, 21)
     choose106.name = 'choose106'
@@ -835,6 +844,12 @@ export function chooseControls (chooseName) {
         scene.add(choose076)
         setTimeout(() => {
           scene.remove(scene.getObjectByName('choose076'))
+        }, 5000)
+        break
+      case 77:
+        scene.add(choose077)
+        setTimeout(() => {
+          scene.remove(scene.getObjectByName('choose077'))
         }, 5000)
         break
       case 78:

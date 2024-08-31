@@ -212,6 +212,8 @@ export default {
         this.messageText += res.data[i].title + '    '
       }
     })
+  },
+  methods: {
   }
 }
 </script>

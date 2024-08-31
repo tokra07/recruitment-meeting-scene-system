@@ -19,54 +19,56 @@ export function bulbControls (bulbName) {
         }
       }
     })
-    bulb001.position.set(-28, 1, -19)
+    bulb001.position.set(22, 1, -19)
     bulb001.castShadow = true
     bulb001.receiveShadow = true
     bulb001.name = 'bulb001'
     const bulb002 = bulb001.clone()
-    bulb002.position.set(-24, 1, -19)
+    bulb002.position.set(19, 1, -19)
     bulb002.name = 'bulb002'
     const bulb003 = bulb001.clone()
-    bulb003.position.set(-21, 1, -19)
+    bulb003.position.set(16, 1, -19)
     bulb003.name = 'bulb003'
     const bulb004 = bulb001.clone()
-    bulb004.position.set(-18, 1, -19)
+    bulb004.position.set(11, 1, -22)
     bulb004.name = 'bulb004'
     const bulb005 = bulb001.clone()
-    bulb005.position.set(-15, 1, -22)
+    bulb005.position.set(8, 1, -22)
     bulb005.name = 'bulb005'
     const bulb006 = bulb001.clone()
-    bulb006.position.set(-12, 1, -22)
+    bulb006.position.set(4, 1, -22)
     bulb006.name = 'bulb006'
     const bulb007 = bulb001.clone()
-    bulb007.position.set(-7, 1, -22)
+    bulb007.position.set(2, 1, -22)
     bulb007.name = 'bulb007'
     const bulb008 = bulb001.clone()
     bulb008.position.set(-2, 1, -22)
     bulb008.name = 'bulb008'
     const bulb009 = bulb001.clone()
-    bulb009.position.set(1, 1, -22)
+    bulb009.position.set(-4, 1, -22)
     bulb009.name = 'bulb009'
-    const bulb010 = bulb001.clone()
-    bulb010.position.set(3, 1, -22)
-    bulb010.name = 'bulb010'
-    const bulb011 = bulb001.clone()
-    bulb011.position.set(8, 1, -22)
-    bulb011.name = 'bulb011'
-    const bulb012 = bulb001.clone()
-    bulb012.position.set(11, 1, -22)
-    bulb012.name = 'bulb012'
-    const bulb013 = bulb001.clone()
-    bulb013.position.set(16, 1, -19)
-    bulb013.name = 'bulb013'
-    const bulb014 = bulb001.clone()
-    bulb014.position.set(19, 1, -19)
-    bulb014.name = 'bulb014'
+    //
     const bulb015 = bulb001.clone()
-    bulb015.position.set(-19, 1, -14)
-    bulb015.name = 'bulb015'
+    bulb015.position.set(-24, 1, -19)
+    bulb015.name = 'bulb15'
+    const bulb014 = bulb001.clone()
+    bulb014.position.set(-21, 1, -19)
+    bulb014.name = 'bulb014'
+    const bulb013 = bulb001.clone()
+    bulb013.position.set(-18, 1, -19)
+    bulb013.name = 'bulb013'
+    const bulb012 = bulb001.clone()
+    bulb012.position.set(-15, 1, -22)
+    bulb012.name = 'bulb012'
+    const bulb011 = bulb001.clone()
+    bulb011.position.set(-12, 1, -22)
+    bulb011.name = 'bulb011'
+    const bulb010 = bulb001.clone()
+    bulb010.position.set(-7, 1, -22)
+    bulb010.name = 'bulb010'
+
     const bulb016 = bulb001.clone()
-    bulb016.position.set(22, 1, -19)
+    bulb016.position.set(-27, 1, -19)
     bulb016.name = 'bulb016'
     const bulb017 = bulb001.clone()
     bulb017.position.set(-21, 1, -14)
@@ -113,51 +115,53 @@ export function bulbControls (bulbName) {
     const bulb031 = bulb001.clone()
     bulb031.position.set(15, 1, -14)
     bulb031.name = 'bulb031'
-    const bulb032 = bulb001.clone()
-    bulb032.position.set(-21, 1, -11)
-    bulb032.name = 'bulb032'
-    const bulb033 = bulb001.clone()
-    bulb033.position.set(-19, 1, -11)
-    bulb033.name = 'bulb033'
-    const bulb034 = bulb001.clone()
-    bulb034.position.set(-16, 1, -11)
-    bulb034.name = 'bulb034'
-    const bulb035 = bulb001.clone()
-    bulb035.position.set(-13, 1, -11)
-    bulb035.name = 'bulb035'
-    const bulb036 = bulb001.clone()
-    bulb036.position.set(-11, 1, -11)
-    bulb036.name = 'bulb036'
-    const bulb037 = bulb001.clone()
-    bulb037.position.set(-8, 1, -11)
-    bulb037.name = 'bulb037'
-    const bulb038 = bulb001.clone()
-    bulb038.position.set(-5, 1, -11)
-    bulb038.name = 'bulb038'
+    //
+    const bulb046 = bulb001.clone()
+    bulb046.position.set(-21, 1, -11)
+    bulb046.name = 'bulb046'
+    const bulb045 = bulb001.clone()
+    bulb045.position.set(-19, 1, -11)
+    bulb045.name = 'bulb045'
+    const bulb044 = bulb001.clone()
+    bulb044.position.set(-16, 1, -11)
+    bulb044.name = 'bulb044'
+    const bulb043 = bulb001.clone()
+    bulb043.position.set(-13, 1, -11)
+    bulb043.name = 'bulb043'
+    const bulb042 = bulb001.clone()
+    bulb042.position.set(-11, 1, -11)
+    bulb042.name = 'bulb042'
+    const bulb041 = bulb001.clone()
+    bulb041.position.set(-8, 1, -11)
+    bulb041.name = 'bulb041'
+    const bulb040 = bulb001.clone()
+    bulb040.position.set(-5, 1, -11)
+    bulb040.name = 'bulb039'
     const bulb039 = bulb001.clone()
     bulb039.position.set(-3, 1, -11)
     bulb039.name = 'bulb039'
-    const bulb040 = bulb001.clone()
-    bulb040.position.set(-1, 1, -11)
-    bulb040.name = 'bulb040'
-    const bulb041 = bulb001.clone()
-    bulb041.position.set(1, 1, -11)
-    bulb041.name = 'bulb041'
-    const bulb042 = bulb001.clone()
-    bulb042.position.set(4, 1, -11)
-    bulb042.name = 'bulb042'
-    const bulb043 = bulb001.clone()
-    bulb043.position.set(7, 1, -11)
-    bulb043.name = 'bulb043'
-    const bulb044 = bulb001.clone()
-    bulb044.position.set(9, 1, -11)
-    bulb044.name = 'bulb044'
-    const bulb045 = bulb001.clone()
-    bulb045.position.set(12, 1, -11)
-    bulb045.name = 'bulb045'
-    const bulb046 = bulb001.clone()
-    bulb046.position.set(15, 1, -11)
-    bulb046.name = 'bulb046'
+    const bulb038 = bulb001.clone()
+    bulb038.position.set(-1, 1, -11)
+    bulb038.name = 'bulb038'
+    const bulb037 = bulb001.clone()
+    bulb037.position.set(1, 1, -11)
+    bulb037.name = 'bulb037'
+    const bulb036 = bulb001.clone()
+    bulb036.position.set(4, 1, -11)
+    bulb036.name = 'bulb036'
+    const bulb035 = bulb001.clone()
+    bulb035.position.set(7, 1, -11)
+    bulb035.name = 'bulb043'
+    const bulb034 = bulb001.clone()
+    bulb034.position.set(9, 1, -11)
+    bulb034.name = 'bulb034'
+    const bulb033 = bulb001.clone()
+    bulb033.position.set(12, 1, -11)
+    bulb033.name = 'bulb033'
+    const bulb032 = bulb001.clone()
+    bulb032.position.set(15, 1, -11)
+    bulb032.name = 'bulb032'
+    //
     const bulb047 = bulb001.clone()
     bulb047.position.set(-12, 1, -5.5)
     bulb047.name = 'bulb047'
@@ -182,30 +186,32 @@ export function bulbControls (bulbName) {
     const bulb054 = bulb001.clone()
     bulb054.position.set(11, 1, -5.5)
     bulb054.name = 'bulb054'
-    const bulb055 = bulb001.clone()
-    bulb055.position.set(-12, 1, -2.5)
-    bulb055.name = 'bulb055'
-    const bulb056 = bulb001.clone()
-    bulb056.position.set(-7, 1, -2.5)
-    bulb056.name = 'bulb056'
-    const bulb057 = bulb001.clone()
-    bulb057.position.set(-4, 1, -2.5)
-    bulb057.name = 'bulb057'
-    const bulb058 = bulb001.clone()
-    bulb058.position.set(-1, 1, -2.5)
-    bulb058.name = 'bulb058'
-    const bulb059 = bulb001.clone()
-    bulb059.position.set(1, 1, -2.5)
-    bulb059.name = 'bulb059'
-    const bulb060 = bulb001.clone()
-    bulb060.position.set(4, 1, -2.5)
-    bulb060.name = 'bulb060'
-    const bulb061 = bulb001.clone()
-    bulb061.position.set(9, 1, -2.5)
-    bulb061.name = 'bulb061'
+    //
     const bulb062 = bulb001.clone()
-    bulb062.position.set(11, 1, -2.5)
+    bulb062.position.set(-12, 1, -2.5)
     bulb062.name = 'bulb062'
+    const bulb061 = bulb001.clone()
+    bulb061.position.set(-7, 1, -2.5)
+    bulb061.name = 'bulb061'
+    const bulb060 = bulb001.clone()
+    bulb060.position.set(-4, 1, -2.5)
+    bulb060.name = 'bulb060'
+    const bulb059 = bulb001.clone()
+    bulb059.position.set(-1, 1, -2.5)
+    bulb059.name = 'bulb059'
+    const bulb058 = bulb001.clone()
+    bulb058.position.set(1, 1, -2.5)
+    bulb058.name = 'bulb058'
+    const bulb057 = bulb001.clone()
+    bulb057.position.set(4, 1, -2.5)
+    bulb057.name = 'bulb057'
+    const bulb056 = bulb001.clone()
+    bulb056.position.set(9, 1, -2.5)
+    bulb056.name = 'bulb056'
+    const bulb055 = bulb001.clone()
+    bulb055.position.set(11, 1, -2.5)
+    bulb055.name = 'bulb055'
+    //
     const bulb063 = bulb001.clone()
     bulb063.position.set(-11, 1, 4)
     bulb063.name = 'bulb063'
@@ -236,36 +242,38 @@ export function bulbControls (bulbName) {
     const bulb072 = bulb001.clone()
     bulb072.position.set(11, 1, 4)
     bulb072.name = 'bulb072'
-    const bulb073 = bulb001.clone()
-    bulb073.position.set(-11, 1, 6)
-    bulb073.name = 'bulb073'
-    const bulb074 = bulb001.clone()
-    bulb074.position.set(-8, 1, 6)
-    bulb074.name = 'bulb074'
-    const bulb075 = bulb001.clone()
-    bulb075.position.set(-5, 1, 6)
-    bulb075.name = 'bulb075'
-    const bulb076 = bulb001.clone()
-    bulb076.position.set(-3, 1, 6)
-    bulb076.name = 'bulb076'
-    const bulb077 = bulb001.clone()
-    bulb077.position.set(-1, 1, 6)
-    bulb077.name = 'bulb077'
-    const bulb078 = bulb001.clone()
-    bulb078.position.set(1, 1, 6)
-    bulb078.name = 'bulb078'
-    const bulb079 = bulb001.clone()
-    bulb079.position.set(4, 1, 6)
-    bulb079.name = 'bulb079'
-    const bulb080 = bulb001.clone()
-    bulb080.position.set(6, 1, 6)
-    bulb080.name = 'bulb080'
-    const bulb081 = bulb001.clone()
-    bulb081.position.set(9, 1, 6)
-    bulb081.name = 'bulb081'
+    //
     const bulb082 = bulb001.clone()
-    bulb082.position.set(11, 1, 6)
+    bulb082.position.set(-11, 1, 6)
     bulb082.name = 'bulb082'
+    const bulb081 = bulb001.clone()
+    bulb081.position.set(-8, 1, 6)
+    bulb081.name = 'bulb081'
+    const bulb080 = bulb001.clone()
+    bulb080.position.set(-5, 1, 6)
+    bulb080.name = 'bulb080'
+    const bulb079 = bulb001.clone()
+    bulb079.position.set(-3, 1, 6)
+    bulb079.name = 'bulb079'
+    const bulb078 = bulb001.clone()
+    bulb078.position.set(-1, 1, 6)
+    bulb078.name = 'bulb078'
+    const bulb077 = bulb001.clone()
+    bulb077.position.set(1, 1, 6)
+    bulb077.name = 'bulb077'
+    const bulb076 = bulb001.clone()
+    bulb076.position.set(4, 1, 6)
+    bulb076.name = 'bulb076'
+    const bulb075 = bulb001.clone()
+    bulb075.position.set(6, 1, 6)
+    bulb075.name = 'bulb075'
+    const bulb074 = bulb001.clone()
+    bulb074.position.set(9, 1, 6)
+    bulb074.name = 'bulb074'
+    const bulb073 = bulb001.clone()
+    bulb073.position.set(11, 1, 6)
+    bulb073.name = 'bulb073'
+    //
     const bulb083 = bulb001.clone()
     bulb083.position.set(-14, 1, 12)
     bulb083.name = 'bulb083'
@@ -293,48 +301,51 @@ export function bulbControls (bulbName) {
     const bulb091 = bulb001.clone()
     bulb091.position.set(11, 1, 12)
     bulb091.name = 'bulb091'
-    const bulb092 = bulb001.clone()
-    bulb092.position.set(-14, 1, 15)
-    bulb092.name = 'bulb092'
-    const bulb093 = bulb001.clone()
-    bulb093.position.set(-12, 1, 15)
-    bulb093.name = 'bulb093'
-    const bulb094 = bulb001.clone()
-    bulb094.position.set(-7, 1, 15)
-    bulb094.name = 'bulb094'
-    const bulb095 = bulb001.clone()
-    bulb095.position.set(-4, 1, 15)
-    bulb095.name = 'bulb095'
+    //
+    const bulb100 = bulb001.clone()
+    bulb100.position.set(-14, 1, 15)
+    bulb100.name = 'bulb100'
+    const bulb099 = bulb001.clone()
+    bulb099.position.set(-12, 1, 15)
+    bulb099.name = 'bulb099'
+    const bulb098 = bulb001.clone()
+    bulb098.position.set(-7, 1, 15)
+    bulb098.name = 'bulb098'
+    const bulb097 = bulb001.clone()
+    bulb097.position.set(-4, 1, 15)
+    bulb097.name = 'bulb097'
     const bulb096 = bulb001.clone()
     bulb096.position.set(-1, 1, 15)
     bulb096.name = 'bulb096'
-    const bulb097 = bulb001.clone()
-    bulb097.position.set(1, 1, 15)
-    bulb097.name = 'bulb097'
-    const bulb098 = bulb001.clone()
-    bulb098.position.set(4, 1, 15)
-    bulb098.name = 'bulb098'
-    const bulb099 = bulb001.clone()
-    bulb099.position.set(9, 1, 15)
-    bulb099.name = 'bulb099'
-    const bulb100 = bulb001.clone()
-    bulb100.position.set(11, 1, 15)
-    bulb100.name = 'bulb100'
-    const bulb101 = bulb001.clone()
-    bulb101.position.set(-32, 1, 15)
-    bulb101.name = 'bulb101'
-    const bulb102 = bulb001.clone()
-    bulb102.position.set(-29, 1, 15)
-    bulb102.name = 'bulb102'
+    const bulb095 = bulb001.clone()
+    bulb095.position.set(1, 1, 15)
+    bulb095.name = 'bulb095'
+    const bulb094 = bulb001.clone()
+    bulb094.position.set(4, 1, 15)
+    bulb094.name = 'bulb094'
+    const bulb093 = bulb001.clone()
+    bulb093.position.set(9, 1, 15)
+    bulb093.name = 'bulb093'
+    const bulb092 = bulb001.clone()
+    bulb092.position.set(11, 1, 15)
+    bulb092.name = 'bulb092'
+    //
+    const bulb105 = bulb001.clone()
+    bulb105.position.set(-35, 1, 15)
+    bulb105.name = 'bulb105'
+    const bulb104 = bulb001.clone()
+    bulb104.position.set(-32, 1, 15)
+    bulb104.name = 'bulb104'
     const bulb103 = bulb001.clone()
     bulb103.position.set(-29, 1, 15)
     bulb103.name = 'bulb103'
-    const bulb104 = bulb001.clone()
-    bulb104.position.set(-26, 1, 15)
-    bulb104.name = 'bulb104'
-    const bulb105 = bulb001.clone()
-    bulb105.position.set(-23, 1, 15)
-    bulb105.name = 'bulb105'
+    const bulb102 = bulb001.clone()
+    bulb102.position.set(-26, 1, 15)
+    bulb102.name = 'bulb102'
+    const bulb101 = bulb001.clone()
+    bulb101.position.set(-23, 1, 15)
+    bulb101.name = 'bulb101'
+    //
     const bulb106 = bulb001.clone()
     bulb106.position.set(-35, 1, 21)
     bulb106.name = 'bulb106'
@@ -835,6 +846,12 @@ export function bulbControls (bulbName) {
         scene.add(bulb076)
         setTimeout(() => {
           scene.remove(scene.getObjectByName('bulb076'))
+        }, 1000)
+        break
+      case 'bulb077':
+        scene.add(bulb077)
+        setTimeout(() => {
+          scene.remove(scene.getObjectByName('bulb077'))
         }, 1000)
         break
       case 'bulb078':

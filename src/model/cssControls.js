@@ -10,52 +10,53 @@ export function addTag (cssNum) {
   para.style.borderRadius = '15px'
   para.appendChild(node)
   const tag001 = new CSS2DObject(para)
-  tag001.position.set(-24, 3, -19)
+  tag001.position.set(22, 3, -19)
   tag001.name = 'tag001'
   const tag002 = tag001.clone()
-  tag002.position.set(-24, 3, -19)
+  tag002.position.set(19, 3, -19)
   tag002.name = 'tag002'
   const tag003 = tag001.clone()
-  tag003.position.set(-21, 3, -19)
-  tag003.name = 'tag003'
+  tag003.position.set(16, 3, -19)
+  tag003.name = 'tag002'
   const tag004 = tag001.clone()
-  tag004.position.set(-18, 3, -19)
+  tag004.position.set(11, 3, -22)
   tag004.name = 'tag004'
   const tag005 = tag001.clone()
-  tag005.position.set(-15, 3, -22)
+  tag005.position.set(8, 3, -22)
   tag005.name = 'tag005'
   const tag006 = tag001.clone()
-  tag006.position.set(-12, 3, -22)
+  tag006.position.set(4, 3, -22)
   tag006.name = 'tag006'
   const tag007 = tag001.clone()
-  tag007.position.set(-7, 3, -22)
+  tag007.position.set(2, 3, -22)
   tag007.name = 'tag007'
   const tag008 = tag001.clone()
   tag008.position.set(-2, 3, -22)
   tag008.name = 'tag008'
   const tag009 = tag001.clone()
-  tag009.position.set(1, 3, -22)
+  tag009.position.set(-4, 3, -22)
   tag009.name = 'tag009'
-  const tag010 = tag001.clone()
-  tag010.position.set(3, 3, -22)
-  tag010.name = 'tag010'
-  const tag011 = tag001.clone()
-  tag011.position.set(8, 3, -22)
-  tag011.name = 'tag011'
-  const tag012 = tag001.clone()
-  tag012.position.set(11, 3, -22)
-  tag012.name = 'tag012'
-  const tag013 = tag001.clone()
-  tag013.position.set(16, 3, -19)
-  tag013.name = 'tag013'
-  const tag014 = tag001.clone()
-  tag014.position.set(19, 3, -19)
-  tag014.name = 'tag014'
+  //
   const tag015 = tag001.clone()
-  tag015.position.set(-19, 3, -14)
+  tag015.position.set(-24, 3, -19)
   tag015.name = 'tag015'
+  const tag014 = tag001.clone()
+  tag014.position.set(-21, 3, -19)
+  tag014.name = 'tag014'
+  const tag013 = tag001.clone()
+  tag013.position.set(-18, 3, -19)
+  tag013.name = 'tag013'
+  const tag012 = tag001.clone()
+  tag012.position.set(-15, 3, -22)
+  tag012.name = 'tag012'
+  const tag011 = tag001.clone()
+  tag011.position.set(-12, 3, -22)
+  tag011.name = 'tag011'
+  const tag010 = tag001.clone()
+  tag010.position.set(-7, 3, -22)
+  tag010.name = 'tag010'
   const tag016 = tag001.clone()
-  tag016.position.set(22, 3, -19)
+  tag016.position.set(-27, 3, -19)
   tag016.name = 'tag016'
   const tag017 = tag001.clone()
   tag017.position.set(-21, 3, -14)
@@ -102,51 +103,53 @@ export function addTag (cssNum) {
   const tag031 = tag001.clone()
   tag031.position.set(15, 3, -14)
   tag031.name = 'tag031'
-  const tag032 = tag001.clone()
-  tag032.position.set(-21, 3, -11)
-  tag032.name = 'tag032'
-  const tag033 = tag001.clone()
-  tag033.position.set(-19, 3, -11)
-  tag033.name = 'tag033'
-  const tag034 = tag001.clone()
-  tag034.position.set(-16, 3, -11)
-  tag034.name = 'tag034'
-  const tag035 = tag001.clone()
-  tag035.position.set(-13, 3, -11)
-  tag035.name = 'tag035'
-  const tag036 = tag001.clone()
-  tag036.position.set(-11, 3, -11)
-  tag036.name = 'tag036'
-  const tag037 = tag001.clone()
-  tag037.position.set(-8, 3, -11)
-  tag037.name = 'tag037'
-  const tag038 = tag001.clone()
-  tag038.position.set(-5, 3, -11)
-  tag038.name = 'tag038'
+  //
+  const tag046 = tag001.clone()
+  tag046.position.set(-21, 3, -11)
+  tag046.name = 'tag046'
+  const tag045 = tag001.clone()
+  tag045.position.set(-19, 3, -11)
+  tag045.name = 'tag045'
+  const tag044 = tag001.clone()
+  tag044.position.set(-16, 3, -11)
+  tag044.name = 'tag044'
+  const tag043 = tag001.clone()
+  tag043.position.set(-13, 3, -11)
+  tag043.name = 'tag043'
+  const tag042 = tag001.clone()
+  tag042.position.set(-11, 3, -11)
+  tag042.name = 'tag042'
+  const tag041 = tag001.clone()
+  tag041.position.set(-8, 3, -11)
+  tag041.name = 'tag041'
+  const tag040 = tag001.clone()
+  tag040.position.set(-5, 3, -11)
+  tag040.name = 'tag040'
   const tag039 = tag001.clone()
   tag039.position.set(-3, 3, -11)
   tag039.name = 'tag039'
-  const tag040 = tag001.clone()
-  tag040.position.set(-1, 3, -11)
-  tag040.name = 'tag040'
-  const tag041 = tag001.clone()
-  tag041.position.set(1, 3, -11)
-  tag041.name = 'tag041'
-  const tag042 = tag001.clone()
-  tag042.position.set(4, 3, -11)
-  tag042.name = 'tag042'
-  const tag043 = tag001.clone()
-  tag043.position.set(7, 3, -11)
-  tag043.name = 'tag043'
-  const tag044 = tag001.clone()
-  tag044.position.set(9, 3, -11)
-  tag044.name = 'tag044'
-  const tag045 = tag001.clone()
-  tag045.position.set(12, 3, -11)
-  tag045.name = 'tag045'
-  const tag046 = tag001.clone()
-  tag046.position.set(15, 3, -11)
-  tag046.name = 'tag046'
+  const tag038 = tag001.clone()
+  tag038.position.set(-1, 3, -11)
+  tag038.name = 'tag038'
+  const tag037 = tag001.clone()
+  tag037.position.set(1, 3, -11)
+  tag037.name = 'tag037'
+  const tag036 = tag001.clone()
+  tag036.position.set(4, 3, -11)
+  tag036.name = 'tag036'
+  const tag035 = tag001.clone()
+  tag035.position.set(7, 3, -11)
+  tag035.name = 'tag035'
+  const tag034 = tag001.clone()
+  tag034.position.set(9, 3, -11)
+  tag034.name = 'tag034'
+  const tag033 = tag001.clone()
+  tag033.position.set(12, 3, -11)
+  tag033.name = 'tag033'
+  const tag032 = tag001.clone()
+  tag032.position.set(15, 3, -11)
+  tag032.name = 'tag032'
+  //
   const tag047 = tag001.clone()
   tag047.position.set(-12, 3, -5.5)
   tag047.name = 'tag047'
@@ -171,30 +174,32 @@ export function addTag (cssNum) {
   const tag054 = tag001.clone()
   tag054.position.set(11, 3, -5.5)
   tag054.name = 'tag054'
-  const tag055 = tag001.clone()
-  tag055.position.set(-12, 3, -2.5)
-  tag055.name = 'tag055'
-  const tag056 = tag001.clone()
-  tag056.position.set(-7, 3, -2.5)
-  tag056.name = 'tag056'
-  const tag057 = tag001.clone()
-  tag057.position.set(-4, 3, -2.5)
-  tag057.name = 'tag057'
-  const tag058 = tag001.clone()
-  tag058.position.set(-1, 3, -2.5)
-  tag058.name = 'tag058'
-  const tag059 = tag001.clone()
-  tag059.position.set(1, 3, -2.5)
-  tag059.name = 'tag059'
-  const tag060 = tag001.clone()
-  tag060.position.set(4, 3, -2.5)
-  tag060.name = 'tag060'
-  const tag061 = tag001.clone()
-  tag061.position.set(9, 3, -2.5)
-  tag061.name = 'tag061'
+  //
   const tag062 = tag001.clone()
-  tag062.position.set(11, 3, -2.5)
+  tag062.position.set(-12, 3, -2.5)
   tag062.name = 'tag062'
+  const tag061 = tag001.clone()
+  tag061.position.set(-7, 3, -2.5)
+  tag061.name = 'tag061'
+  const tag060 = tag001.clone()
+  tag060.position.set(-4, 3, -2.5)
+  tag060.name = 'tag060'
+  const tag059 = tag001.clone()
+  tag059.position.set(-1, 3, -2.5)
+  tag059.name = 'tag059'
+  const tag058 = tag001.clone()
+  tag058.position.set(1, 3, -2.5)
+  tag058.name = 'tag058'
+  const tag057 = tag001.clone()
+  tag057.position.set(4, 3, -2.5)
+  tag057.name = 'tag057'
+  const tag056 = tag001.clone()
+  tag056.position.set(9, 3, -2.5)
+  tag056.name = 'tag056'
+  const tag055 = tag001.clone()
+  tag055.position.set(11, 3, -2.5)
+  tag055.name = 'tag055'
+  //
   const tag063 = tag001.clone()
   tag063.position.set(-11, 3, 4)
   tag063.name = 'tag063'
@@ -225,36 +230,38 @@ export function addTag (cssNum) {
   const tag072 = tag001.clone()
   tag072.position.set(11, 3, 4)
   tag072.name = 'tag072'
-  const tag073 = tag001.clone()
-  tag073.position.set(-11, 3, 6)
-  tag073.name = 'tag073'
-  const tag074 = tag001.clone()
-  tag074.position.set(-8, 3, 6)
-  tag074.name = 'tag074'
-  const tag075 = tag001.clone()
-  tag075.position.set(-5, 3, 6)
-  tag075.name = 'tag075'
-  const tag076 = tag001.clone()
-  tag076.position.set(-3, 3, 6)
-  tag076.name = 'tag076'
-  const tag077 = tag001.clone()
-  tag077.position.set(-1, 3, 6)
-  tag077.name = 'tag077'
-  const tag078 = tag001.clone()
-  tag078.position.set(1, 3, 6)
-  tag078.name = 'tag078'
-  const tag079 = tag001.clone()
-  tag079.position.set(4, 3, 6)
-  tag079.name = 'tag079'
-  const tag080 = tag001.clone()
-  tag080.position.set(6, 3, 6)
-  tag080.name = 'tag080'
-  const tag081 = tag001.clone()
-  tag081.position.set(9, 3, 6)
-  tag081.name = 'tag081'
+  //
   const tag082 = tag001.clone()
-  tag082.position.set(11, 3, 6)
+  tag082.position.set(-11, 3, 6)
   tag082.name = 'tag082'
+  const tag081 = tag001.clone()
+  tag081.position.set(-8, 3, 6)
+  tag081.name = 'tag081'
+  const tag080 = tag001.clone()
+  tag080.position.set(-5, 3, 6)
+  tag080.name = 'tag080'
+  const tag079 = tag001.clone()
+  tag079.position.set(-3, 3, 6)
+  tag079.name = 'tag079'
+  const tag078 = tag001.clone()
+  tag078.position.set(-1, 3, 6)
+  tag078.name = 'tag078'
+  const tag077 = tag001.clone()
+  tag077.position.set(1, 3, 6)
+  tag077.name = 'tag077'
+  const tag076 = tag001.clone()
+  tag076.position.set(4, 3, 6)
+  tag076.name = 'tag076'
+  const tag075 = tag001.clone()
+  tag075.position.set(6, 3, 6)
+  tag075.name = 'tag075'
+  const tag074 = tag001.clone()
+  tag074.position.set(9, 3, 6)
+  tag074.name = 'tag074'
+  const tag073 = tag001.clone()
+  tag073.position.set(11, 3, 6)
+  tag073.name = 'tag073'
+  //
   const tag083 = tag001.clone()
   tag083.position.set(-14, 3, 12)
   tag083.name = 'tag083'
@@ -282,48 +289,51 @@ export function addTag (cssNum) {
   const tag091 = tag001.clone()
   tag091.position.set(11, 3, 12)
   tag091.name = 'tag091'
-  const tag092 = tag001.clone()
-  tag092.position.set(-14, 3, 15)
-  tag092.name = 'tag092'
-  const tag093 = tag001.clone()
-  tag093.position.set(-12, 3, 15)
-  tag093.name = 'tag093'
-  const tag094 = tag001.clone()
-  tag094.position.set(-7, 3, 15)
-  tag094.name = 'tag094'
-  const tag095 = tag001.clone()
-  tag095.position.set(-4, 3, 15)
-  tag095.name = 'tag095'
+  //
+  const tag100 = tag001.clone()
+  tag100.position.set(-14, 3, 15)
+  tag100.name = 'tag100'
+  const tag099 = tag001.clone()
+  tag099.position.set(-12, 3, 15)
+  tag099.name = 'tag099'
+  const tag098 = tag001.clone()
+  tag098.position.set(-7, 3, 15)
+  tag098.name = 'tag098'
+  const tag097 = tag001.clone()
+  tag097.position.set(-4, 3, 15)
+  tag097.name = 'tag097'
   const tag096 = tag001.clone()
   tag096.position.set(-1, 3, 15)
   tag096.name = 'tag096'
-  const tag097 = tag001.clone()
-  tag097.position.set(1, 3, 15)
-  tag097.name = 'tag097'
-  const tag098 = tag001.clone()
-  tag098.position.set(4, 3, 15)
-  tag098.name = 'tag098'
-  const tag099 = tag001.clone()
-  tag099.position.set(9, 3, 15)
-  tag099.name = 'tag099'
-  const tag100 = tag001.clone()
-  tag100.position.set(11, 3, 15)
-  tag100.name = 'tag100'
-  const tag101 = tag001.clone()
-  tag101.position.set(-32, 3, 15)
-  tag101.name = 'tag101'
-  const tag102 = tag001.clone()
-  tag102.position.set(-29, 3, 15)
-  tag102.name = 'tag102'
+  const tag095 = tag001.clone()
+  tag095.position.set(1, 3, 15)
+  tag095.name = 'tag095'
+  const tag094 = tag001.clone()
+  tag094.position.set(4, 3, 15)
+  tag094.name = 'tag094'
+  const tag093 = tag001.clone()
+  tag093.position.set(9, 3, 15)
+  tag093.name = 'tag093'
+  const tag092 = tag001.clone()
+  tag092.position.set(11, 3, 15)
+  tag092.name = 'tag092'
+  //
+  const tag105 = tag005.clone()
+  tag105.position.set(-35, 3, 15)
+  tag105.name = 'tag105'
+  const tag104 = tag001.clone()
+  tag104.position.set(-32, 3, 15)
+  tag104.name = 'tag104'
   const tag103 = tag001.clone()
   tag103.position.set(-29, 3, 15)
   tag103.name = 'tag103'
-  const tag104 = tag001.clone()
-  tag104.position.set(-26, 3, 15)
-  tag104.name = 'tag104'
-  const tag105 = tag001.clone()
-  tag105.position.set(-23, 3, 15)
-  tag105.name = 'tag105'
+  const tag102 = tag001.clone()
+  tag102.position.set(-26, 3, 15)
+  tag102.name = 'tag102'
+  const tag101 = tag001.clone()
+  tag101.position.set(-23, 3, 15)
+  tag101.name = 'tag101'
+  //
   const tag106 = tag001.clone()
   tag106.position.set(-35, 3, 21)
   tag106.name = 'tag106'
@@ -824,6 +834,12 @@ export function addTag (cssNum) {
       scene.add(tag076)
       setTimeout(() => {
         scene.remove(scene.getObjectByName('tag076'))
+      }, 3000)
+      break
+    case 'tag077':
+      scene.add(tag077)
+      setTimeout(() => {
+        scene.remove(scene.getObjectByName('tag077'))
       }, 3000)
       break
     case 'tag078':

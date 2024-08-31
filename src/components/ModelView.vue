@@ -224,7 +224,7 @@ export default {
         const models = intersects[0].object
         if (models.name !== 'road') {
           if (models.name.includes('booth')) {
-            console.log(models.name)
+            console.log('展位', models.name)
             const setName = models.name.slice(5, 8)
             const data = { boothNo: setName }
             console.log(data)

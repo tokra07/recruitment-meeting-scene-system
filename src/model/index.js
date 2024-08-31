@@ -59,53 +59,53 @@ loader.load('glb/booth.glb', (gltf) => {
       }
     }
   })
-  boothGlb001.position.set(-26.3, 0, -19)
-  boothGlb001.name = 'booth001'
-  const boothGlb002 = boothGlb001.clone()
-  boothGlb002.position.set(-23.3, 0, -19)
-  boothGlb002.name = 'booth002'
-  const boothGlb003 = boothGlb001.clone()
-  boothGlb003.position.set(-20.8, 0, -19)
-  boothGlb003.name = 'booth003'
-  const boothGlb004 = boothGlb001.clone()
-  boothGlb004.position.set(-17.8, 0, -19)
-  boothGlb004.name = 'booth004'
-  const boothGlb005 = boothGlb001.clone()
-  boothGlb005.position.set(-14, 0, -22)
-  boothGlb005.name = 'booth005'
-  const boothGlb006 = boothGlb001.clone()
-  boothGlb006.position.set(-11, 0, -22)
-  boothGlb006.name = 'booth006'
-  const boothGlb007 = boothGlb001.clone()
-  boothGlb007.position.set(-6.3, 0, -22)
-  boothGlb007.name = 'booth007'
-  const boothGlb008 = boothGlb001.clone()
-  boothGlb008.position.set(-3.3, 0, -22)
-  boothGlb008.name = 'booth008'
-  const boothGlb009 = boothGlb001.clone()
-  boothGlb009.position.set(-1, 0, -22)
-  boothGlb009.name = 'booth009'
-  const boothGlb010 = boothGlb001.clone()
-  boothGlb010.position.set(2, 0, -22)
-  boothGlb010.name = 'booth010'
-  const boothGlb011 = boothGlb001.clone()
-  boothGlb011.position.set(4.7, 0, -22)
-  boothGlb011.name = 'booth011'
-  const boothGlb012 = boothGlb001.clone()
-  boothGlb012.position.set(9, 0, -22)
-  boothGlb012.name = 'booth012'
-  const boothGlb013 = boothGlb001.clone()
-  boothGlb013.position.set(12, 0, -22)
-  boothGlb013.name = 'booth013'
-  const boothGlb014 = boothGlb001.clone()
-  boothGlb014.position.set(17, 0, -19)
-  boothGlb014.name = 'booth014'
-  const boothGlb015 = boothGlb001.clone()
-  boothGlb015.position.set(20, 0, -19)
-  boothGlb015.name = 'booth015'
   const boothGlb016 = boothGlb001.clone()
-  boothGlb016.position.set(23, 0, -19)
+  boothGlb016.position.set(-26.3, 0, -19)
   boothGlb016.name = 'booth016'
+  const boothGlb015 = boothGlb001.clone()
+  boothGlb015.position.set(-23.3, 0, -19)
+  boothGlb015.name = 'booth015'
+  const boothGlb014 = boothGlb001.clone()
+  boothGlb014.position.set(-20.8, 0, -19)
+  boothGlb014.name = 'booth014'
+  const boothGlb013 = boothGlb001.clone()
+  boothGlb013.position.set(-17.8, 0, -19)
+  boothGlb013.name = 'booth013'
+  const boothGlb012 = boothGlb001.clone()
+  boothGlb012.position.set(-14, 0, -22)
+  boothGlb012.name = 'booth012'
+  const boothGlb011 = boothGlb001.clone()
+  boothGlb011.position.set(-11, 0, -22)
+  boothGlb011.name = 'booth011'
+  const boothGlb010 = boothGlb001.clone()
+  boothGlb010.position.set(-6.3, 0, -22)
+  boothGlb010.name = 'booth010'
+  const boothGlb009 = boothGlb001.clone()
+  boothGlb009.position.set(-3.3, 0, -22)
+  boothGlb009.name = 'booth009'
+  const boothGlb008 = boothGlb001.clone()
+  boothGlb008.position.set(-1, 0, -22)
+  boothGlb008.name = 'booth008'
+  const boothGlb007 = boothGlb001.clone()
+  boothGlb007.position.set(2, 0, -22)
+  boothGlb007.name = 'booth007'
+  const boothGlb006 = boothGlb001.clone()
+  boothGlb006.position.set(4.7, 0, -22)
+  boothGlb006.name = 'booth006'
+  const boothGlb005 = boothGlb001.clone()
+  boothGlb005.position.set(9, 0, -22)
+  boothGlb005.name = 'booth005'
+  const boothGlb004 = boothGlb001.clone()
+  boothGlb004.position.set(12, 0, -22)
+  boothGlb004.name = 'booth004'
+  const boothGlb003 = boothGlb001.clone()
+  boothGlb003.position.set(17, 0, -19)
+  boothGlb003.name = 'booth003'
+  const boothGlb002 = boothGlb001.clone()
+  boothGlb002.position.set(20, 0, -19)
+  boothGlb002.name = 'booth002'
+  boothGlb001.position.set(23, 0, -19)
+  boothGlb001.name = 'booth001'
   const boothGlb017 = boothGlb001.clone()
   boothGlb017.position.set(-20.8, 0, -14)
   boothGlb017.name = 'booth017'
@@ -151,51 +151,51 @@ loader.load('glb/booth.glb', (gltf) => {
   const boothGlb031 = boothGlb001.clone()
   boothGlb031.position.set(16, 0, -14)
   boothGlb031.name = 'booth031'
-  const boothGlb032 = boothGlb001.clone()
-  boothGlb032.position.set(-20.8, 0, -11)
-  boothGlb032.name = 'booth032'
-  const boothGlb033 = boothGlb001.clone()
-  boothGlb033.position.set(-18.1, 0, -11)
-  boothGlb033.name = 'booth033'
-  const boothGlb034 = boothGlb001.clone()
-  boothGlb034.position.set(-15.5, 0, -11)
-  boothGlb034.name = 'booth034'
-  const boothGlb035 = boothGlb001.clone()
-  boothGlb035.position.set(-12.8, 0, -11)
-  boothGlb035.name = 'booth035'
-  const boothGlb036 = boothGlb001.clone()
-  boothGlb036.position.set(-10.1, 0, -11)
-  boothGlb036.name = 'booth036'
-  const boothGlb037 = boothGlb001.clone()
-  boothGlb037.position.set(-7.4, 0, -11)
-  boothGlb037.name = 'booth037'
-  const boothGlb038 = boothGlb001.clone()
-  boothGlb038.position.set(-4.7, 0, -11)
-  boothGlb038.name = 'booth038'
+  const boothGlb046 = boothGlb001.clone()
+  boothGlb046.position.set(-20.8, 0, -11)
+  boothGlb046.name = 'booth046'
+  const boothGlb045 = boothGlb001.clone()
+  boothGlb045.position.set(-18.1, 0, -11)
+  boothGlb045.name = 'booth045'
+  const boothGlb044 = boothGlb001.clone()
+  boothGlb044.position.set(-15.5, 0, -11)
+  boothGlb044.name = 'booth044'
+  const boothGlb043 = boothGlb001.clone()
+  boothGlb043.position.set(-12.8, 0, -11)
+  boothGlb043.name = 'booth043'
+  const boothGlb042 = boothGlb001.clone()
+  boothGlb042.position.set(-10.1, 0, -11)
+  boothGlb042.name = 'booth042'
+  const boothGlb041 = boothGlb001.clone()
+  boothGlb041.position.set(-7.4, 0, -11)
+  boothGlb041.name = 'booth041'
+  const boothGlb040 = boothGlb001.clone()
+  boothGlb040.position.set(-4.7, 0, -11)
+  boothGlb040.name = 'booth040'
   const boothGlb039 = boothGlb001.clone()
   boothGlb039.position.set(-2.3, 0, -11)
   boothGlb039.name = 'booth039'
-  const boothGlb040 = boothGlb001.clone()
-  boothGlb040.position.set(0.3, 0, -11)
-  boothGlb040.name = 'booth040'
-  const boothGlb041 = boothGlb001.clone()
-  boothGlb041.position.set(2.9, 0, -11)
-  boothGlb041.name = 'booth041'
-  const boothGlb042 = boothGlb001.clone()
-  boothGlb042.position.set(5.5, 0, -11)
-  boothGlb042.name = 'booth042'
-  const boothGlb043 = boothGlb001.clone()
-  boothGlb043.position.set(8.1, 0, -11)
-  boothGlb043.name = 'booth043'
-  const boothGlb044 = boothGlb001.clone()
-  boothGlb044.position.set(10.8, 0, -11)
-  boothGlb044.name = 'booth044'
-  const boothGlb045 = boothGlb001.clone()
-  boothGlb045.position.set(13.4, 0, -11)
-  boothGlb045.name = 'booth045'
-  const boothGlb046 = boothGlb001.clone()
-  boothGlb046.position.set(16, 0, -11)
-  boothGlb046.name = 'booth046'
+  const boothGlb038 = boothGlb001.clone()
+  boothGlb038.position.set(0.3, 0, -11)
+  boothGlb038.name = 'booth038'
+  const boothGlb037 = boothGlb001.clone()
+  boothGlb037.position.set(2.9, 0, -11)
+  boothGlb037.name = 'booth037'
+  const boothGlb036 = boothGlb001.clone()
+  boothGlb036.position.set(5.5, 0, -11)
+  boothGlb036.name = 'booth036'
+  const boothGlb035 = boothGlb001.clone()
+  boothGlb035.position.set(8.1, 0, -11)
+  boothGlb035.name = 'booth035'
+  const boothGlb034 = boothGlb001.clone()
+  boothGlb034.position.set(10.8, 0, -11)
+  boothGlb034.name = 'booth034'
+  const boothGlb033 = boothGlb001.clone()
+  boothGlb033.position.set(13.4, 0, -11)
+  boothGlb033.name = 'booth033'
+  const boothGlb032 = boothGlb001.clone()
+  boothGlb032.position.set(16, 0, -11)
+  boothGlb032.name = 'booth032'
   const boothGlb047 = boothGlb001.clone()
   boothGlb047.position.set(-11, 0, -5.5)
   boothGlb047.name = 'booth047'
@@ -220,30 +220,30 @@ loader.load('glb/booth.glb', (gltf) => {
   const boothGlb054 = boothGlb001.clone()
   boothGlb054.position.set(12.8, 0, -5.5)
   boothGlb054.name = 'booth054'
-  const boothGlb055 = boothGlb001.clone()
-  boothGlb055.position.set(-11, 0, -2.5)
-  boothGlb055.name = 'booth055'
-  const boothGlb056 = boothGlb001.clone()
-  boothGlb056.position.set(-6, 0, -2.5)
-  boothGlb056.name = 'booth056'
-  const boothGlb057 = boothGlb001.clone()
-  boothGlb057.position.set(-3.2, 0, -2.5)
-  boothGlb057.name = 'booth057'
-  const boothGlb058 = boothGlb001.clone()
-  boothGlb058.position.set(-0.3, 0, -2.5)
-  boothGlb058.name = 'booth058'
-  const boothGlb059 = boothGlb001.clone()
-  boothGlb059.position.set(2.4, 0, -2.5)
-  boothGlb059.name = 'booth059'
-  const boothGlb060 = boothGlb001.clone()
-  boothGlb060.position.set(5.2, 0, -2.5)
-  boothGlb060.name = 'booth060'
-  const boothGlb061 = boothGlb001.clone()
-  boothGlb061.position.set(10, 0, -2.5)
-  boothGlb061.name = 'booth061'
   const boothGlb062 = boothGlb001.clone()
-  boothGlb062.position.set(12.8, 0, -2.5)
+  boothGlb062.position.set(-11, 0, -2.5)
   boothGlb062.name = 'booth062'
+  const boothGlb061 = boothGlb001.clone()
+  boothGlb061.position.set(-6, 0, -2.5)
+  boothGlb061.name = 'booth061'
+  const boothGlb060 = boothGlb001.clone()
+  boothGlb060.position.set(-3.2, 0, -2.5)
+  boothGlb060.name = 'booth060'
+  const boothGlb059 = boothGlb001.clone()
+  boothGlb059.position.set(-0.3, 0, -2.5)
+  boothGlb059.name = 'booth059'
+  const boothGlb058 = boothGlb001.clone()
+  boothGlb058.position.set(2.4, 0, -2.5)
+  boothGlb058.name = 'booth058'
+  const boothGlb057 = boothGlb001.clone()
+  boothGlb057.position.set(5.2, 0, -2.5)
+  boothGlb057.name = 'booth57'
+  const boothGlb056 = boothGlb001.clone()
+  boothGlb056.position.set(10, 0, -2.5)
+  boothGlb056.name = 'booth056'
+  const boothGlb055 = boothGlb001.clone()
+  boothGlb055.position.set(12.8, 0, -2.5)
+  boothGlb055.name = 'booth055'
   const boothGlb063 = boothGlb001.clone()
   boothGlb063.position.set(-10, 0, 4)
   boothGlb063.name = 'booth063'
@@ -274,36 +274,36 @@ loader.load('glb/booth.glb', (gltf) => {
   const boothGlb072 = boothGlb001.clone()
   boothGlb072.position.set(12.8, 0, 4)
   boothGlb072.name = 'booth072'
-  const boothGlb073 = boothGlb001.clone()
-  boothGlb073.position.set(-10, 0, 6)
-  boothGlb073.name = 'booth073'
-  const boothGlb074 = boothGlb001.clone()
-  boothGlb074.position.set(-7.5, 0, 6)
-  boothGlb074.name = 'booth074'
-  const boothGlb075 = boothGlb001.clone()
-  boothGlb075.position.set(-4.8, 0, 6)
-  boothGlb075.name = 'booth075'
-  const boothGlb076 = boothGlb001.clone()
-  boothGlb076.position.set(-2.1, 0, 6)
-  boothGlb076.name = 'booth076'
-  const boothGlb077 = boothGlb001.clone()
-  boothGlb077.position.set(0.1, 0, 6)
-  boothGlb077.name = 'booth077'
-  const boothGlb078 = boothGlb001.clone()
-  boothGlb078.position.set(2.7, 0, 6)
-  boothGlb078.name = 'booth078'
-  const boothGlb079 = boothGlb001.clone()
-  boothGlb079.position.set(5.2, 0, 6)
-  boothGlb079.name = 'booth079'
-  const boothGlb080 = boothGlb001.clone()
-  boothGlb080.position.set(7.6, 0, 6)
-  boothGlb080.name = 'booth080'
-  const boothGlb081 = boothGlb001.clone()
-  boothGlb081.position.set(10.2, 0, 6)
-  boothGlb081.name = 'booth081'
   const boothGlb082 = boothGlb001.clone()
-  boothGlb082.position.set(12.8, 0, 6)
+  boothGlb082.position.set(-10, 0, 6)
   boothGlb082.name = 'booth082'
+  const boothGlb081 = boothGlb001.clone()
+  boothGlb081.position.set(-7.5, 0, 6)
+  boothGlb081.name = 'booth081'
+  const boothGlb080 = boothGlb001.clone()
+  boothGlb080.position.set(-4.8, 0, 6)
+  boothGlb080.name = 'booth080'
+  const boothGlb079 = boothGlb001.clone()
+  boothGlb079.position.set(-2.1, 0, 6)
+  boothGlb079.name = 'booth079'
+  const boothGlb078 = boothGlb001.clone()
+  boothGlb078.position.set(0.1, 0, 6)
+  boothGlb078.name = 'booth079'
+  const boothGlb077 = boothGlb001.clone()
+  boothGlb077.position.set(2.7, 0, 6)
+  boothGlb077.name = 'booth077'
+  const boothGlb076 = boothGlb001.clone()
+  boothGlb076.position.set(5.2, 0, 6)
+  boothGlb076.name = 'booth076'
+  const boothGlb075 = boothGlb001.clone()
+  boothGlb075.position.set(7.6, 0, 6)
+  boothGlb075.name = 'booth075'
+  const boothGlb074 = boothGlb001.clone()
+  boothGlb074.position.set(10.2, 0, 6)
+  boothGlb074.name = 'booth074'
+  const boothGlb073 = boothGlb001.clone()
+  boothGlb073.position.set(12.8, 0, 6)
+  boothGlb073.name = 'booth073'
   const boothGlb083 = boothGlb001.clone()
   boothGlb083.position.set(-13.8, 0, 12)
   boothGlb083.name = 'booth083'
@@ -331,48 +331,48 @@ loader.load('glb/booth.glb', (gltf) => {
   const boothGlb091 = boothGlb001.clone()
   boothGlb091.position.set(12.8, 0, 12)
   boothGlb091.name = 'booth091'
-  const boothGlb092 = boothGlb001.clone()
-  boothGlb092.position.set(-13.8, 0, 15)
-  boothGlb092.name = 'booth092'
-  const boothGlb093 = boothGlb001.clone()
-  boothGlb093.position.set(-11, 0, 15)
-  boothGlb093.name = 'booth002'
-  const boothGlb094 = boothGlb001.clone()
-  boothGlb094.position.set(-6, 0, 15)
-  boothGlb094.name = 'booth002'
-  const boothGlb095 = boothGlb001.clone()
-  boothGlb095.position.set(-3.2, 0, 15)
-  boothGlb095.name = 'booth002'
+  const boothGlb100 = boothGlb001.clone()
+  boothGlb100.position.set(-13.8, 0, 15)
+  boothGlb100.name = 'booth100'
+  const boothGlb099 = boothGlb001.clone()
+  boothGlb099.position.set(-11, 0, 15)
+  boothGlb099.name = 'booth099'
+  const boothGlb098 = boothGlb001.clone()
+  boothGlb098.position.set(-6, 0, 15)
+  boothGlb098.name = 'booth098'
+  const boothGlb097 = boothGlb001.clone()
+  boothGlb097.position.set(-3.2, 0, 15)
+  boothGlb097.name = 'booth097'
   const boothGlb096 = boothGlb001.clone()
   boothGlb096.position.set(-0.3, 0, 15)
-  boothGlb096.name = 'booth002'
-  const boothGlb097 = boothGlb001.clone()
-  boothGlb097.position.set(2.4, 0, 15)
-  boothGlb097.name = 'booth002'
-  const boothGlb098 = boothGlb001.clone()
-  boothGlb098.position.set(5.2, 0, 15)
-  boothGlb098.name = 'booth002'
-  const boothGlb099 = boothGlb001.clone()
-  boothGlb099.position.set(10, 0, 15)
-  boothGlb099.name = 'booth002'
-  const boothGlb100 = boothGlb001.clone()
-  boothGlb100.position.set(12.8, 0, 15)
-  boothGlb100.name = 'booth002'
-  const boothGlb101 = boothGlb001.clone()
-  boothGlb101.position.set(-34, 0, 15)
-  boothGlb101.name = 'booth101'
-  const boothGlb102 = boothGlb001.clone()
-  boothGlb102.position.set(-31, 0, 15)
-  boothGlb102.name = 'booth102'
+  boothGlb096.name = 'booth096'
+  const boothGlb095 = boothGlb001.clone()
+  boothGlb095.position.set(2.4, 0, 15)
+  boothGlb095.name = 'booth095'
+  const boothGlb094 = boothGlb001.clone()
+  boothGlb094.position.set(5.2, 0, 15)
+  boothGlb094.name = 'booth094'
+  const boothGlb093 = boothGlb001.clone()
+  boothGlb093.position.set(10, 0, 15)
+  boothGlb093.name = 'booth093'
+  const boothGlb092 = boothGlb001.clone()
+  boothGlb092.position.set(12.8, 0, 15)
+  boothGlb092.name = 'booth092'
+  const boothGlb105 = boothGlb001.clone()
+  boothGlb105.position.set(-34, 0, 15)
+  boothGlb105.name = 'booth105'
+  const boothGlb104 = boothGlb001.clone()
+  boothGlb104.position.set(-31, 0, 15)
+  boothGlb104.name = 'booth10'
   const boothGlb103 = boothGlb001.clone()
   boothGlb103.position.set(-28, 0, 15)
   boothGlb103.name = 'booth103'
-  const boothGlb104 = boothGlb001.clone()
-  boothGlb104.position.set(-25, 0, 15)
-  boothGlb104.name = 'booth104'
-  const boothGlb105 = boothGlb001.clone()
-  boothGlb105.position.set(-22, 0, 15)
-  boothGlb105.name = 'booth105'
+  const boothGlb102 = boothGlb001.clone()
+  boothGlb102.position.set(-25, 0, 15)
+  boothGlb102.name = 'booth102'
+  const boothGlb101 = boothGlb001.clone()
+  boothGlb101.position.set(-22, 0, 15)
+  boothGlb101.name = 'booth101'
   const boothGlb106 = boothGlb001.clone()
   boothGlb106.position.set(-34, 0, 21)
   boothGlb106.name = 'booth106'

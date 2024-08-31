@@ -1,118 +1,118 @@
 import * as THREE from 'three'
 import { scene } from '@/model/index'
 export function lightControls (lightName) {
-  const spotLight001 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight001.name = 'spotLight001'
-  spotLight001.position.set(-28, 2, -19)
-  spotLight001.target.position.set(-28, 0, -19)
-  spotLight001.intensity = 5000.0
-  spotLight001.decay = 0.0
-  spotLight001.angle = Math.PI / 5
-  const spotLight002 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight002.name = 'spotLight002'
-  spotLight002.position.set(-24, 2, -19)
-  spotLight002.target.position.set(-24, 0, -19)
-  spotLight002.intensity = 5000.0
-  spotLight002.decay = 0.0
-  spotLight002.angle = Math.PI / 5
-  const spotLight003 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight003.name = 'spotLight003'
-  spotLight003.position.set(-21, 2, -19)
-  spotLight003.target.position.set(-21, 0, -19)
-  spotLight003.intensity = 5000.0
-  spotLight003.decay = 0.0
-  spotLight003.angle = Math.PI / 5
-  const spotLight004 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight004.name = 'spotLight004'
-  spotLight004.position.set(-18, 2, -19)
-  spotLight004.target.position.set(-18, 0, -19)
-  spotLight004.intensity = 5000.0
-  spotLight004.decay = 0.0
-  spotLight004.angle = Math.PI / 5
-  const spotLight005 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight005.name = 'spotLight005'
-  spotLight005.position.set(-15, 2, -22)
-  spotLight005.target.position.set(-15, 0, -22)
-  spotLight005.intensity = 5000.0
-  spotLight005.decay = 0.0
-  spotLight005.angle = Math.PI / 5
-  const spotLight006 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight006.name = 'spotLight006'
-  spotLight006.position.set(-12, 2, -22)
-  spotLight006.target.position.set(-12, 0, -22)
-  spotLight006.intensity = 5000.0
-  spotLight006.decay = 0.0
-  spotLight006.angle = Math.PI / 5
-  const spotLight007 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight007.name = 'spotLight007'
-  spotLight007.position.set(-7, 2, -22)
-  spotLight007.target.position.set(-7, 0, -22)
-  spotLight007.intensity = 5000.0
-  spotLight007.decay = 0.0
-  spotLight007.angle = Math.PI / 5
-  const spotLight008 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight008.name = 'spotLight008'
-  spotLight008.position.set(-4, 2, -22)
-  spotLight008.target.position.set(-4, 0, -22)
-  spotLight008.intensity = 5000.0
-  spotLight008.decay = 0.0
-  spotLight008.angle = Math.PI / 5
-  const spotLight009 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight009.name = 'spotLight009'
-  spotLight009.position.set(-2, 2, -22)
-  spotLight009.target.position.set(-2, 0, -22)
-  spotLight009.intensity = 5000.0
-  spotLight009.decay = 0.0
-  spotLight009.angle = Math.PI / 5
-  const spotLight010 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight010.name = 'spotLight010'
-  spotLight010.position.set(1, 2, -22)
-  spotLight010.target.position.set(1, 0, -22)
-  spotLight010.intensity = 5000.0
-  spotLight010.decay = 0.0
-  spotLight010.angle = Math.PI / 5
-  const spotLight011 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight011.name = 'spotLight011'
-  spotLight011.position.set(3, 2, -22)
-  spotLight011.target.position.set(3, 0, -22)
-  spotLight011.intensity = 5000.0
-  spotLight011.decay = 0.0
-  spotLight011.angle = Math.PI / 5
-  const spotLight012 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight012.name = 'spotLight012'
-  spotLight012.position.set(8, 2, -22)
-  spotLight012.target.position.set(8, 0, -22)
-  spotLight012.intensity = 5000.0
-  spotLight012.decay = 0.0
-  spotLight012.angle = Math.PI / 5
-  const spotLight013 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight013.name = 'spotLight013'
-  spotLight013.position.set(11, 2, -22)
-  spotLight013.target.position.set(11, 0, -22)
-  spotLight013.intensity = 5000.0
-  spotLight013.decay = 0.0
-  spotLight013.angle = Math.PI / 5
-  const spotLight014 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight014.name = 'spotLight014'
-  spotLight014.position.set(16, 2, -19)
-  spotLight014.target.position.set(16, 0, -19)
-  spotLight014.intensity = 5000.0
-  spotLight014.decay = 0.0
-  spotLight014.angle = Math.PI / 5
-  const spotLight015 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight015.name = 'spotLight015'
-  spotLight015.position.set(19, 2, -19)
-  spotLight015.target.position.set(19, 0, -19)
-  spotLight015.intensity = 5000.0
-  spotLight015.decay = 0.0
-  spotLight015.angle = Math.PI / 5
   const spotLight016 = new THREE.SpotLight(0xBB0000, 1.0)
   spotLight016.name = 'spotLight016'
-  spotLight016.position.set(22, 2, -19)
-  spotLight016.target.position.set(22, 0, -19)
+  spotLight016.position.set(-27, 2, -19)
+  spotLight016.target.position.set(-27, 0, -19)
   spotLight016.intensity = 5000.0
   spotLight016.decay = 0.0
   spotLight016.angle = Math.PI / 5
+  const spotLight015 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight015.name = 'spotLight015'
+  spotLight015.position.set(-24, 2, -19)
+  spotLight015.target.position.set(-24, 0, -19)
+  spotLight015.intensity = 5000.0
+  spotLight015.decay = 0.0
+  spotLight015.angle = Math.PI / 5
+  const spotLight014 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight014.name = 'spotLight014'
+  spotLight014.position.set(-21, 2, -19)
+  spotLight014.target.position.set(-21, 0, -19)
+  spotLight014.intensity = 5000.0
+  spotLight014.decay = 0.0
+  spotLight014.angle = Math.PI / 5
+  const spotLight013 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight013.name = 'spotLight013'
+  spotLight013.position.set(-18, 2, -19)
+  spotLight013.target.position.set(-18, 0, -19)
+  spotLight013.intensity = 5000.0
+  spotLight013.decay = 0.0
+  spotLight013.angle = Math.PI / 5
+  const spotLight012 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight012.name = 'spotLight012'
+  spotLight012.position.set(-15, 2, -22)
+  spotLight012.target.position.set(-15, 0, -22)
+  spotLight012.intensity = 5000.0
+  spotLight012.decay = 0.0
+  spotLight012.angle = Math.PI / 5
+  const spotLight011 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight011.name = 'spotLight011'
+  spotLight011.position.set(-12, 2, -22)
+  spotLight011.target.position.set(-12, 0, -22)
+  spotLight011.intensity = 5000.0
+  spotLight011.decay = 0.0
+  spotLight011.angle = Math.PI / 5
+  const spotLight010 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight010.name = 'spotLight0110'
+  spotLight010.position.set(-7, 2, -22)
+  spotLight010.target.position.set(-7, 0, -22)
+  spotLight010.intensity = 5000.0
+  spotLight010.decay = 0.0
+  spotLight010.angle = Math.PI / 5
+  const spotLight009 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight009.name = 'spotLight009'
+  spotLight009.position.set(-4, 2, -22)
+  spotLight009.target.position.set(-4, 0, -22)
+  spotLight009.intensity = 5000.0
+  spotLight009.decay = 0.0
+  spotLight009.angle = Math.PI / 5
+  const spotLight008 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight008.name = 'spotLight008'
+  spotLight008.position.set(-2, 2, -22)
+  spotLight008.target.position.set(-2, 0, -22)
+  spotLight008.intensity = 5000.0
+  spotLight008.decay = 0.0
+  spotLight008.angle = Math.PI / 5
+  const spotLight007 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight007.name = 'spotLight007'
+  spotLight007.position.set(1, 2, -22)
+  spotLight007.target.position.set(2, 0, -22)
+  spotLight007.intensity = 5000.0
+  spotLight007.decay = 0.0
+  spotLight007.angle = Math.PI / 5
+  const spotLight006 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight006.name = 'spotLight006'
+  spotLight006.position.set(4, 2, -22)
+  spotLight006.target.position.set(3, 0, -22)
+  spotLight006.intensity = 5000.0
+  spotLight006.decay = 0.0
+  spotLight006.angle = Math.PI / 5
+  const spotLight005 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight005.name = 'spotLight005'
+  spotLight005.position.set(8, 2, -22)
+  spotLight005.target.position.set(8, 0, -22)
+  spotLight005.intensity = 5000.0
+  spotLight005.decay = 0.0
+  spotLight005.angle = Math.PI / 5
+  const spotLight004 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight004.name = 'spotLight004'
+  spotLight004.position.set(11, 2, -22)
+  spotLight004.target.position.set(11, 0, -22)
+  spotLight004.intensity = 5000.0
+  spotLight004.decay = 0.0
+  spotLight004.angle = Math.PI / 5
+  const spotLight003 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight003.name = 'spotLight003'
+  spotLight003.position.set(16, 2, -19)
+  spotLight003.target.position.set(16, 0, -19)
+  spotLight003.intensity = 5000.0
+  spotLight003.decay = 0.0
+  spotLight003.angle = Math.PI / 5
+  const spotLight002 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight002.name = 'spotLight002'
+  spotLight002.position.set(19, 2, -19)
+  spotLight002.target.position.set(19, 0, -19)
+  spotLight002.intensity = 5000.0
+  spotLight002.decay = 0.0
+  spotLight002.angle = Math.PI / 5
+  const spotLight001 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight001.name = 'spotLight001'
+  spotLight001.position.set(22, 2, -19)
+  spotLight001.target.position.set(22, 0, -19)
+  spotLight001.intensity = 5000.0
+  spotLight001.decay = 0.0
+  spotLight001.angle = Math.PI / 5
   const spotLight017 = new THREE.SpotLight(0xBB0000, 1.0)
   spotLight017.name = 'spotLight017'
   spotLight017.position.set(-21, 2, -14)
@@ -218,55 +218,56 @@ export function lightControls (lightName) {
   spotLight031.intensity = 5000.0
   spotLight031.decay = 0.0
   spotLight031.angle = Math.PI / 5
-  const spotLight032 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight032.name = 'spotLight032'
-  spotLight032.position.set(-21, 2, -11)
-  spotLight032.target.position.set(-21, 0, -11)
-  spotLight032.intensity = 5000.0
-  spotLight032.decay = 0.0
-  spotLight032.angle = Math.PI / 5
-  const spotLight033 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight033.name = 'spotLight033'
-  spotLight033.position.set(-19, 2, -11)
-  spotLight033.target.position.set(-19, 0, -11)
-  spotLight033.intensity = 5000.0
-  spotLight033.decay = 0.0
-  spotLight033.angle = Math.PI / 5
-  const spotLight034 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight034.name = 'spotLight034'
-  spotLight034.position.set(-16, 2, -11)
-  spotLight034.target.position.set(-16, 0, -11)
-  spotLight034.intensity = 5000.0
-  spotLight034.decay = 0.0
-  spotLight034.angle = Math.PI / 5
-  const spotLight035 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight035.name = 'spotLight35'
-  spotLight035.position.set(-13, 2, -11)
-  spotLight035.target.position.set(-13, 0, -11)
-  spotLight035.intensity = 5000.0
-  spotLight035.decay = 0.0
-  spotLight035.angle = Math.PI / 5
-  const spotLight036 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight036.name = 'spotLight036'
-  spotLight036.position.set(-11, 2, -11)
-  spotLight036.target.position.set(-11, 0, -11)
-  spotLight036.intensity = 5000.0
-  spotLight036.decay = 0.0
-  spotLight036.angle = Math.PI / 5
-  const spotLight037 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight037.name = 'spotLight037'
-  spotLight037.position.set(-8, 2, -11)
-  spotLight037.target.position.set(-8, 0, -11)
-  spotLight037.intensity = 5000.0
-  spotLight037.decay = 0.0
-  spotLight037.angle = Math.PI / 5
-  const spotLight038 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight038.name = 'spotLight038'
-  spotLight038.position.set(-5, 2, -11)
-  spotLight038.target.position.set(-5, 0, -11)
-  spotLight038.intensity = 5000.0
-  spotLight038.decay = 0.0
-  spotLight038.angle = Math.PI / 5
+  //
+  const spotLight046 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight046.name = 'spotLight046'
+  spotLight046.position.set(-21, 2, -11)
+  spotLight046.target.position.set(-21, 0, -11)
+  spotLight046.intensity = 5000.0
+  spotLight046.decay = 0.0
+  spotLight046.angle = Math.PI / 5
+  const spotLight045 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight045.name = 'spotLight045'
+  spotLight045.position.set(-19, 2, -11)
+  spotLight045.target.position.set(-19, 0, -11)
+  spotLight045.intensity = 5000.0
+  spotLight045.decay = 0.0
+  spotLight045.angle = Math.PI / 5
+  const spotLight044 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight044.name = 'spotLight044'
+  spotLight044.position.set(-16, 2, -11)
+  spotLight044.target.position.set(-16, 0, -11)
+  spotLight044.intensity = 5000.0
+  spotLight044.decay = 0.0
+  spotLight044.angle = Math.PI / 5
+  const spotLight043 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight043.name = 'spotLight43'
+  spotLight043.position.set(-13, 2, -11)
+  spotLight043.target.position.set(-13, 0, -11)
+  spotLight043.intensity = 5000.0
+  spotLight043.decay = 0.0
+  spotLight043.angle = Math.PI / 5
+  const spotLight042 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight042.name = 'spotLight042'
+  spotLight042.position.set(-11, 2, -11)
+  spotLight042.target.position.set(-11, 0, -11)
+  spotLight042.intensity = 5000.0
+  spotLight042.decay = 0.0
+  spotLight042.angle = Math.PI / 5
+  const spotLight041 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight041.name = 'spotLight041'
+  spotLight041.position.set(-8, 2, -11)
+  spotLight041.target.position.set(-8, 0, -11)
+  spotLight041.intensity = 5000.0
+  spotLight041.decay = 0.0
+  spotLight041.angle = Math.PI / 5
+  const spotLight040 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight040.name = 'spotLight040'
+  spotLight040.position.set(-5, 2, -11)
+  spotLight040.target.position.set(-5, 0, -11)
+  spotLight040.intensity = 5000.0
+  spotLight040.decay = 0.0
+  spotLight040.angle = Math.PI / 5
   const spotLight039 = new THREE.SpotLight(0xBB0000, 1.0)
   spotLight039.name = 'spotLight039'
   spotLight039.position.set(-3, 2, -11)
@@ -274,55 +275,56 @@ export function lightControls (lightName) {
   spotLight039.intensity = 5000.0
   spotLight039.decay = 0.0
   spotLight039.angle = Math.PI / 5
-  const spotLight040 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight040.name = 'spotLight040'
-  spotLight040.position.set(-1, 2, -11)
-  spotLight040.target.position.set(-1, 0, -11)
-  spotLight040.intensity = 5000.0
-  spotLight040.decay = 0.0
-  spotLight040.angle = Math.PI / 5
-  const spotLight041 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight041.name = 'spotLight041'
-  spotLight041.position.set(1, 2, -11)
-  spotLight041.target.position.set(1, 0, -11)
-  spotLight041.intensity = 5000.0
-  spotLight041.decay = 0.0
-  spotLight041.angle = Math.PI / 5
-  const spotLight042 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight042.name = 'spotLight042'
-  spotLight042.position.set(4, 2, -11)
-  spotLight042.target.position.set(4, 0, -11)
-  spotLight042.intensity = 5000.0
-  spotLight042.decay = 0.0
-  spotLight042.angle = Math.PI / 5
-  const spotLight043 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight043.name = 'spotLight043'
-  spotLight043.position.set(7, 2, -11)
-  spotLight043.target.position.set(7, 0, -11)
-  spotLight043.intensity = 5000.0
-  spotLight043.decay = 0.0
-  spotLight043.angle = Math.PI / 5
-  const spotLight044 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight044.name = 'spotLight044'
-  spotLight044.position.set(9, 2, -11)
-  spotLight044.target.position.set(9, 0, -11)
-  spotLight044.intensity = 5000.0
-  spotLight044.decay = 0.0
-  spotLight044.angle = Math.PI / 5
-  const spotLight045 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight045.name = 'spotLight045'
-  spotLight045.position.set(12, 2, -11)
-  spotLight045.target.position.set(12, 0, -11)
-  spotLight045.intensity = 5000.0
-  spotLight045.decay = 0.0
-  spotLight045.angle = Math.PI / 5
-  const spotLight046 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight046.name = 'spotLight046'
-  spotLight046.position.set(15, 2, -11)
-  spotLight046.target.position.set(15, 0, -11)
-  spotLight046.intensity = 5000.0
-  spotLight046.decay = 0.0
-  spotLight046.angle = Math.PI / 5
+  const spotLight038 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight038.name = 'spotLight038'
+  spotLight038.position.set(-1, 2, -11)
+  spotLight038.target.position.set(-1, 0, -11)
+  spotLight038.intensity = 5000.0
+  spotLight038.decay = 0.0
+  spotLight038.angle = Math.PI / 5
+  const spotLight037 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight037.name = 'spotLight037'
+  spotLight037.position.set(1, 2, -11)
+  spotLight037.target.position.set(1, 0, -11)
+  spotLight037.intensity = 5000.0
+  spotLight037.decay = 0.0
+  spotLight037.angle = Math.PI / 5
+  const spotLight036 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight036.name = 'spotLight036'
+  spotLight036.position.set(4, 2, -11)
+  spotLight036.target.position.set(4, 0, -11)
+  spotLight036.intensity = 5000.0
+  spotLight036.decay = 0.0
+  spotLight036.angle = Math.PI / 5
+  const spotLight035 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight043.name = 'spotLight035'
+  spotLight035.position.set(7, 2, -11)
+  spotLight035.target.position.set(7, 0, -11)
+  spotLight035.intensity = 5000.0
+  spotLight035.decay = 0.0
+  spotLight035.angle = Math.PI / 5
+  const spotLight034 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight034.name = 'spotLight034'
+  spotLight034.position.set(9, 2, -11)
+  spotLight034.target.position.set(9, 0, -11)
+  spotLight034.intensity = 5000.0
+  spotLight034.decay = 0.0
+  spotLight034.angle = Math.PI / 5
+  const spotLight033 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight033.name = 'spotLight033'
+  spotLight033.position.set(12, 2, -11)
+  spotLight033.target.position.set(12, 0, -11)
+  spotLight033.intensity = 5000.0
+  spotLight033.decay = 0.0
+  spotLight033.angle = Math.PI / 5
+  const spotLight032 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight032.name = 'spotLight032'
+  spotLight032.position.set(15, 2, -11)
+  spotLight032.target.position.set(15, 0, -11)
+  spotLight032.intensity = 5000.0
+  spotLight032.decay = 0.0
+  spotLight032.angle = Math.PI / 5
+  //
   const spotLight047 = new THREE.SpotLight(0xBB0000, 1.0)
   spotLight047.name = 'spotLight047'
   spotLight047.position.set(-12, 2, -5.5)
@@ -379,62 +381,63 @@ export function lightControls (lightName) {
   spotLight054.intensity = 5000.0
   spotLight054.decay = 0.0
   spotLight054.angle = Math.PI / 5
-  const spotLight055 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight055.name = 'spotLight055'
-  spotLight055.position.set(-12, 2, -2.5)
-  spotLight055.target.position.set(-12, 0, -2.5)
-  spotLight055.intensity = 5000.0
-  spotLight055.decay = 0.0
-  spotLight055.angle = Math.PI / 5
-  const spotLight056 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight056.name = 'spotLight056'
-  spotLight056.position.set(-7, 2, -2.5)
-  spotLight056.target.position.set(-7, 0, -2.5)
-  spotLight056.intensity = 5000.0
-  spotLight056.decay = 0.0
-  spotLight056.angle = Math.PI / 5
-  const spotLight057 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight057.name = 'spotLight057'
-  spotLight057.position.set(-4, 2, -2.5)
-  spotLight057.target.position.set(-4, 0, -2.5)
-  spotLight057.intensity = 5000.0
-  spotLight057.decay = 0.0
-  spotLight057.angle = Math.PI / 5
-  const spotLight058 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight058.name = 'spotLight058'
-  spotLight058.position.set(-1, 2, -2.5)
-  spotLight058.target.position.set(-1, 0, -2.5)
-  spotLight058.intensity = 5000.0
-  spotLight058.decay = 0.0
-  spotLight058.angle = Math.PI / 5
-  const spotLight059 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight059.name = 'spotLight059'
-  spotLight059.position.set(1, 2, -2.5)
-  spotLight059.target.position.set(1, 0, -2.5)
-  spotLight059.intensity = 5000.0
-  spotLight059.decay = 0.0
-  spotLight059.angle = Math.PI / 5
-  const spotLight060 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight060.name = 'spotLight060'
-  spotLight060.position.set(4, 2, -2.5)
-  spotLight060.target.position.set(4, 0, -2.5)
-  spotLight060.intensity = 5000.0
-  spotLight060.decay = 0.0
-  spotLight060.angle = Math.PI / 5
-  const spotLight061 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight061.name = 'spotLight061'
-  spotLight061.position.set(9, 2, -2.5)
-  spotLight061.target.position.set(9, 0, -2.5)
-  spotLight061.intensity = 5000.0
-  spotLight061.decay = 0.0
-  spotLight061.angle = Math.PI / 5
+  //
   const spotLight062 = new THREE.SpotLight(0xBB0000, 1.0)
   spotLight062.name = 'spotLight062'
-  spotLight062.position.set(11, 2, -2.5)
-  spotLight062.target.position.set(11, 0, -2.5)
+  spotLight062.position.set(-12, 2, -2.5)
+  spotLight062.target.position.set(-12, 0, -2.5)
   spotLight062.intensity = 5000.0
   spotLight062.decay = 0.0
   spotLight062.angle = Math.PI / 5
+  const spotLight061 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight061.name = 'spotLight061'
+  spotLight061.position.set(-7, 2, -2.5)
+  spotLight061.target.position.set(-7, 0, -2.5)
+  spotLight061.intensity = 5000.0
+  spotLight061.decay = 0.0
+  spotLight061.angle = Math.PI / 5
+  const spotLight060 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight060.name = 'spotLight060'
+  spotLight060.position.set(-4, 2, -2.5)
+  spotLight060.target.position.set(-4, 0, -2.5)
+  spotLight060.intensity = 5000.0
+  spotLight060.decay = 0.0
+  spotLight060.angle = Math.PI / 5
+  const spotLight059 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight059.name = 'spotLight059'
+  spotLight059.position.set(-1, 2, -2.5)
+  spotLight059.target.position.set(-1, 0, -2.5)
+  spotLight059.intensity = 5000.0
+  spotLight059.decay = 0.0
+  spotLight059.angle = Math.PI / 5
+  const spotLight058 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight058.name = 'spotLight058'
+  spotLight058.position.set(1, 2, -2.5)
+  spotLight058.target.position.set(1, 0, -2.5)
+  spotLight058.intensity = 5000.0
+  spotLight058.decay = 0.0
+  spotLight058.angle = Math.PI / 5
+  const spotLight057 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight057.name = 'spotLight057'
+  spotLight057.position.set(4, 2, -2.5)
+  spotLight057.target.position.set(4, 0, -2.5)
+  spotLight057.intensity = 5000.0
+  spotLight057.decay = 0.0
+  spotLight057.angle = Math.PI / 5
+  const spotLight056 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight056.name = 'spotLight056'
+  spotLight056.position.set(9, 2, -2.5)
+  spotLight056.target.position.set(9, 0, -2.5)
+  spotLight056.intensity = 5000.0
+  spotLight056.decay = 0.0
+  spotLight056.angle = Math.PI / 5
+  const spotLight055 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight055.name = 'spotLight055'
+  spotLight055.position.set(11, 2, -2.5)
+  spotLight055.target.position.set(11, 0, -2.5)
+  spotLight055.intensity = 5000.0
+  spotLight055.decay = 0.0
+  spotLight055.angle = Math.PI / 5
   const spotLight063 = new THREE.SpotLight(0xBB0000, 1.0)
   spotLight063.name = 'spotLight063'
   spotLight063.position.set(-11, 2, 4)
@@ -505,76 +508,78 @@ export function lightControls (lightName) {
   spotLight072.intensity = 5000.0
   spotLight072.decay = 0.0
   spotLight072.angle = Math.PI / 5
-  const spotLight073 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight073.name = 'spotLight073'
-  spotLight073.position.set(-11, 2, 6)
-  spotLight073.target.position.set(-11, 0, 6)
-  spotLight073.intensity = 5000.0
-  spotLight073.decay = 0.0
-  spotLight073.angle = Math.PI / 5
-  const spotLight074 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight074.name = 'spotLight074'
-  spotLight074.position.set(-8, 2, 6)
-  spotLight074.target.position.set(-8, 0, 6)
-  spotLight074.intensity = 5000.0
-  spotLight074.decay = 0.0
-  spotLight074.angle = Math.PI / 5
-  const spotLight075 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight075.name = 'spotLight075'
-  spotLight075.position.set(-5, 2, 6)
-  spotLight075.target.position.set(-5, 0, 6)
-  spotLight075.intensity = 5000.0
-  spotLight075.decay = 0.0
-  spotLight075.angle = Math.PI / 5
-  const spotLight076 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight076.name = 'spotLight076'
-  spotLight076.position.set(-3, 2, 6)
-  spotLight076.target.position.set(-3, 0, 6)
-  spotLight076.intensity = 5000.0
-  spotLight076.decay = 0.0
-  spotLight076.angle = Math.PI / 5
-  const spotLight077 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight077.name = 'spotLight077'
-  spotLight077.position.set(-1, 2, 6)
-  spotLight077.target.position.set(-1, 0, 6)
-  spotLight077.intensity = 5000.0
-  spotLight077.decay = 0.0
-  spotLight077.angle = Math.PI / 5
-  const spotLight078 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight078.name = 'spotLight078'
-  spotLight078.position.set(1, 2, 6)
-  spotLight078.target.position.set(1, 0, 6)
-  spotLight078.intensity = 5000.0
-  spotLight078.decay = 0.0
-  spotLight078.angle = Math.PI / 5
-  const spotLight079 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight079.name = 'spotLight079'
-  spotLight079.position.set(4, 2, 6)
-  spotLight079.target.position.set(4, 0, 6)
-  spotLight079.intensity = 5000.0
-  spotLight079.decay = 0.0
-  spotLight079.angle = Math.PI / 5
-  const spotLight080 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight080.name = 'spotLight080'
-  spotLight080.position.set(6, 2, 6)
-  spotLight080.target.position.set(6, 0, 6)
-  spotLight080.intensity = 5000.0
-  spotLight080.decay = 0.0
-  spotLight080.angle = Math.PI / 5
-  const spotLight081 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight081.name = 'spotLight081'
-  spotLight081.position.set(9, 2, 6)
-  spotLight081.target.position.set(9, 0, 6)
-  spotLight081.intensity = 5000.0
-  spotLight081.decay = 0.0
-  spotLight081.angle = Math.PI / 5
+  //
   const spotLight082 = new THREE.SpotLight(0xBB0000, 1.0)
   spotLight082.name = 'spotLight082'
-  spotLight082.position.set(11, 2, 6)
-  spotLight082.target.position.set(11, 0, 6)
+  spotLight082.position.set(-11, 2, 6)
+  spotLight082.target.position.set(-11, 0, 6)
   spotLight082.intensity = 5000.0
   spotLight082.decay = 0.0
   spotLight082.angle = Math.PI / 5
+  const spotLight081 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight081.name = 'spotLight081'
+  spotLight081.position.set(-8, 2, 6)
+  spotLight081.target.position.set(-8, 0, 6)
+  spotLight081.intensity = 5000.0
+  spotLight081.decay = 0.0
+  spotLight081.angle = Math.PI / 5
+  const spotLight080 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight080.name = 'spotLight080'
+  spotLight080.position.set(-5, 2, 6)
+  spotLight080.target.position.set(-5, 0, 6)
+  spotLight080.intensity = 5000.0
+  spotLight080.decay = 0.0
+  spotLight080.angle = Math.PI / 5
+  const spotLight079 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight079.name = 'spotLight079'
+  spotLight079.position.set(-3, 2, 6)
+  spotLight079.target.position.set(-3, 0, 6)
+  spotLight079.intensity = 5000.0
+  spotLight079.decay = 0.0
+  spotLight079.angle = Math.PI / 5
+  const spotLight078 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight078.name = 'spotLight078'
+  spotLight078.position.set(-1, 2, 6)
+  spotLight078.target.position.set(-1, 0, 6)
+  spotLight078.intensity = 5000.0
+  spotLight078.decay = 0.0
+  spotLight078.angle = Math.PI / 5
+  const spotLight077 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight077.name = 'spotLight077'
+  spotLight077.position.set(1, 2, 6)
+  spotLight077.target.position.set(1, 0, 6)
+  spotLight077.intensity = 5000.0
+  spotLight077.decay = 0.0
+  spotLight077.angle = Math.PI / 5
+  const spotLight076 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight076.name = 'spotLight076'
+  spotLight076.position.set(4, 2, 6)
+  spotLight076.target.position.set(4, 0, 6)
+  spotLight076.intensity = 5000.0
+  spotLight076.decay = 0.0
+  spotLight076.angle = Math.PI / 5
+  const spotLight075 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight075.name = 'spotLight075'
+  spotLight075.position.set(6, 2, 6)
+  spotLight075.target.position.set(6, 0, 6)
+  spotLight075.intensity = 5000.0
+  spotLight075.decay = 0.0
+  spotLight075.angle = Math.PI / 5
+  const spotLight074 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight074.name = 'spotLight074'
+  spotLight074.position.set(9, 2, 6)
+  spotLight074.target.position.set(9, 0, 6)
+  spotLight074.intensity = 5000.0
+  spotLight074.decay = 0.0
+  spotLight074.angle = Math.PI / 5
+  const spotLight073 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight073.name = 'spotLight073'
+  spotLight073.position.set(11, 2, 6)
+  spotLight073.target.position.set(11, 0, 6)
+  spotLight073.intensity = 5000.0
+  spotLight073.decay = 0.0
+  spotLight073.angle = Math.PI / 5
+  //
   const spotLight083 = new THREE.SpotLight(0xBB0000, 1.0)
   spotLight083.name = 'spotLight083'
   spotLight083.position.set(-14, 2, 12)
@@ -638,34 +643,35 @@ export function lightControls (lightName) {
   spotLight091.intensity = 5000.0
   spotLight091.decay = 0.0
   spotLight091.angle = Math.PI / 5
-  const spotLight092 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight092.name = 'spotLight092'
-  spotLight092.position.set(-14, 2, 15)
-  spotLight092.target.position.set(-14, 0, 15)
-  spotLight092.intensity = 5000.0
-  spotLight092.decay = 0.0
-  spotLight092.angle = Math.PI / 5
-  const spotLight093 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight093.name = 'spotLight093'
-  spotLight093.position.set(-12, 2, 15)
-  spotLight093.target.position.set(-12, 0, 15)
-  spotLight093.intensity = 5000.0
-  spotLight093.decay = 0.0
-  spotLight093.angle = Math.PI / 5
-  const spotLight094 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight094.name = 'spotLight094'
-  spotLight094.position.set(-7, 2, 15)
-  spotLight094.target.position.set(-7, 0, 15)
-  spotLight094.intensity = 5000.0
-  spotLight094.decay = 0.0
-  spotLight094.angle = Math.PI / 5
-  const spotLight095 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight095.name = 'spotLight095'
-  spotLight095.position.set(-4, 2, 15)
-  spotLight095.target.position.set(-4, 0, 15)
-  spotLight095.intensity = 5000.0
-  spotLight095.decay = 0.0
-  spotLight095.angle = Math.PI / 5
+  //
+  const spotLight100 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight100.name = 'spotLight100'
+  spotLight100.position.set(-14, 2, 15)
+  spotLight100.target.position.set(-14, 0, 15)
+  spotLight100.intensity = 5000.0
+  spotLight100.decay = 0.0
+  spotLight100.angle = Math.PI / 5
+  const spotLight099 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight099.name = 'spotLight099'
+  spotLight099.position.set(-12, 2, 15)
+  spotLight099.target.position.set(-12, 0, 15)
+  spotLight099.intensity = 5000.0
+  spotLight099.decay = 0.0
+  spotLight099.angle = Math.PI / 5
+  const spotLight098 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight098.name = 'spotLight098'
+  spotLight098.position.set(-7, 2, 15)
+  spotLight098.target.position.set(-7, 0, 15)
+  spotLight098.intensity = 5000.0
+  spotLight098.decay = 0.0
+  spotLight098.angle = Math.PI / 5
+  const spotLight097 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight097.name = 'spotLight097'
+  spotLight097.position.set(-4, 2, 15)
+  spotLight097.target.position.set(-4, 0, 15)
+  spotLight097.intensity = 5000.0
+  spotLight097.decay = 0.0
+  spotLight097.angle = Math.PI / 5
   const spotLight096 = new THREE.SpotLight(0xBB0000, 1.0)
   spotLight096.name = 'spotLight096'
   spotLight096.position.set(-1, 2, 15)
@@ -673,48 +679,49 @@ export function lightControls (lightName) {
   spotLight096.intensity = 5000.0
   spotLight096.decay = 0.0
   spotLight096.angle = Math.PI / 5
-  const spotLight097 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight097.name = 'spotLight097'
-  spotLight097.position.set(1, 2, 15)
-  spotLight097.target.position.set(1, 0, 15)
-  spotLight097.intensity = 5000.0
-  spotLight097.decay = 0.0
-  spotLight097.angle = Math.PI / 5
-  const spotLight098 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight098.name = 'spotLight098'
-  spotLight098.position.set(4, 2, 15)
-  spotLight098.target.position.set(4, 0, 15)
-  spotLight098.intensity = 5000.0
-  spotLight098.decay = 0.0
-  spotLight098.angle = Math.PI / 5
-  const spotLight099 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight099.name = 'spotLight099'
-  spotLight099.position.set(9, 2, 15)
-  spotLight099.target.position.set(9, 0, 15)
-  spotLight099.intensity = 5000.0
-  spotLight099.decay = 0.0
-  spotLight099.angle = Math.PI / 5
-  const spotLight100 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight100.name = 'spotLight100'
-  spotLight100.position.set(11, 2, 15)
-  spotLight100.target.position.set(11, 0, 15)
-  spotLight100.intensity = 5000.0
-  spotLight100.decay = 0.0
-  spotLight100.angle = Math.PI / 5
-  const spotLight101 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight101.name = 'spotLight101'
-  spotLight101.position.set(-32, 2, 15)
-  spotLight101.target.position.set(-32, 0, 15)
-  spotLight101.intensity = 5000.0
-  spotLight101.decay = 0.0
-  spotLight101.angle = Math.PI / 5
-  const spotLight102 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight102.name = 'spotLight102'
-  spotLight102.position.set(-29, 2, 15)
-  spotLight102.target.position.set(-29, 0, 15)
-  spotLight102.intensity = 5000.0
-  spotLight102.decay = 0.0
-  spotLight102.angle = Math.PI / 5
+  const spotLight095 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight095.name = 'spotLight095'
+  spotLight095.position.set(1, 2, 15)
+  spotLight095.target.position.set(1, 0, 15)
+  spotLight095.intensity = 5000.0
+  spotLight095.decay = 0.0
+  spotLight095.angle = Math.PI / 5
+  const spotLight094 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight094.name = 'spotLight094'
+  spotLight094.position.set(4, 2, 15)
+  spotLight094.target.position.set(4, 0, 15)
+  spotLight094.intensity = 5000.0
+  spotLight094.decay = 0.0
+  spotLight094.angle = Math.PI / 5
+  const spotLight093 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight093.name = 'spotLight093'
+  spotLight093.position.set(9, 2, 15)
+  spotLight093.target.position.set(9, 0, 15)
+  spotLight093.intensity = 5000.0
+  spotLight093.decay = 0.0
+  spotLight093.angle = Math.PI / 5
+  const spotLight092 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight092.name = 'spotLight092'
+  spotLight092.position.set(11, 2, 15)
+  spotLight092.target.position.set(11, 0, 15)
+  spotLight092.intensity = 5000.0
+  spotLight092.decay = 0.0
+  spotLight092.angle = Math.PI / 5
+  //
+  const spotLight105 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight105.name = 'spotLight105'
+  spotLight105.position.set(-35, 2, 15)
+  spotLight105.target.position.set(-35, 0, 15)
+  spotLight105.intensity = 5000.0
+  spotLight105.decay = 0.0
+  spotLight105.angle = Math.PI / 5
+  const spotLight104 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight104.name = 'spotLight104'
+  spotLight104.position.set(-32, 2, 15)
+  spotLight104.target.position.set(-32, 0, 15)
+  spotLight104.intensity = 5000.0
+  spotLight104.decay = 0.0
+  spotLight104.angle = Math.PI / 5
   const spotLight103 = new THREE.SpotLight(0xBB0000, 1.0)
   spotLight103.name = 'spotLight103'
   spotLight103.position.set(-29, 2, 15)
@@ -722,20 +729,20 @@ export function lightControls (lightName) {
   spotLight103.intensity = 5000.0
   spotLight103.decay = 0.0
   spotLight103.angle = Math.PI / 5
-  const spotLight104 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight104.name = 'spotLight104'
-  spotLight104.position.set(-26, 2, 15)
-  spotLight104.target.position.set(-26, 0, 15)
-  spotLight104.intensity = 5000.0
-  spotLight104.decay = 0.0
-  spotLight104.angle = Math.PI / 5
-  const spotLight105 = new THREE.SpotLight(0xBB0000, 1.0)
-  spotLight105.name = 'spotLight105'
-  spotLight105.position.set(-23, 2, 15)
-  spotLight105.target.position.set(-23, 0, 15)
-  spotLight105.intensity = 5000.0
-  spotLight105.decay = 0.0
-  spotLight105.angle = Math.PI / 5
+  const spotLight102 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight102.name = 'spotLight102'
+  spotLight102.position.set(-26, 2, 15)
+  spotLight102.target.position.set(-26, 0, 15)
+  spotLight102.intensity = 5000.0
+  spotLight102.decay = 0.0
+  spotLight102.angle = Math.PI / 5
+  const spotLight101 = new THREE.SpotLight(0xBB0000, 1.0)
+  spotLight101.name = 'spotLight101'
+  spotLight101.position.set(-23, 2, 15)
+  spotLight101.target.position.set(-23, 0, 15)
+  spotLight101.intensity = 5000.0
+  spotLight101.decay = 0.0
+  spotLight101.angle = Math.PI / 5
   const spotLight106 = new THREE.SpotLight(0xBB0000, 1.0)
   spotLight106.name = 'spotLight106'
   spotLight106.position.set(-35, 2, 21)
@@ -1395,8 +1402,8 @@ export function lightControls (lightName) {
       break
     case 'spotLight070':
       console.log('spotLight070')
-      scene.add(spotLight069)
-      scene.add(spotLight069.target)
+      scene.add(spotLight070)
+      scene.add(spotLight070.target)
       setTimeout(() => {
         scene.remove(scene.getObjectByName('spotLight069'))
       }, 1000)
