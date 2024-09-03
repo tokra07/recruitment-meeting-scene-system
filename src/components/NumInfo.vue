@@ -88,7 +88,7 @@ export default {
         if (event.data === '连接成功') {
           _this.peopleSocket.send(1)
         } else {
-          _this.personMum++
+          _this.personMum = event.data.CurrentPersonage
         }
       })
     }
