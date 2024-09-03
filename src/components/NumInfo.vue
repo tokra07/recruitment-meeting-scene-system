@@ -49,7 +49,7 @@ export default {
   methods: {
     resume () {
       const _this = this
-      _this.resumeSocket = new WebSocket('ws://jy.chifengrencai.com//ledapi/getDeliveriesNumber')
+      _this.resumeSocket = new WebSocket('ws://jy.chifengrencai.com/ledapi/getDeliveriesNumber')
       _this.resumeSocket.addEventListener('message', function (event) {
         console.log('getDeliveriesNumber', event)
         if (event.data === '连接成功') {
@@ -64,6 +64,8 @@ export default {
             console.log('comList', comList)
             const deliverNum = JSON.parse(event.data)
             const deliverKeys = Object.keys(deliverNum)
+            const num = Object.values(deliverNum)
+            console.log('getDeliveriesNumber', num)
             console.log('返回的值', comList[deliverKeys])
             const boothNum = 'spotLight' + deliverKeys
             const bulbName = 'bulb' + deliverKeys
@@ -71,7 +73,7 @@ export default {
             lightControls(boothNum)
             bulbControls(bulbName)
             addTag(cssNum)
-            _this.resumeNum++
+            _this.resumeNum = num
             // _this.$message({
             //   message: '恭喜' + comList[deliverKeys] + '收到一份简历',
             //   type: 'success'
@@ -82,13 +84,15 @@ export default {
     },
     people () {
       const _this = this
-      _this.peopleSocket = new WebSocket('ws://jy.chifengrencai.com//ledapi/getCurrentPersonage')
+      _this.peopleSocket = new WebSocket('ws://jy.chifengrencai.com/ledapi/getCurrentPersonage')
       _this.peopleSocket.addEventListener('message', function (event) {
         console.log('getCurrentPersonage', event)
         if (event.data === '连接成功') {
           _this.peopleSocket.send(1)
         } else {
-          _this.personMum = event.data.CurrentPersonage
+          console.log('getCurrentPersonage', event.data)
+          const num = JSON.parse(event.data)
+          _this.personMum = num.CurrentPersonage
         }
       })
     }
